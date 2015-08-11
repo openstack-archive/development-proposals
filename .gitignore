@@ -1,0 +1,9 @@
+# Unit test / coverage reports
+.tox
+
+# Sphinx
+doc/build
+
+# pbr generates these
+AUTHORS
+ChangeLog
