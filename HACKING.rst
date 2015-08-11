@@ -33,7 +33,7 @@ We might often have a user story in the repository that might be beneficial to m
 
 User Story Tracker
 ------------------------------
-The tracker file for the user story has to be updated once a user story has gone through the workflow and has blueprints associated with it.
+The tracker file for the user story has to be updated once a user story has gone through the workflow and has blueprints associated with it.  
 
 - Follow instructions at `Documentation/HowTo/FirstTimers <https://wiki.openstack.org/wiki/Documentation/HowTo/FirstTimers>`_
     - This page will help you configure your local environment
