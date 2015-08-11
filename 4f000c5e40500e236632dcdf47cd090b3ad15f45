@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Code-Review+2: Rochelle Grober <rochelle.grober@huawei.com>
+Workflow+1: Rochelle Grober <rochelle.grober@huawei.com>
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 11 Aug 2015 21:43:30 +0000
+Reviewed-on: https://review.openstack.org/211725
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
