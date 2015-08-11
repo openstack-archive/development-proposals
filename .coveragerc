@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = openstack-user-stories
+omit = openstack-user-stories/openstack/*
+
+[report]
+ignore-errors = True
