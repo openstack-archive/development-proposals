@@ -1,6 +1,5 @@
-
-rking with OpenStack User Stories
-=================================================
+Working with OpenStack User Stories
+===================================
 
 This repository is working space for the `OpenStack Product WG <https://wiki.openstack.org/wiki/ProductTeam>`_ and contains user stories and their associated trackers.
 
