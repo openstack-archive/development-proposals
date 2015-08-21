@@ -1,0 +1,15 @@
+git checkout -b ProtectVMs
+
+
+git status
+
+git add --all
+
+git commit -a
+
+git review -v
+
+
+
+git remote update
+
