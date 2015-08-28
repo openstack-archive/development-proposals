@@ -30,7 +30,7 @@ Draft User Stories
    :glob:
    :maxdepth: 1
 
-   ../../user-stories/draft/*
+   user-stories/draft/*
 
 =====================
 Proposed User Stories
@@ -40,7 +40,7 @@ Proposed User Stories
    :glob:
    :maxdepth: 1
 
-   ../../user-stories/proposed/*
+   user-stories/proposed/*
 
 ====================
 Tracked User Stories
@@ -50,4 +50,4 @@ Tracked User Stories
    :glob:
    :maxdepth: 1
 
-   ../../user-stories/tracked/*
+   user-stories/tracked/*
