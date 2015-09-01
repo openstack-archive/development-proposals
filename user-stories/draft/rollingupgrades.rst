@@ -1,4 +1,3 @@
-=============================
 Rolling Upgrades
 =============================
 **Sections in** *italics* **are optional.**

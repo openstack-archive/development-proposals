@@ -1,4 +1,3 @@
-============================================
 Onboarding Legacy Apps into OpenStack (Pets)
 ============================================
 **Sections in** *italics* **are optional.**

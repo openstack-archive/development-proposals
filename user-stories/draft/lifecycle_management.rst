@@ -3,7 +3,6 @@
 .. just write: None.  For help with syntax, see http://sphinx-doc.org/rest.html You
 .. can also use an online RST editor at rst.ninjs.org to generate proper RST.
 
-============================
 Lifecycle Management for VMs
 ============================
 **Sections in** *italics* **are optional.**

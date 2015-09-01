@@ -3,14 +3,14 @@
 .. just write: None.  For help with syntax, see http://sphinx-doc.org/rest.html You
 .. can also use an online RST editor at rst.ninjs.org to generate proper RST.
 
-=============================
+
 The title of your use case
-=============================
+==========================
 **Sections in** *italics* **are optional.**
 
 *Problem description*
 ---------------------
-.. This section is optional. 
+.. This section is optional.
 .. Please use it to provide additional details (if available) about your user story
 .. (if warranted) for further expansion for clarity.  A detailed description of the
 .. problem. This should include the types of functions that you expect to run on
@@ -27,7 +27,7 @@ User Stories
 .. associated with a single epic and/or function.  If the user stories are
 .. explaining goals that fall under different epics/themes then please complete a
 .. separate submission for each group of user stories.  Please replace "None." with
-.. the appropriate data. 
+.. the appropriate data.
 
 .. A list of user stories ideally in this or a similar format:
 
@@ -43,7 +43,7 @@ Usage Scenarios Examples
 .. user story and what they might expect.  An example of a usage scenario can be
 .. found at http://agilemodeling.com/artifacts/usageScenario.htm of a currently
 .. implemented or documented planned solution.  Please replace "None." with the
-.. appropriate data. 
+.. appropriate data.
 
 .. If you have multiple usage scenarios/examples (the more the merrier) you may
 .. want to use a numbered list with a title for each one, like the following:
@@ -55,7 +55,7 @@ None.
 
 Opportunity/Justification
 -------------------------
-.. This section is mandatory. 
+.. This section is mandatory.
 .. Use this section to give opportunity details that support why
 .. pursuing these user stories would help address key barriers to adoption or
 .. operation.
@@ -68,7 +68,7 @@ None.
 
 Related User Stories
 --------------------
-.. This section is mandatory. 
+.. This section is mandatory.
 .. If there are related user stories that have some overlap in the problem domain or
 .. that you perceive may partially share requirements or a solution, reference them
 .. here.
@@ -77,7 +77,7 @@ None.
 
 *Requirements*
 --------------
-.. This section is optional.  It might be useful to specify 
+.. This section is optional.  It might be useful to specify
 .. additional requirements that should be considered but may not be
 .. apparent through the user story and usage examples.  This information will help
 .. the development be aware of any additional known constraints that need to be met
@@ -89,15 +89,15 @@ None.
 .. need.
 
 .. * 1st Requirement
-.. * 2nd Requirement 
+.. * 2nd Requirement
 .. * [...]
 
 None.
 
 *Gaps*
 ------
-.. This section is optional.  
-.. It might be useful to provide information in this 
+.. This section is optional.
+.. It might be useful to provide information in this
 .. section if there is already some functionality in OpenStack
 .. that might seem to fit your user story on the surface but, in reality, does not
 .. actually fulfill the needs of the user type or the objective.  If you choose to
@@ -112,8 +112,8 @@ None currently known.
 
 *Affected By*
 -------------
-.. This section is optional.  
-.. This section should be used for prior records of 
+.. This section is optional.
+.. This section should be used for prior records of
 .. activity inside OpenStack related to this user story
 .. (bugs that need to be fixed, blueprints for prior attempts, etc.).  If
 .. possible, please include links to the related specs, blueprints, or bug reports.
@@ -134,8 +134,8 @@ None.
 
 Glossary
 ========
-.. This section is optional.  
-.. It is highly suggested that you define any terms, 
+.. This section is optional.
+.. It is highly suggested that you define any terms,
 .. abbreviations that are not   commonly used in order to ensure
 .. that your user story is understood properly.
 
