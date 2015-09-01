@@ -22,9 +22,10 @@ User Story Status
 
    status/*
 
-==================
-Draft User Stories
-==================
+User Stories
+------------
+
+Drafts:
 
 .. toctree::
    :glob:
@@ -32,9 +33,7 @@ Draft User Stories
 
    user-stories/draft/*
 
-=====================
-Proposed User Stories
-=====================
+Proposed:
 
 .. toctree::
    :glob:
@@ -42,12 +41,17 @@ Proposed User Stories
 
    user-stories/proposed/*
 
-====================
-Tracked User Stories
-====================
+Tracked:
 
 .. toctree::
    :glob:
    :maxdepth: 1
 
    user-stories/tracked/*
+
+
+==================
+Indices and tables
+==================
+
+* :ref:`search`
