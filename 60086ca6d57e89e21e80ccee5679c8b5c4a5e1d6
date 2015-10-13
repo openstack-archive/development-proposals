@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Code-Review+2: Ken Johnston <kencjohnston@gmail.com>
+Workflow+1: Ken Johnston <kencjohnston@gmail.com>
+Submitted-by: Jenkins
+Submitted-at: Tue, 13 Oct 2015 21:13:42 +0000
+Reviewed-on: https://review.openstack.org/234434
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
