@@ -67,5 +67,5 @@ scale, upgradable, production ready OpenStack becomes an achievable use case.
 None.
 
 Glossary
-========
+--------
 None.

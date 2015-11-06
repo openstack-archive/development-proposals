@@ -81,5 +81,5 @@ example launching a VM needs access to the datastore, OS images files, disks,
 ability to create them and/or read an existing one etc.
 
 Glossary
-========
+--------
 None.

@@ -94,5 +94,5 @@ volume-type.html where it implies that admin privilege is required.
 None.
 
 Glossary
-========
+--------
 None.

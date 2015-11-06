@@ -133,7 +133,7 @@ None.
 None.
 
 Glossary
-========
+--------
 .. This section is optional.
 .. It is highly suggested that you define any terms,
 .. abbreviations that are not   commonly used in order to ensure

@@ -82,7 +82,7 @@ None.
 None.
 
 Glossary
-========
+--------
 **Pets** Legacy application workloads that are characterized by stateful
 applications that lack of application level redundancy and high value to the
 business (contrast with "cattle")

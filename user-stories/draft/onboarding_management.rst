@@ -109,7 +109,7 @@ None.
 None.
 
 Glossary
-========
+--------
 **Hosts** Physical systems that contain a hypervisor allowing for
 multiple virtual machines to run
 
