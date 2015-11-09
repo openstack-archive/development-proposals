@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Code-Review+2: Carol Barrett <carol.l.barrett@intel.com>
+Workflow+1: Carol Barrett <carol.l.barrett@intel.com>
+Submitted-by: Jenkins
+Submitted-at: Mon, 09 Nov 2015 19:53:51 +0000
+Reviewed-on: https://review.openstack.org/243260
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
