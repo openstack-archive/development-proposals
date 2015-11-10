@@ -1,22 +1,26 @@
-# Workflow
-## Introducing Feature/Improvements
+Workflow
+=======
+Where Feature/Improvements Come From
+------------------------------------
 Feature or improvement ideas typically start from a few ways:
 
 * User feedback collected by the product working group.
 * IRC or Mailing list discussion.
 * A patch within a project that's recognized as benefiting other projects.
 
-### Blueprints
+How to Propose Feature/Improvements in OpenStack
+-----------------------------------------------
+Blueprints
+^^^^^^^^^^
 To formally propose a feature or improvement to an OpenStack project, you need
 to create a Blueprint. Blueprints allow the community to track initiatives and
 potentially mark them to a milestone in a release being developed. Some of the
-information tracked is who is implementing it, current progress, and
-[more](https://wiki.openstack.org/wiki/Blueprints#Blueprints_reference).
+information tracked is who is implementing it, current progress, and `more <https://wiki.openstack.org/wiki/Blueprints#Blueprints_reference>`_
 
-[Read entire
-flow](https://wiki.openstack.org/wiki/Blueprints#Blueprints_only_lifecycle)
+`Read entire flow <https://wiki.openstack.org/wiki/Blueprints#Blueprints_only_lifecycle>`_
 
-### Project Specifications
+Project Specifications
+^^^^^^^^^^^^^^^^^^^^^^
 Some projects go a step futher with blueprints and ask for a set of information
 up front to know whether a certain initiative is a good idea. This set of
 information can be technical information such as:
@@ -34,20 +38,22 @@ see what questions you need to answer.
 Keep in mind not all ideas need a specification, so find out from the project
 members if a certain idea warrants a full spec, or just a blueprint.
 
-[Read entire
-flow](https://wiki.openstack.org/wiki/Blueprints#Spec_.2B_Blueprints_lifecycle)
+`Read entire flow <https://wiki.openstack.org/wiki/Blueprints#Spec_.2B_Blueprints_lifecycle>`_
 
-### Cross-Project Specifications
+Cross-Project Specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If an idea spans to more than one project, it should be introduced in the
-[OpenStack Specs repo](https://github.com/openstack/openstack-specs) instead
+`OpenStack Specs repo <https://github.com/openstack/openstack-specs>`_ instead
 a project specific Specification.
 
 Each project that is involved with the specification should have a blueprint
 registered, and the blueprint URL should be included in the OpenStack
 Specification.
 
-#### Product Working Group Liaisons
-##### Introducing A Feature/Improvement
+Product Working Group Liaisons Role
+-----------------------------------
+Introducing A Feature/Improvement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 It should be assumed introducing a feature/improvement depending on
 availability resources and other priorities, it'll likely require a notice of
 a release or two with project teams before any work can begin. Therefore
@@ -58,16 +64,16 @@ assigned to oversee an idea cross-project with the following responsibilities:
 2. CC cross-project liaisons of projects to specification for attention. If
    needed email cross-project liaisons for attention.
 3. If any specifications needs additional attention, you can add an item to the
-   [cross-project meeting
-   agenda](https://wiki.openstack.org/wiki/Meetings/CrossProjectMeeting#Proposed_agenda),
+   `cross-project meeting agenda
+   <https://wiki.openstack.org/wiki/Meetings/CrossProjectMeeting#Proposed_agenda>`_, 
    and have it be discussed realtime.
 4. Once enough consensus is met by the cross-project liaisons of the necessary
    projects, the specification will be passed to the Technical Committee for
    approval.
 
 
-##### Tracking Feature/Improvement
-
+Tracking Feature/Improvement
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. The Product Working Group Liaison should identify with each project involved
    who will actually implement the feature/improvement.
 2. Alignment with each project implementing the feature/improvement in the same
