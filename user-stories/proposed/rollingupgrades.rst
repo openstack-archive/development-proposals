@@ -11,7 +11,7 @@ specifically their access to a constantly improving platform.
 
 User Stories
 ------------
-* As a Cloud User, I want to experience a consistently updated
+* As a Cloud User, I want to experience a stable, regularly updated
   OpenStack platform in order to utilize new features, bug fixes and
   security enhancements, so that my cloud development experience is
   consistently world-class.
@@ -21,7 +21,7 @@ User Stories
 * As a Cloud Operator, I want to have confidence in my ability to
   perform an OpenStack cloud upgrade so that I can perform them on a
   monthly basis
-* As a Cloud Operator, I want to be able to roll back any cloud
+* As a Cloud Operator, I want to be able to roll back the most recent cloud
   upgrade I initiate in the event of issues so that I can be confident
   that even in the case of errors I will still avoid data plane or
   control plane downtime
@@ -40,14 +40,14 @@ Usage Scenarios Examples
     e. Cloud Operator schedules next upgrade for 1 month's time to take
        advantage of backports and security updates
 2. Unsuccessful upgrade
-    a. Cloud Operator schedules OpenStack upgrade to latest release
+    a. Cloud Operator schedules OpenStack upgrade to latest  6 month release
     b. While performing upgrade Cloud Operator notices an unexpected error
     c. Cloud Operator rolls back the upgrade to a previously known, error-free
        state
 3. Immediate Upgrade
     a. Cloud Operator is informed that a security vulnerability has been found
        in an OpenStack service and a patch is available for the current release
-    b. Cloud Operator schedules an upgrade to the newest release
+    b. Cloud Operator schedules an upgrade to the newest update
     c. After successfully completed the Cloud Operator's cloud is no longer
        vulnerable
 4. Rolling Upgrade on Dataplane
