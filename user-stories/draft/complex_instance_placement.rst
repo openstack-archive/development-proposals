@@ -64,7 +64,15 @@ is however no concept of having two separate groups of instances where the
 instances in the group have one policy towards each other, and a different
 policy towards all instances in the other group.
 
-TODO: Work with Calum on market data for the NFV use case specifically.
+Although this user story is written from a particular virtual IMS use case, it is
+generally applicable to many other NFV applications and more broadly to any
+applications which need to be scalable and reliable and try to achieve this
+through a stateless scale-out architecture for their processing tier. Those all
+share the common factor of having a pool of VMs of which not too many can be
+packed on a single host without compromising reliability. For example, consider a
+service implemented as a Web tier in front of a distributed database. If the Web
+tier's VMs are tightly packed onto a small number of hosts, failure of any one of
+those hosts could result in an unacceptable short-term impact to service.
 
 Related User Stories
 --------------------
