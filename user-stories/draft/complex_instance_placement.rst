@@ -64,7 +64,22 @@ is however no concept of having two separate groups of instances where the
 instances in the group have one policy towards each other, and a different
 policy towards all instances in the other group.
 
-TODO: Work with Calum on market data for the NFV use case specifically.
+Additionally there is no concept of expressing affinity rules that can control
+how concentrated the members of a server group can be - that is, how tightly
+packed members of a server group can be onto any given hosts. For some
+applications it may be desirable to pack tightly, to minimise latency between
+them; for others, it may be undesirable, as then the failure of any given host
+can take out an unacceptably high percentage of the total application
+resources. Such requirements can partially be bet with so called "soft"
+affinity and anti-affinity rules (if implemented) but may require more advanced
+policy knobs to set how much packing or spread is too much.
+
+Although this user story is written from a particular virtual IMS use case, it
+is generally applicable to many other NFV applications and more broadly to any
+applications which have some combination of:
+
+* Performance requirements that are met by packing related workloads; or
+* Resiliency requirements that are met by spreading related workloads
 
 Related User Stories
 --------------------
