@@ -61,15 +61,20 @@ planning and discussion should happen as soon as possible. A liaison will be
 assigned to oversee an idea cross-project with the following responsibilities:
 
 1. Create or have someone create the technical OpenStack specification.
-2. CC cross-project liaisons of projects to specification for attention. If
-   needed email cross-project liaisons for attention.
+2. CC cross-project spec liaisons of projects to specification for attention.
+   If needed email cross-project spec liaisons for attention.
 3. If any specifications needs additional attention, you can add an item to the
    `cross-project meeting agenda
-   <https://wiki.openstack.org/wiki/Meetings/CrossProjectMeeting#Proposed_agenda>`_, 
+   <https://wiki.openstack.org/wiki/Meetings/CrossProjectMeeting#Proposed_agenda>`_,
    and have it be discussed realtime.
-4. Once enough consensus is met by the cross-project liaisons of the necessary
-   projects, the specification will be passed to the Technical Committee for
-   approval.
+4. Specify in the cross-project spec the `topic branch
+   <http://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches>`_
+   for work to be carried out on. This will allow all development work in
+   `gerrit <https://review.openstack.org>`_ to be found easily with the topic
+   filter across the different projects.
+4. Once enough consensus is met by the cross-project spec liaisons of the
+   necessary projects, the specification will be passed to the Technical
+   Committee for approval.
 
 
 Tracking Feature/Improvement
