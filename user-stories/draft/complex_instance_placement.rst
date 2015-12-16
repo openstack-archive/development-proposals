@@ -162,6 +162,8 @@ External References
 * [2] https://en.wikipedia.org/wiki/IP_Multimedia_Subsystem
 * [3] http://www.projectclearwater.org
 * [4] http://www.projectclearwater.org/technical/clearwater-architecture/
+* [5] https://review.openstack.org/#/c/247654/
+* [6] https://blueprints.launchpad.net/nova/+spec/generic-resource-pools
 
 Glossary
 --------
