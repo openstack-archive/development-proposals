@@ -50,7 +50,13 @@ None.
 
 Opportunity/Justification
 -------------------------
-None.
+* Laws and regulations are becoming more strict in regards to the handling of
+  sensitive data
+* More and more enterprises are looking to OpenStack based clouds to host
+  sensitive transactional workloads
+* Allowing an application to specify encryption in flight, at rest, or both
+  enables enterprises to remain compliant at all times, despite enabling self-
+  service to non-administrative users
 
 Related User Stories
 --------------------
@@ -73,8 +79,6 @@ Related User Stories
   storage system that supports either or both encryption/decryption at the
   instance, in addition to at rest.
 
-
-
 *Gaps*
 ------
 **Cinder issues:**
@@ -92,7 +96,6 @@ the application.
 * Development of a data at rest solution is currently under development,
 however, this does not solve for in flight data.
 
-
 *Affected By*
 -------------
 
@@ -103,7 +106,6 @@ however, this does not solve for in flight data.
   `current documentation`_ implies that admin privilege is required.
 * There is an `object encryption spec`_ which documents the approach for object
   encryption (at rest).
-
 
 *External References*
 ---------------------
