@@ -84,6 +84,34 @@ Related User Stories
 1. Onboarding must be non-disruptive to legacy environments such that
 the applications, virtual machines and physical hosts should not need to
 be restarted
+2. Openstack needs to at least tolerate Virtual Machine resource
+configuration changes made by non-OpenStack management tools
+after the VM has been onboarded into OpenStack.
+The eventual goal is for full synchronization between all resource
+management tools
+
+Three phases of synchronization related to onboarding are:
+Phase 1 - No synchronization - The move to OpenStack management is one
+way only. No out of band/non-OpenStack management will be accomodated
+by OpenStack.
+Example: Nova would delete a VM that was migrated by a control
+mechanism outside of OpenStack,
+
+Phase 2 - OpenStack toleration. Management actions initiated outside of
+OpenStack would be tolerated and the OpenStack database would reflect
+the changes in resources.
+Example, in the case of a live migration, OpenStack would
+accept that the VM had been moved to a different physical host
+
+Similar accommodation needed for changes to storage volumes outside of
+Cinder and networking changes outside of Neutron 
+
+Phase 3 - Full synchronization - This would allow multiple management
+control points to take action against managed resources and have the
+changes reflected in all resource managers. Most important for VMware
+environments.
+Example: Self service provisioning initiated in OpenStack Horizon would
+result in the new VMs also showing up in vCenter
 
 *Gaps*
 ------
