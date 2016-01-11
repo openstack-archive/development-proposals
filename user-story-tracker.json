@@ -1,1 +1,31 @@
-"status":"TODO"
+{
+    "id": "",
+    "date": "",
+    "description": "",
+    "source": "",
+    "status": "",
+    "tasks": [
+        "",
+        ""
+    ],
+    "tasks_status": {
+        "": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "",
+            "projects": [
+                "",
+                ""
+            ],
+            "projects_status": {
+                "": {
+                    "blueprints": {
+                        "$bp_name": "$bp_status"
+                    },
+                    "spec": "",
+                    "spec_status": ""
+                }
+            }
+        }
+    }
+}
