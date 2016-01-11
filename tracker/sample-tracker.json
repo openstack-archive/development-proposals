@@ -1,0 +1,50 @@
+{
+  "id": "2016.01.01",
+  "date": "06-01-2016",
+  "description": "Rolling Upgrade Monitor",
+  "source": "https://github.com/openstack/openstack-user-stories/blob/master/user-stories/tracked/rolling-upgrades.rst",
+  "status": "in-progress",
+  "tasks": ["versionedObjects", "newCollector"],
+  "tasks_status": {
+    "versionedObjects": {
+      "cross-project spec": "https://github.com/openstack/openstack-specs/blob/master/specs/eventlet-best-practices.rst",
+      "gerrit-topic": "verobj-all",
+      "xp_status": "in-progress",
+      "projects": ["cinder","nova","tacker"],
+        "projects_status": {
+          "cinder": {
+            "blueprint": "backup-snapshots",
+	    "bp_status": "in-progress",
+            "spec": "https://github.com/openstack/cinder-specs/blob/master/specs/mitaka/backup-snapshots.rst",
+	    "spec_status":"completed"
+           },
+          "nova": {
+            "blueprint": "na",
+	    "bp_status": "na",
+	    "spec": "https://github.com/openstack/nova-specs/blob/master/specs/mitaka/approved/cells-db-connection-switching.rst",
+	    "spec_status":"na"
+            },
+          "tacker": {
+	    "blueprint": "multi-site-vim",
+	    "bp_status": "in-progress",
+	    "spec": "needed",
+	    "spec_status": "pending"
+	    },
+    "newCollector": {
+      "cross-project spec": "needed",
+      "gerrit-topic": "ru-newcollecter",
+      "xp_status": "pending",
+      "projects": ["ceilometer"],
+      "projects_status": {
+        "ceilometer": {
+          "blueprint": "needed",
+	  "bp_status": "pending",
+          "spec": "needed",
+	  "spec_status": "pending"
+            }
+          }
+        }
+      }
+    }
+  }
+}
