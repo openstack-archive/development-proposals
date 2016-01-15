@@ -104,7 +104,7 @@ Example, in the case of a live migration, OpenStack would
 accept that the VM had been moved to a different physical host
 
 Similar accommodation needed for changes to storage volumes outside of
-Cinder and networking changes outside of Neutron 
+Cinder and networking changes outside of Neutron
 
 Phase 3 - Full synchronization - This would allow multiple management
 control points to take action against managed resources and have the
