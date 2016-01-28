@@ -1,0 +1,10 @@
+Code-Review+1: Deric Horn <deric.horn@hp.com>
+Code-Review+2: Ken Johnston <kencjohnston@gmail.com>
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Workflow+1: Shamail Tahir <ItzShamail@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 28 Jan 2016 17:42:45 +0000
+Reviewed-on: https://review.openstack.org/266068
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
