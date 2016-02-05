@@ -1,0 +1,85 @@
+The title of your use case
+==========================
+Stable Branch Support
+
+*Problem description*
+---------------------
+Need to find a process to keep EOL releases maintained longer than one year by
+the community if there is enough business justification and resources
+committed for the stable support work.
+
+User Stories
+------------
+As a cloud operator, I would like to run my OpenStack Cloud on a particular
+release for more than a year while still receiving updates and patches for the
+release that I use. 
+
+According to the current OpenStack release policy, any release can be
+maintained by the OpenStack community for only one year. In the Enterprise IT
+environment, we can't move this fast. We need 4-6 months to first qualify a
+new release, then there might be migration or integration issues that might
+take longer time (e.g. 3-4 months to move). And vendor's distros come out
+ranging from 1-6 or more months after a new OpenStack release is available.
+This could totally take up to 18 months. Once we finally get a new release
+finalized, we need to keep it stable for awhile before we move again.
+
+The current OpenStack release model is not viable for Enterprise IT or Service
+Providers. In the Enterprise or Service Providers world, we need more
+stability. Today, each distro vendor will provide their own maintenance and
+support for EOL OpenStack releases, which will eventually create various
+branches of EOL OpenStack out in the product environments. This will
+eventually cost more work for the operators and vendors, and eventually slow
+down the overall OpenStack adoption.
+
+Usage Scenarios Examples
+------------------------
+* Operator's view
+Infrastructure just moved from Gerrit 2.8 to Gerrit 2.11.
+They were on 2.8 for two years before the switch, and it took them six
+months to make it work. Operators require 4-6 months to first qualify a
+new release, then another 3-4 months (minimum) to move. Vendor distros come
+out 1-6 months after the OpenStack release.
+
+* Distro vendor's view
+It is our goal to support our customers in their real-life situation.
+Enterprise customers generally don't upgrade to a new release every 6 months.
+We are willing to provide resources to the stable branch work. For example,
+for Juno, the vendors were willing to provide resources but unfortunately TC
+still decided to EOL Juno.
+
+Opportunity/Justification
+-------------------------
+The current enterprise adoption for OpenStack is not ideal. We believe that
+the current model (only 2 releases ailve) is one of the barriers for adoption.
+OpenStack needs to be perceived as an "Enterprise-ready" platform. Instead of
+having each vendor trying to do the maintenance work individually, we should
+have an official process to qualify and support an EOL release.
+
+Related User Stories
+--------------------
+TBD.
+
+*Requirements*
+--------------
+.. * 1st Requirement
+.. * 2nd Requirement
+.. * [...]
+
+TBD.
+
+*Gaps*
+------
+There is no official process to qualify and support and EOL release in the
+OpenStack community.
+
+*Affected By*
+-------------
+The current TC decision making for this issue.
+
+*External References*
+---------------------
+TBD.
+
+Glossary
+--------
+None.
