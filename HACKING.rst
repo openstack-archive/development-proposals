@@ -18,6 +18,7 @@ Product WG User Story Submission Process
 - Document your user story using our `approved template <user-story-template.rst>`_
 - Save the user story in the "user-stories" directory with a unique name
 - Document relevant information about the submission in a tracker using JSON.  Here is a link to the `tracker template <user-story-tracker.json>`_
+    - For more information on the tracker format, you can read the `Tracker Overview <doc/source/tracker_overview.rst>`_
 - Save the tracker file (with as much information as you are able to provide) in the "trackers" directory using the same unique name as the user-story but ending with a .json extension
 - A member of the Product WG might contact you to review the submission using the email address associated with your Gerrit user.
 
