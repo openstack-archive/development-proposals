@@ -52,11 +52,13 @@ Perimeta signaling instances must be able to support large numbers of
 concurrent TCP connections (hundreds of thousands) to cater for large numbers
 of clients using TCP.
 
-Perimeta must be able to coexist with VMs which do not have these requirements
-on the same host, so long as it can provide sufficient dedicated resources.
-For example, just because Perimeta may not require security group function it
-does not mean this can be disabled at a host scope, or just because Perimeta
-uses SR-IOV or DPDK it does not mean that all VMs on that host must do so.
+It is highly desirable that Perimeta should be able to co-exist on the same 
+host with VMs which do not share these specific requirements, so long as the
+host can provide sufficient dedicated resources, otherwise host hardware will
+not be used efficiently.  For example, just because Perimeta may not require
+security group function it does not mean this can be disabled at a host scope,
+or just because Perimeta uses SR-IOV or DPDK it does not mean that all VMs on
+that host must do so.
 
 User Stories
 ------------
@@ -76,11 +78,11 @@ clouds, providing high availability, high scale and high performance.
 Opportunity/Justification
 -------------------------
 
-Although this user story is specifically about Perimeta, it is
-more generally representative of the issues involved in
-deploying in OpenStack any VNF utilising a fast data plane or high scale SIP.
-The use case focuses on those elements rather than more generic issues like
-orchestration and high availability (HA).
+Although this user story is specifically about Perimeta, it is more generally
+representative of the issues involved in deploying in OpenStack any VNF
+utilising a fast data plane or high scale SIP.  The use case focuses on those
+elements rather than more generic issues like orchestration and high
+availability (HA).
 
 Related User Stories
 --------------------
@@ -244,7 +246,7 @@ The following are not yet addressed.
 
   As above, to deliver 5 9's service Perimeta expects to be deployed spanning
   multiple cloud instances, but if deployed in a single instance it is
-  desirable for that cloud to be available as possible.
+  desirable for that cloud to be as available as possible.
 
 This use case also implicitly places requirement on elements outside core
 OpenStack, such as the DPDK OVS mechanism driver
