@@ -29,11 +29,13 @@ can be detected and recovered by the system. Possible failure events include:
 Usage Scenarios Examples
 ------------------------
 * VM is down
-Monitor the VM. Detect VM down failure and notify system to recover the VM.
+
+  Monitor the VM. Detect VM down failure and notify system to recover the VM.
 
 * VM provisioning process is down
-Monitor the provisioning process service (nova-compute service). Detect
-process failure and notify system to restart the service.
+
+  Monitor the provisioning process service (nova-compute service). Detect
+  process failure and notify system to restart the service.
 
 * Host/Hypervisor is down
 Monitor the hypervisor. Detect hypervisor failure and evaculate all VMs from
@@ -60,7 +62,7 @@ To be determined.
 * An ability to restart VM due to VM failure.
 * An ability to restart provisioning process.
 * An ability to automatically evacuate VMs from a failure hosts and restart
-the VMs on available host.
+  the VMs on available host.
 
 *Gaps*
 ------
@@ -74,6 +76,7 @@ To be determined.
 *External References*
 ---------------------
 https://github.com/ntt-sic/masakari
+
 https://etherpad.openstack.org/p/automatic-evacuation
 
 Glossary
