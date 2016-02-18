@@ -8,8 +8,11 @@ The title of your use case
 ==========================
 **Sections in** *italics* **are optional.**
 
-*Problem description*
----------------------
+Problem description
+====================
+
+*Problem Definition*
+--------------------
 .. This section is optional.
 .. Please use it to provide additional details (if available) about your user story
 .. (if warranted) for further expansion for clarity.  A detailed description of the
@@ -19,6 +22,22 @@ The title of your use case
 .. section.
 
 None.
+
+Opportunity/Justification
+-------------------------
+.. This section is mandatory.
+.. Use this section to give opportunity details that support why
+.. pursuing these user stories would help address key barriers to adoption or
+.. operation.
+
+.. Some examples of information that might be included here are applicable market
+.. segments, workloads, user bases, etc. and any associated data.  Please replace
+.. "None." with the appropriate data.
+
+None.
+
+Use Cases
+=========
 
 User Stories
 ------------
@@ -35,7 +54,7 @@ User Stories
 
 None.
 
-Usage Scenarios Examples
+Usage Scenario Examples
 ------------------------
 .. This section is mandatory.
 .. In order to explain your user stories, if possible, provide an example in the
@@ -53,21 +72,10 @@ Usage Scenarios Examples
 
 None.
 
-Opportunity/Justification
--------------------------
-.. This section is mandatory.
-.. Use this section to give opportunity details that support why
-.. pursuing these user stories would help address key barriers to adoption or
-.. operation.
 
-.. Some examples of information that might be included here are applicable market
-.. segments, workloads, user bases, etc. and any associated data.  Please replace
-.. "None." with the appropriate data.
-
-None.
 
 Related User Stories
---------------------
+====================
 .. This section is mandatory.
 .. If there are related user stories that have some overlap in the problem domain or
 .. that you perceive may partially share requirements or a solution, reference them
@@ -76,7 +84,7 @@ Related User Stories
 None.
 
 *Requirements*
---------------
+==============
 .. This section is optional.  It might be useful to specify
 .. additional requirements that should be considered but may not be
 .. apparent through the user story and usage examples.  This information will help
@@ -94,24 +102,8 @@ None.
 
 None.
 
-*Gaps*
-------
-.. This section is optional.
-.. It might be useful to provide information in this
-.. section if there is already some functionality in OpenStack
-.. that might seem to fit your user story on the surface but, in reality, does not
-.. actually fulfill the needs of the user type or the objective.  If you choose to
-.. complete this section, please be sure to include information about the gap AND
-.. why you believe the current functionality does not meet the requirement. Please
-.. replace "None currently known." with the appropriate data. This section can
-.. often be left with "None currently known." It is the purpose of this working
-.. group and repository to use the use cases presented here to identify what the
-.. gaps are.
-
-None currently known.
-
 *Affected By*
--------------
+=============
 .. This section is optional.
 .. This section should be used for prior records of
 .. activity inside OpenStack related to this user story
@@ -122,7 +114,7 @@ None currently known.
 None.
 
 *External References*
----------------------
+=====================
 .. This section is optional.
 .. Please use this section to add references for standards or well-defined
 .. mechanisms.  You can also use this section to reference existing functionality
@@ -133,7 +125,7 @@ None.
 None.
 
 Glossary
---------
+========
 .. This section is optional.
 .. It is highly suggested that you define any terms,
 .. abbreviations that are not   commonly used in order to ensure
