@@ -1,0 +1,31 @@
+{
+    "id": "00001",
+    "date": "2016-02-29",
+    "description": "Rolling Upgrades",
+    "source": "https://github.com/openstack/openstack-user-stories/tree/master/user-stories/proposed/rolling-upgrades.rst",
+    "status": "In Progress",
+    "tasks": [
+        "",
+        ""
+    ],
+    "tasks_status": {
+        "": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "",
+            "projects": [
+                "",
+                ""
+            ],
+            "projects_status": {
+                "": {
+                    "blueprints": {
+                        "$bp_name": "$bp_status"
+                    },
+                    "spec": "",
+                    "spec_status": ""
+                }
+            }
+        }
+    }
+}

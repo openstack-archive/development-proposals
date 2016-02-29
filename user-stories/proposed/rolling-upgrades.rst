@@ -1,8 +1,14 @@
 Rolling Updates and Upgrades
 =============================
+Cross Project Spec - Ready for Submission
 
-*Problem description*
----------------------
+User Story Tracker - `Rolling Upgrades Tracker <https://github.com/openstack/openstack-user-stories/tree/master/tracker/rolling-upgrades.json>`_
+
+Problem description
+====================
+
+Problem Definition
+--------------------
 OpenStack operators often shy away from upgrading or updating OpenStack due to
 concerns about the intrusiveness of upgrades. This prohibits operators from
 realizing the complete value of their OpenStack cloud, specifically their
@@ -13,6 +19,18 @@ The use cases below cover deployments based directly on the OpenStack upstream
 code base. While some of the features may be utilized by distribution providers
 to improve their support for non-disruptive updates and upgrades, they are not
 specifically covered in this document.
+
+Opportunity/Justification
+-------------------------
+This is a large reason why enterprises fail to gain the full value of their
+OpenStack cloud. **Upgrades and updates have never been easy and in many
+environments require extended downtime of both the control and dataplane.**
+This is an inherently un-cloudy characteristic of the OpenStack platform.
+Fixing upgrades and updates would clear up many concerns which limit OpenStack
+adoption today.
+
+Use Cases
+=========
 
 User Stories
 ------------
@@ -72,25 +90,16 @@ Usage Scenarios Examples
        of the dataplane hosts in an automated, configurable process
     c. Cloud Users are unaffected by the reboots
 
-Opportunity/Justification
--------------------------
-This is a large reason why enterprises fail to gain the full value of their
-OpenStack cloud. **Upgrades and updates have never been easy and in many
-environments require extended downtime of both the control and dataplane.**
-This is an inherently un-cloudy characteristic of the OpenStack platform.
-Fixing upgrades and updates would clear up many concerns which limit OpenStack
-adoption today.
-
 Related User Stories
---------------------
+====================
 None.
 
-*Requirements*
---------------
+Requirements
+=============
 None.
 
-*Gaps*
-------
+Gaps
+====
 Upgrades today require downtime in the data plane, network connectivity and
 often control plane.
 
@@ -236,19 +245,18 @@ There are project meta data tags to signify that a given OpenStack project is
 capable of performing a rolling upgrade.
 * Status - Implemented
 
-*Affected By*
--------------
-None.
-
-*External References*
----------------------
+External References
+===================
 * `Dan Smith's Upgrade Blog Series <http://www.danplanet.com/blog/tag/nova-upgrade-details/>`_
 * `Rolling Upgrades Project Meta Data Tag <https://github.com/openstack/governance/blob/master/reference/tags/assert_supports-rolling-upgrade.rst>`_
 * `Grenade - OpenStack Upgrade Test Harness <https://wiki.openstack.org/wiki/Grenade>`_
 
+Rejected User Stories / Usage Scenarios
+=======================================
+None.
 
 Glossary
---------
+========
 * **Control Plane** Hosts or infrastructure which operate OpenStack services
   (e.g. nova-api)
 * **Data Plane** Infrastructure instances created by cloud users on an
