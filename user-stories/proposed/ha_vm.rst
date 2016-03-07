@@ -6,10 +6,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-===================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 
 Enterprise customers are moving their application workloads onto OpenStack
 Cloud. However, not all applications can be re-architected into a
@@ -21,16 +21,16 @@ hypervisor. Therefore, the system must be able to recover or rescue the VM
 from a failure events preferably in an automated and cost effective manner.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Many enterprise customers requires HA VM feature in order to satisfy their
-workload SLA. HA VM is a critical requirements for NTT customers.
+workload SLA. For example, HA VM is a critical requirements for NTT customers.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 
 As a cloud operator, I would like to provide my users with highly reliable
 VM to meet high SLA requirement. Potentially there are few types of failure
@@ -51,7 +51,7 @@ can be detected and recovered by the system. Possible failure events include:
 
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 
 * VM is down
 
@@ -71,12 +71,12 @@ Usage Scenarios Examples
   instance volume as these volumes survive outside the hypervisors.
 
 Related User Stories
-====================
+++++++++++++++++++++
 To be determined.
 
 
 *Requirements*
-==============
+++++++++++++++
 
 * An ability to monitor VM failure.
 
@@ -93,19 +93,21 @@ To be determined.
 
 
 *External References*
-=====================
++++++++++++++++++++++
 
 https://github.com/ntt-sic/masakari
 
 https://etherpad.openstack.org/p/automatic-evacuation
 
+https://review.openstack.org/#/c/257809
+
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 
 None.
 
 Glossary
-========
+--------
 
 To be determined.
 
