@@ -6,10 +6,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-===================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 
 Enterprise customers are moving their application workloads onto OpenStack
 Cloud. However, not all applications can be re-architected into a
@@ -21,16 +21,16 @@ hypervisor. Therefore, the system must be able to recover or rescue the VM
 from a failure events preferably in an automated and cost effective manner.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Many enterprise customers requires HA VM feature in order to satisfy their
-workload SLA. HA VM is a critical requirements for NTT customers.
+workload SLA. For example, HA VM is a critical requirements for NTT customers.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 
 As a cloud operator, I would like to provide my users with highly reliable
 VM to meet high SLA requirement. Potentially there are few types of failure
@@ -51,7 +51,7 @@ can be detected and recovered by the system. Possible failure events include:
 
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 
 * VM is down
 
@@ -60,23 +60,25 @@ Usage Scenarios Examples
 * VM provisioning process is down
 
   Monitor the provisioning process service (nova-compute service). Detect
-  process failure and notify system to restart the service.
+  process failure and notify system to restart the service. If it fails to
+  restart the provisioning process, it should stop scheduling a new VM
+  instance onto the hypervisor/host that the process is running on.
 
 * Host/Hypervisor is down
 
-  Monitor the hypervisor. Detect hypervisor failure and evaculate all VMs from
+  Monitor the hypervisor. Detect hypervisor failure and evacuate all VMs from
   failure host. Restart the VMs on new hosts that enable an application
   workload to resume a process if the VM state is stored in a volume even
   though it loses the state on memory. A shared storage can be used for
   instance volume as these volumes survive outside the hypervisors.
 
 Related User Stories
-====================
+++++++++++++++++++++
 To be determined.
 
 
 *Requirements*
-==============
+++++++++++++++
 
 * An ability to monitor VM failure.
 
@@ -93,19 +95,21 @@ To be determined.
 
 
 *External References*
-=====================
++++++++++++++++++++++
 
 https://github.com/ntt-sic/masakari
 
 https://etherpad.openstack.org/p/automatic-evacuation
 
+https://review.openstack.org/#/c/257809
+
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 
 None.
 
 Glossary
-========
+--------
 
 To be determined.
 
