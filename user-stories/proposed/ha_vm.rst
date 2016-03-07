@@ -24,7 +24,7 @@ Opportunity/Justification
 -------------------------
 
 Many enterprise customers requires HA VM feature in order to satisfy their
-workload SLA. HA VM is a critical requirements for NTT customers.
+workload SLA. For example, HA VM is a critical requirements for NTT customers.
 
 Use Cases
 =========
@@ -98,6 +98,8 @@ To be determined.
 https://github.com/ntt-sic/masakari
 
 https://etherpad.openstack.org/p/automatic-evacuation
+
+https://review.openstack.org/#/c/257809
 
 *Rejected User Stories / Usage Scenarios*
 =========================================
