@@ -1,13 +1,19 @@
 Encrypted Storage
 ==================
+Cross Project Spec - None
 
-*Problem description*
----------------------
+User Story Tracker - None
+
+Problem Description
+====================
+
+*Problem Definition*
+--------------------
 Enterprises typically have their own data classification strategies. The types
 of data stored typically include (but are not limited to): financial, personal,
 health, and confidential business data. Some enterprises (especially finance and
 health care industries) have stringent data requirements in order to be
-compliant with regional law and regulations. 
+compliant with regional law and regulations.
 
 For example, PCI DSS Requirement 3.4 states that credit card payment details must
 be rendered unreadable anywhere they are persistently stored (including portable
@@ -22,6 +28,13 @@ In addition, proper key management processes need to be in place. The keys used
 to encrypt/decrypt the data must be rotated on a regular basis and the access of
 keys are restricted to authorized personnel only.
 
+Opportunity/Justification
+-------------------------
+None.
+
+Use Cases
+=========
+
 User Stories
 ------------
 * As the Enterprise IT Manager, I must ensure the appropriate security for the
@@ -29,7 +42,7 @@ User Stories
   applications. I would like to migrate the database into our company's
   OpenStack private cloud so that I do not need to maintain the system it
   currently resides on. However, because of the sensitive nature of the
-  information in the database our company policy does not allow this 
+  information in the database our company policy does not allow this
   information to reside on any shared system in an unencrypted form. To be able
   to move the database into the private cloud I need to ensure that the
   persistently stored data and all data in flight to/from the instance is
@@ -48,17 +61,14 @@ Usage Scenarios Examples
 ------------------------
 None.
 
-Opportunity/Justification
--------------------------
-None.
 
 Related User Stories
---------------------
+====================
 * An application needs to be able to specify networking requirements
 * An application needs to be able to specify workload isolation requirements
 
 *Requirements*
---------------
+==============
 
 * A block & object storage solution that enables encryption/decryption at the
   instance source
@@ -73,10 +83,12 @@ Related User Stories
   storage system that supports either or both encryption/decryption at the
   instance, in addition to at rest.
 
-
+*External References*
+=====================
+None.
 
 *Gaps*
-------
+======
 **Cinder issues:**
 * The storage encryption functionality exists, but requires admin status.
 Creating encrypted volumes should not require admin status.
@@ -94,23 +106,21 @@ however, this does not solve for in flight data.
 
 
 *Affected By*
--------------
-
+=============
 * At the Hong Kong summit there was `a talk`_ on barbican/cinder/nova for this
   type of functionality. Don’t know if it was successfully integrated into
-  OpenStack yet. 
-* There is a `volume encryption spec`_ for some early work and the 
+  OpenStack yet.
+* There is a `volume encryption spec`_ for some early work and the
   `current documentation`_ implies that admin privilege is required.
 * There is an `object encryption spec`_ which documents the approach for object
   encryption (at rest).
 
-
-*External References*
----------------------
+*Rejected User Stories / Usage Scenarios*
+=========================================
 None.
 
 Glossary
---------
+========
 * Data in Flight - Data in transit between an instance and storage system
 * Data at Rest - Data stored persistently on a storage system
 
