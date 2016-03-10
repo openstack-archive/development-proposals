@@ -1,0 +1,10 @@
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Code-Review+2: Carol Barrett <carol.l.barrett@intel.com>
+Code-Review+1: Stephen Gordon <sgordon@redhat.com>
+Workflow+1: Ken Johnston <kencjohnston@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 10 Mar 2016 04:47:49 +0000
+Reviewed-on: https://review.openstack.org/289577
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
