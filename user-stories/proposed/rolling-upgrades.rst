@@ -1,6 +1,6 @@
 Rolling Updates and Upgrades
 =============================
-Cross Project Spec - Ready for Submission
+Cross Project Spec - `Under Review <https://review.openstack.org/290977>`_
 
 User Story Tracker - `Rolling Upgrades Tracker <https://github.com/openstack/openstack-user-stories/tree/master/tracker/rolling-upgrades.json>`_
 
