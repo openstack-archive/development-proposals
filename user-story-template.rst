@@ -85,8 +85,6 @@ Usage Scenario Examples
 
 None.
 
-
-
 Related User Stories
 ====================
 .. This section is mandatory.
