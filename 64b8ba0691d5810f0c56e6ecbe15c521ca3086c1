@@ -1,0 +1,9 @@
+Code-Review+2: Carol Barrett <carol.l.barrett@intel.com>
+Code-Review+2: Ken Johnston <kenny@kencjohnston.com>
+Workflow+1: Ken Johnston <kenny@kencjohnston.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 21 Mar 2016 21:16:27 +0000
+Reviewed-on: https://review.openstack.org/290347
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
