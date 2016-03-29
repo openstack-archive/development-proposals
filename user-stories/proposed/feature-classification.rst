@@ -1,14 +1,14 @@
 Feature Classification Framework
 ================================
-Cross Project Spec - None
+Cross Project Spec - Ready for Submission
 
 User Story Tracker - None
 
 Problem description
-====================
+-------------------
 
 Problem Definition
-------------------
+++++++++++++++++++
 Operators and Users lack centralized visibility into the status of the
 completeness, stability and documentation of features. They also lack knowledge
 of the effects of configuration decisions on these features and their
@@ -18,7 +18,7 @@ stability of features they might choose to use in their applications and
 workloads.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 The configuration and use of OpenStack services can be simplified by:
 
 * providing a centralized framework for classifying features, and
@@ -26,10 +26,10 @@ The configuration and use of OpenStack services can be simplified by:
   configuration sets
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 
 * As an Operator, I want to understand what features are complete,
   well-documented and stable so that I can ensure a good experience for my
@@ -47,7 +47,7 @@ User Stories
   to improving those deficient features.
 
 Usage Scenario Examples
-------------------------
++++++++++++++++++++++++
 **User Feature Selection**
 
 * User begins developing an application which utilizes OpenStack services
@@ -88,11 +88,11 @@ Usage Scenario Examples
   stable, complete and well documented.
 
 Related User Stories
-====================
+++++++++++++++++++++
 None.
 
 Requirements
-============
+++++++++++++
 
 * Third Party CI Reporting submitted by Configuration
 * Initial Mapping of Tempest UUIDs to Features
@@ -100,7 +100,7 @@ Requirements
 * Documented Classification Criteria Across All Projects
 
 Example Matrix
---------------
+++++++++++++++
 Below is an example matrix to illustrate what a Feature Classification Matrix
 might look like.
 
@@ -116,13 +116,13 @@ Feature 2 (S,M)                  Y     Y     Y    .
 S=Stable, M=Mature, D=Documented
 
 External References
-===================
++++++++++++++++++++
 * `Nova - Feature Classification <http://docs.openstack.org/developer/nova/feature_classification.html>`_
 
 Rejected User Stories / Usage Scenarios
-=======================================
+---------------------------------------
 None.
 
 Glossary
-========
-TBD.
+--------
+None.
