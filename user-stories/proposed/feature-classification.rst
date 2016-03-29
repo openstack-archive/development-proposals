@@ -1,6 +1,6 @@
 Feature Classification Framework
 ================================
-Cross Project Spec - None
+Cross Project Spec - Ready for Submission
 
 User Story Tracker - None
 
