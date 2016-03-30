@@ -9,9 +9,10 @@ Complex Instance Placement
 Problem description
 -------------------
 
-An IMS core [2] is a key element of Telco infrastructure, handling VoIP device
-registration and call routing.  Specifically, it provides SIP-based call
-control for voice and video as well as SIP based messaging apps.
+An IP Multimedia Subsystem (IMS) core [2] is a key element of Telco
+infrastructure, handling VoIP device registration and call routing.
+Specifically, it provides SIP-based call control for voice and video as well as
+SIP based messaging apps.
 
 An IMS core is mainly a compute application with modest demands on
 storage and network - it provides the control plane, not the media plane
