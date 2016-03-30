@@ -9,9 +9,13 @@ Complex Instance Placement
 Problem description
 -------------------
 
-An IMS core [2] is a key element of Telco infrastructure, handling VoIP device
-registration and call routing.  Specifically, it provides SIP-based call
-control for voice and video as well as SIP based messaging apps.
+Problem Definition
+++++++++++++++++++
+
+An IP Multimedia Subsystem (IMS) core [2] is a key element of Telco
+infrastructure, handling VoIP device registration and call routing.
+Specifically, it provides SIP-based call control for voice and video as well as
+SIP based messaging apps.
 
 An IMS core is mainly a compute application with modest demands on
 storage and network - it provides the control plane, not the media plane
@@ -35,26 +39,8 @@ elastically scaled by an NFV orchestrator running on top of OpenStack.
 The requirements that such an orchestrator places on OpenStack are not
 addressed in this use case.
 
-User Stories
-------------
-
-* As a communication service provider, I want to deploy a highly available
-  IMS core as a Virtual Network Function running on OpenStack so that I meet my
-  SLAs.
-* As an enterprise operator, I want to deploy my traditional database server
-  shards such that they are not on the same physical nodes so that I avoid a
-  service outage due to failure of a single node.
-
-Usage Scenarios Examples
-------------------------
-
-Project Clearwater [3] is an open-source implementation of an IMS core
-designed to run in the cloud and be massively scalable.  It provides
-P/I/S-CSCF functions together with a BGCF and an HSS cache, and includes a
-WebRTC gateway providing interworking between WebRTC & SIP clients.
-
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Currently OpenStack supports basic workload affinity/anti-affinity using a
 concept called server groups. These allow for creation of groups of instances
@@ -81,13 +67,34 @@ applications which have some combination of:
 * Performance requirements that are met by packing related workloads; or
 * Resiliency requirements that are met by spreading related workloads
 
+Use Cases
+---------
+
+User Stories
+++++++++++++
+
+* As a communication service provider, I want to deploy a highly available
+  IMS core as a Virtual Network Function running on OpenStack so that I meet my
+  SLAs.
+* As an enterprise operator, I want to deploy my traditional database server
+  shards such that they are not on the same physical nodes so that I avoid a
+  service outage due to failure of a single node.
+
+Usage Scenarios Examples
+++++++++++++++++++++++++
+
+Project Clearwater [3] is an open-source implementation of an IMS core
+designed to run in the cloud and be massively scalable.  It provides
+P/I/S-CSCF functions together with a BGCF and an HSS cache, and includes a
+WebRTC gateway providing interworking between WebRTC & SIP clients.
+
 Related User Stories
---------------------
+++++++++++++++++++++
 
 * http://git.openstack.org/cgit/openstack/telcowg-usecases/tree/usecases/sec_segregation.rst
 
 Requirements
-------------
+++++++++++++
 
 The problem statement above leads to the following requirements.
 
@@ -128,7 +135,7 @@ The problem statement above leads to the following requirements.
   MZ.
 
 Gaps
-----
+++++
 
 The above requirements currently suffer from these gaps:
 
@@ -150,13 +157,8 @@ The above requirements currently suffer from these gaps:
   scheduler needs to provide some way to control the last of these by limiting
   the proportion of a group of related VMs that are scheduled on the same host.
 
-Affected By
------------
-
-None.
-
 External References
--------------------
++++++++++++++++++++
 
 * [1] https://wiki.openstack.org/wiki/TelcoWorkingGroup/UseCases#Virtual_IMS_Core
 * [2] https://en.wikipedia.org/wiki/IP_Multimedia_Subsystem
@@ -164,6 +166,11 @@ External References
 * [4] http://www.projectclearwater.org/technical/clearwater-architecture/
 * [5] https://review.openstack.org/#/c/247654/
 * [6] https://blueprints.launchpad.net/nova/+spec/generic-resource-pools
+
+Rejected User Stories / Usage Scenarios
+---------------------------------------
+
+None.
 
 Glossary
 --------
