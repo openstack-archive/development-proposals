@@ -150,17 +150,6 @@ can be used to implement placement zones, but:
 * No real enforcement
 * Complex operations
 
-*Affected By*
--------------
-.. This section is optional.
-.. This section should be used for prior records of
-.. activity inside OpenStack related to this user story
-.. (bugs that need to be fixed, blueprints for prior attempts, etc.).  If
-.. possible, please include links to the related specs, blueprints, or bug reports.
-.. Please replace "None." with the appropriate data.
-
-None.
-
 *External References*
 ---------------------
 
