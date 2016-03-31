@@ -6,7 +6,7 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-===================
+-------------------
 
 This use case is specifically about deploying the Perimeta Session Border
 Controller (SBC) Virtual Network Function (VNF) from Metaswitch Networks in
@@ -63,7 +63,7 @@ does not mean this can be disabled at a host scope, or just because Perimeta
 uses SR-IOV or DPDK it does not mean that all VMs on that host must do so.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Although this user story is specifically about Perimeta, it is more generally
 representative of the issues involved in deploying in OpenStack any VNF
@@ -72,17 +72,17 @@ elements rather than more generic issues like orchestration and high
 availability (HA).
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 
 * As a communication service provider, I want to deploy a highly available,
   high scale, high performance Session Border Controller on OpenStack to police
   VoIP traffic at the edge of my network.
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 
 The Perimeta Session Border controller from Metaswitch Networks is a
 Telco-grade implementation of a Session Border Controller designed to run
@@ -90,12 +90,12 @@ either on generic PC hardware or virtualized, running on OpenStack and other
 clouds, providing high availability, high scale and high performance.
 
 Related User Stories
-====================
+++++++++++++++++++++
 
 None.
 
 *Requirements*
-==============
+++++++++++++++
 
 The problem statement above leads to the following requirements.
 
@@ -201,17 +201,17 @@ The problem statement above leads to the following requirements.
   VLAN aware VMs: https://blueprints.launchpad.net/neutron/+spec/vlan-aware-vms
 
 *External References*
-=====================
++++++++++++++++++++++
 
 None.
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 
 None.
 
 Glossary
-========
+--------
 
 **NFV**
   Network Functions Virtualization, the vision of deploying telecoms functions

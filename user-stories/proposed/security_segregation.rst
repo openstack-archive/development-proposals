@@ -27,7 +27,7 @@ User Stories
 ------------
 
 Current Situation
------------------
++++++++++++++++++
 Today the DMZ and MZ concept is an essential part of the security design
 of nearly every telco application deployment. Today this separation is
 done by a consequent physical segregation including hosts, network and
@@ -35,7 +35,7 @@ management systems. This separation leads to high investment and
 operational costs.
 
 Enable the following
---------------------
+++++++++++++++++++++
 Placement Zones should be used to reduce the risk that the whole cloud platform
 is affected by a serious security breach.
 
@@ -61,7 +61,7 @@ zone can not access the storage of a different placement zone. Otherwise an
 attacker could inject malicious code into the virtual disk of a VM.
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 
 An application presentation layer (e.g. webserver) must be decoupled from
 the systems containing sensitive data (e.g. database) through at least one
@@ -76,18 +76,18 @@ a network perspective? GBP would need updates for this concept.*
 https://wiki.openstack.org/wiki/File:TelcoWG_Placementzones.png
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Separation of DMZ and MZ is a common requirement of VNFs to meet
 communication service provider security requirements.
 
 Related User Stories
---------------------
+++++++++++++++++++++
 
 None.
 
 *Requirements*
---------------
+++++++++++++++
 
 * One OpenStack installation must be capable to manage different placement
   zones. All resources (compute, network and storage) are assigned to one
@@ -111,7 +111,7 @@ None.
 * ...and the whole thing must be optional :-)
 
 *Gaps*
-------
+++++++
 
 **Nova issues:**
 
@@ -151,7 +151,7 @@ can be used to implement placement zones, but:
 * Complex operations
 
 *Affected By*
--------------
++++++++++++++
 .. This section is optional.
 .. This section should be used for prior records of
 .. activity inside OpenStack related to this user story
@@ -162,13 +162,13 @@ can be used to implement placement zones, but:
 None.
 
 *External References*
----------------------
++++++++++++++++++++++
 
 * [1]: http://docs.openstack.org/openstack-ops/content/scaling.html
 * [2]: https://wiki.openstack.org/wiki/Congress
 
 Glossary
---------
+++++++++
 
 **AZ**
   Availability Zone (OpenStack terminology)

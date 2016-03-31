@@ -5,10 +5,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem Description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 Enterprises typically have their own data classification strategies. The types
 of data stored typically include (but are not limited to): financial, personal,
 health, and confidential business data. Some enterprises (especially finance and
@@ -29,14 +29,14 @@ to encrypt/decrypt the data must be rotated on a regular basis and the access of
 keys are restricted to authorized personnel only.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 None.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 * As the Enterprise IT Manager, I must ensure the appropriate security for the
   HR Department database containing employee records that services several
   applications. I would like to migrate the database into our company's
@@ -58,18 +58,17 @@ User Stories
   at rest, and that keys used to encrypt the data are rotated annually.
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 None.
 
 
 Related User Stories
-====================
+++++++++++++++++++++
 * An application needs to be able to specify networking requirements
 * An application needs to be able to specify workload isolation requirements
 
 *Requirements*
-==============
-
+++++++++++++++
 * A block & object storage solution that enables encryption/decryption at the
   instance source
 * A block & object storage solution that enables encryption/decryption for
@@ -84,11 +83,11 @@ Related User Stories
   instance, in addition to at rest.
 
 *External References*
-=====================
++++++++++++++++++++++
 None.
 
 *Gaps*
-======
+++++++
 **Cinder issues:**
 * The storage encryption functionality exists, but requires admin status.
 Creating encrypted volumes should not require admin status.
@@ -106,7 +105,7 @@ however, this does not solve for in flight data.
 
 
 *Affected By*
-=============
++++++++++++++
 * At the Hong Kong summit there was `a talk`_ on barbican/cinder/nova for this
   type of functionality. Don’t know if it was successfully integrated into
   OpenStack yet.
@@ -116,11 +115,11 @@ however, this does not solve for in flight data.
   encryption (at rest).
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 None.
 
 Glossary
-========
+--------
 * Data in Flight - Data in transit between an instance and storage system
 * Data at Rest - Data stored persistently on a storage system
 

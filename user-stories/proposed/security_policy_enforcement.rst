@@ -5,23 +5,23 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem Description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 Many enterprise has stringent security requirements and the security policy
 must be enforced by IT security. Such security policy must be enforced and applied to
 all compute resources hosted in the enterprise environment.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 TBD.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 * As an Enterprise IT security policy maker, I need to ensure that all compute
 resources must adhere to the security policy as defined by the IT security
 department so that the cloud resources are compliant to enterprise rules and
@@ -34,7 +34,7 @@ by the cloud users. A cloud users may add additional rules but cannot remove
 any rules as defined by the IT security administrator.
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 The Enterprise IT needs to enforce a corporate-wide or division-wide firewall
 policy and rules. This firewall (or security group) must be applied to all
 compute resources of a project/tenant within that division. This policy is
@@ -46,11 +46,11 @@ predefined rules. This security group must be automatically applied to all VM
 whenever the VM is launched by the cloud users and cannot be removed.
 
 Related User Stories
-====================
+++++++++++++++++++++
 None.
 
 *Requirements*
-==============
+++++++++++++++
 In order to support this user story, we need:
 * A method for security administrator to create a
 firewall or security policy and be able to enforce such policy to different
@@ -64,13 +64,13 @@ by cloud users. This might requires "role-based access control" to specific
 type of resources and actions.
 
 *External References*
-=====================
++++++++++++++++++++++
 TBD.
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 None.
 
 Glossary
-========
+--------
 TBD.
