@@ -6,10 +6,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem Description
-===================
+-------------------
 
 Problem Definition
-------------------
+++++++++++++++++++
 Each operator of an OpenStack cloud needs the ability to clean up the OpenStack
 database of objects which have been deleted. Currently a new record is created in
 the OpenStack database when an object (project, user, VM, network, volume, swift
@@ -41,28 +41,25 @@ in the outcome of my proof of concept and cloud functionality.
 database so that I can complete my upgrade in the allocated down time.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 DB hygiene is required for handling OpenStack performance, operational and
 upgrade issues. This ensures that historical records of deleted items are not
 impacting operational performance and such deleted items are not polluted by
 upgrades.
 
 User Cases
-==========
+----------
 
 User Stories
-------------
+++++++++++++
 WIP
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 WIP
 
-
-
-
 Related User Stories
-====================
+++++++++++++++++++++
 Nova specs:
 * https://review.openstack.org/#/c/184645/
 * https://review.openstack.org/#/c/184637/
@@ -72,7 +69,7 @@ Cinder blueprint:
 * https://blueprints.launchpad.net/cinder/+spec/db-cleanup
 
 Requirements
-============
+++++++++++++
 * Operator should be able to specify which policy to apply for deleted objects
 * Operator should be able to specify which policy to apply for different tenants
 and sub-tenants.
@@ -81,13 +78,13 @@ other persistent storage for a specific interval duration; Policy 2 - Remove
 the records from database permanently.
 
 External References
-===================
++++++++++++++++++++
 None.
 
 Rejected User Stories / Usage Scenarios
-=======================================
+---------------------------------------
 None.
 
 Glossary
-========
+--------
 None.

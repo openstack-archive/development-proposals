@@ -22,10 +22,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 .. This section is optional.
 .. Please use it to provide additional details (if available) about your user story
 .. (if warranted) for further expansion for clarity.  A detailed description of the
@@ -50,7 +50,7 @@ infrastructure you would like to manage with OpenStack
         host and the virtual machines running on the host
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 .. This section is mandatory.
 .. Use this section to give opportunity details that support why
 .. pursuing these user stories would help address key barriers to adoption or
@@ -77,10 +77,10 @@ Support for onboarding legacy environments in a non-disruptive manner
 will greatly increase the adoption of OpenStack.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 ..  This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are
@@ -109,7 +109,7 @@ User Stories
         machines network resources without disrupting those virtual machines
 
 Usage Scenario Examples
-------------------------
++++++++++++++++++++++++
 .. This section is mandatory.
 .. In order to explain your user stories, if possible, provide an example in the
 .. form of a scenario to show how the specified user type might interact with the
@@ -135,7 +135,7 @@ Usage Scenario Examples
         Neutron.
 
 Related User Stories
-====================
+++++++++++++++++++++
 .. This section is mandatory.
 .. If there are related user stories that have some overlap in the problem domain or
 .. that you perceive may partially share requirements or a solution, reference them
@@ -150,7 +150,7 @@ Related User Stories
 * https://blueprints.launchpad.net/cinder/+spec/over-subscription-in-thin-provisioning
 
 *Requirements*
-==============
+++++++++++++++
 .. This section is optional.  It might be useful to specify
 .. additional requirements that should be considered but may not be
 .. apparent through the user story and usage examples.  This information will help
@@ -200,7 +200,7 @@ Example: Self service provisioning initiated in OpenStack Horizon would
 result in the new VMs also showing up in vCenter
 
 *External References*
-=====================
++++++++++++++++++++++
 .. This section is optional.
 .. Please use this section to add references for standards or well-defined
 .. mechanisms.  You can also use this section to reference existing functionality
@@ -211,7 +211,7 @@ result in the new VMs also showing up in vCenter
 None.
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 .. This is optional
 .. Please fill out this section after a User Story has been submitted as a
 .. cross project spec to highlight any user stories deemed out of scope of the
@@ -220,7 +220,7 @@ None.
 None.
 
 Glossary
-========
+--------
 .. This section is optional.
 .. It is highly suggested that you define any terms,
 .. abbreviations that are not   commonly used in order to ensure
