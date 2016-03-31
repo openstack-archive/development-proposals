@@ -22,10 +22,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 .. This section is optional.
 .. Please use it to provide additional details (if available) about your user story
 .. (if warranted) for further expansion for clarity.  A detailed description of the
@@ -37,7 +37,7 @@ Problem description
 None.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 .. This section is mandatory.
 .. Use this section to give opportunity details that support why
 .. pursuing these user stories would help address key barriers to adoption or
@@ -50,10 +50,10 @@ Opportunity/Justification
 None.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 ..  This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are
@@ -68,7 +68,7 @@ User Stories
 None.
 
 Usage Scenario Examples
-------------------------
++++++++++++++++++++++++
 .. This section is mandatory.
 .. In order to explain your user stories, if possible, provide an example in the
 .. form of a scenario to show how the specified user type might interact with the
@@ -86,7 +86,7 @@ Usage Scenario Examples
 None.
 
 Related User Stories
-====================
+++++++++++++++++++++
 .. This section is mandatory.
 .. If there are related user stories that have some overlap in the problem domain or
 .. that you perceive may partially share requirements or a solution, reference them
@@ -95,14 +95,14 @@ Related User Stories
 None.
 
 *Requirements*
-==============
+++++++++++++++
 .. This section is optional.  It might be useful to specify
 .. additional requirements that should be considered but may not be
 .. apparent through the user story and usage examples.  This information will help
 .. the development be aware of any additional known constraints that need to be met
 .. for adoption of the newly implemented features/functionality.  Use this section
-.. to define the functions that must be available or any specific technical
-.. requirements that exist in order to successfully support your use case. If there
+.. to define tahe functions that must be available or any specific technical
+.. requirementsthat exist in order to successfully support your use case. If there
 .. are requirements that are external to OpenStack, note them as such. Please
 .. always add a comprehensible description to ensure that people understand your
 .. need.
@@ -114,7 +114,7 @@ None.
 None.
 
 *External References*
-=====================
++++++++++++++++++++++
 .. This section is optional.
 .. Please use this section to add references for standards or well-defined
 .. mechanisms.  You can also use this section to reference existing functionality
@@ -125,7 +125,7 @@ None.
 None.
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 .. This is optional
 .. Please fill out this section after a User Story has been submitted as a
 .. cross project spec to highlight any user stories deemed out of scope of the
@@ -134,7 +134,7 @@ None.
 None.
 
 Glossary
-========
+--------
 .. This section is optional.
 .. It is highly suggested that you define any terms,
 .. abbreviations that are not   commonly used in order to ensure

@@ -6,16 +6,16 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem Description
-===================
+-------------------
 
 Problem Definition
--------------------
+++++++++++++++++++
 OpenStack doesn’t have a hierarchical permission structure that allows an
 Operator to assign different permissions for different activities or access to
 resources to different users.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 Role Based Access is a basic Enterprise requirement. This capability enables
 Enterprise IT Managers to set read and write permissions to different elements
 of the IT infrastructure for different people/positions in the organization.
@@ -23,26 +23,24 @@ Enterprise security requires separate access UI/ API for Network, Security,
 Storage management, User Management, and Instance management.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 * As a cloud operator I want to enable my team to be able to see all Admin
   level alerts, but not to be able to change their status. That requires review
   and approval by the IT manager.
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 None.
 
-
-
 Related User Stories
-====================
+++++++++++++++++++++
 None.
 
 Requirements
-============
+++++++++++++
 
 * Enterprise security requires separate access UI/ API for Network, Security,
   Storage management, User Management, and Instance management.
@@ -57,7 +55,7 @@ Requirements
   superuser problem (newly created role inherit these rights)
 
 External References
-===================
++++++++++++++++++++
 From looking at other solutions, generally there are 3 immutable system roles:
 administrator, read-only, no-access. With support for specifying roles on
 objects and their hierarchy. There is a notion of "folder", data center, host,
@@ -67,12 +65,8 @@ the role that permits the complex action must contain the full set of necessary
 privileges. For example launching a VM needs access to the datastore, OS images
 files, disks, ability to create them and/or read an existing one etc.
 
-Rejected User Stories / Usage Scenarios
-=======================================
-None.
-
 Gaps
-====
+++++
 **Keystone**
 
 * Need to add a new role.
@@ -98,6 +92,10 @@ Gaps
 * Further Horizon today is "pulling" the policy files to determine which
   buttons/links exposed to users to guide them down the correct path.
 
+Rejected User Stories / Usage Scenarios
+---------------------------------------
+None.
+
 Glossary
-========
+--------
 None.

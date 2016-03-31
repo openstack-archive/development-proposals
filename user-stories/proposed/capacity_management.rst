@@ -6,10 +6,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem Description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 A canonical property of an IaaS system like OpenStack is “capacity on demand”. Users expect to be able to allocate new resources via UI or API whenever needed, and to release them when the need ends. By supporting a large number of users, pooling resources, and maintaining some excess capacity, the cloud service provider (CSP) presents the illusion of infinite capacity.
 
 In practice, of course, the resources are not infinite, and the CSP must institute measures to manage capacity so that resource exhaustion is minimized. This is generally done by imposing a cap or quota on the resources that a particular project may consume, and by managing the relationship between the available physical resources and the aggregate quotas for all projects. When a project requires more resources than its assigned quota, the user is generally required to submit a request, generally requiring human approval. The CSP may reject the request, or delay it until sufficient capacity is available. When the request is approved, the quota for the project is modified to reflect the new limit.
@@ -19,7 +19,7 @@ Other CSPs have introduced a number of mechanisms to provide them with flexibili
 One common factor in all these processes is that they do not reflect temporal variations in resource usage. Yet in many cases the user knows how their usage is going to vary over time, and such information would be useful to the CSP who needs to decide how to handle each request. It might also facilitate the automation of some of the processing. The following user stories capture the possibilities here.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 .. This section is mandatory.
 .. Use this section to give opportunity details that support why
 .. pursuing these user stories would help address key barriers to adoption or
@@ -32,10 +32,10 @@ Opportunity/Justification
 None.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 ..  This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are
@@ -74,7 +74,7 @@ User Stories
 
 
 Usage Scenarios Examples
-------------------------
+++++++++++++++++++++++++
 .. This section is mandatory.
 .. In order to explain your user stories, if possible, provide an example in the
 .. form of a scenario to show how the specified user type might interact with the
@@ -92,7 +92,7 @@ Usage Scenarios Examples
 TBD
 
 Related User Stories
-====================
+++++++++++++++++++++
 .. This section is mandatory.
 .. If there are related user stories that have some overlap in the problem domain or
 .. that you perceive may partially share requirements or a solution, reference them
@@ -101,7 +101,7 @@ Related User Stories
 This Use Case is related to the Infinite Elasticity use case. The latter focuses on testing the capability of an OpenStack cloud to handle large-scale capacity requests.
 
 *Requirements*
-==============
+++++++++++++++
 .. This section is optional.  It might be useful to specify
 .. additional requirements that should be considered but may not be
 .. apparent through the user story and usage examples.  This information will help
@@ -121,7 +121,7 @@ This Use Case is related to the Infinite Elasticity use case. The latter focuses
 * It will also require a rich monitoring, notification, and visualization system, so that both user and CSP have accurate and timely data about the behavior of the system.
 
 *External References*
-=====================
++++++++++++++++++++++
 .. This section is optional.
 .. Please use this section to add references for standards or well-defined
 .. mechanisms.  You can also use this section to reference existing functionality
@@ -132,7 +132,7 @@ This Use Case is related to the Infinite Elasticity use case. The latter focuses
 None.
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 .. This is optional
 .. Please fill out this section after a User Story has been submitted as a
 .. cross project spec to highlight any user stories deemed out of scope of the
@@ -141,7 +141,7 @@ None.
 None.
 
 Glossary
-========
+--------
 .. This section is optional.
 .. It is highly suggested that you define any terms,
 .. abbreviations that are not   commonly used in order to ensure

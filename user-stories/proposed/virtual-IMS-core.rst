@@ -6,10 +6,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 This use case is about deploying a virtual IMS core as an NFV function in
 OpenStack.  It replaces the version previously uploaded to the TelcoWG
 repository [1].
@@ -41,7 +41,7 @@ The requirements that such an orchestrator places on OpenStack are not
 addressed in this use case.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Although this user story is specifically about deploying the Project
 Clearwater virtual IMS core, it is more generally representative of the
@@ -50,17 +50,17 @@ plane Virtual Network Function (VNF) deployed as a series of load-balanced
 stateless N+k pools.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 
 * As a communication service provider, I want to deploy a highly available,
   high scale, high performance virtual IMS core on OpenStack to provide my core
   Voice-over-IP service.
 
 Usage Scenario Examples
-------------------------
++++++++++++++++++++++++
 
 Project Clearwater [3] is an open-source implementation of an IMS core
 designed to run in the cloud and be massively scalable.  It provides
@@ -68,12 +68,12 @@ P/I/S-CSCF functions together with a BGCF and an HSS cache, and includes a
 WebRTC gateway providing interworking between WebRTC & SIP clients.
 
 Related User Stories
-====================
+++++++++++++++++++++
 
 None.
 
 *Requirements*
-==============
+++++++++++++++
 
 The problem statement above leads to the following requirements.
 
@@ -114,15 +114,19 @@ The problem statement above leads to the following requirements.
   MZ.
 
 *External References*
-=====================
++++++++++++++++++++++
 
 * [1] https://review.openstack.org/#/c/179142/
 * [2] https://en.wikipedia.org/wiki/IP_Multimedia_Subsystem
 * [3] http://www.projectclearwater.org
 * [4] http://www.projectclearwater.org/technical/clearwater-architecture/
 
+Rejected User Stories / Usage Scenarios
+---------------------------------------
+None.
+
 Glossary
-========
+--------
 
 * NFV - Networks Functions Virtualisation, see http://www.etsi.org/technologies-clusters/technologies/nfv
 * IMS - IP Multimedia Subsystem
