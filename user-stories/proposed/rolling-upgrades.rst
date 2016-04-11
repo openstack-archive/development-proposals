@@ -141,7 +141,7 @@ objects is the right tool for the multi-version interoperability job. The
 following is the status of versioned objects for common OpenStack projects:
 
 * Nova - Implemented
-* Neutron - Not Implemented
+* Neutron - In Progress
 * Glance - Not Applicable
 * Cinder - In Progress, Not Required
 * Swift - Not Applicable
@@ -231,7 +231,7 @@ There is an available multi-node upgrade test framework called Grenade. Some
 projects have begun including upgrade tests in their gates.
 
 * Nova - Gated by multi-node Grenade test
-* Neutron - None
+* Neutron - Gated by multi-node grenade
 * Glance - None
 * Cinder - None
 * Swift - Unknown
