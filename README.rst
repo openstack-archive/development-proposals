@@ -14,3 +14,6 @@ The `HACKING.rst <HACKING.rst>`_ file contains details on how to contribute user
 :Product WG Workflow: doc/source/workflow/workflow.rst
 :Active User Story Template: user-story-template.rst
 :Tracker Template: user-story-tracker.json
+
+The rendered user stories are available at
+http://specs.openstack.org/openstack/openstack-user-stories/.
