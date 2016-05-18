@@ -177,7 +177,7 @@ management tools
 
 Three phases of synchronization related to onboarding are:
 Phase 1 - No synchronization - The move to OpenStack management is one
-way only. No out of band/non-OpenStack management will be accomodated
+way only. No out of band/non-OpenStack management will be accommodated
 by OpenStack.
 Example: Nova would delete a VM that was migrated by a control
 mechanism outside of OpenStack,
