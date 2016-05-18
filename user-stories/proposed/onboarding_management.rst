@@ -169,7 +169,7 @@ Related User Stories
 1. Onboarding must be non-disruptive to legacy environments such that
 the applications, virtual machines and physical hosts should not need to
 be restarted
-2. Openstack needs to at least tolerate Virtual Machine resource
+2. OpenStack needs to at least tolerate Virtual Machine resource
 configuration changes made by non-OpenStack management tools
 after the VM has been onboarded into OpenStack.
 The eventual goal is for full synchronization between all resource

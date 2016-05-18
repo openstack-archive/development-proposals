@@ -142,7 +142,7 @@ None.
 **OpenStack regions** provide a segregation of all resources. The region concept
 can be used to implement placement zones, but:
 
-* Complex and resource consuming installation for the Openstack management
+* Complex and resource consuming installation for the OpenStack management
   systems
 * Tenants must deal with additional regions
 * No L2 network sharing for VMs in the SEC placement zone required to glue the
