@@ -25,14 +25,6 @@ User Story Status
 User Stories
 ------------
 
-Drafts:
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   user-stories/draft/*
-
 Proposed:
 
 .. toctree::
@@ -40,14 +32,6 @@ Proposed:
    :maxdepth: 1
 
    user-stories/proposed/*
-
-Tracked:
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   user-stories/tracked/*
 
 
 ==================
