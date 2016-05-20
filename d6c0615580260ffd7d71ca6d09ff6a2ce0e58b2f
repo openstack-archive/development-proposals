@@ -1,0 +1,11 @@
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Code-Review+1: Brian Rosmaita <brian.rosmaita@rackspace.com>
+Code-Review+1: Ian Cordasco <ian.cordasco@rackspace.com>
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Workflow+1: Ken Johnston <kenny@kencjohnston.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 20 May 2016 04:27:24 +0000
+Reviewed-on: https://review.openstack.org/291406
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
