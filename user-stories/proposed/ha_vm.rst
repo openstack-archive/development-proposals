@@ -40,6 +40,13 @@ can be detected and recovered by the system. Possible failure events include:
 
 * VM is down.
 
+* VM hangs.
+
+  For example, an issue with a VM's block storage could cause the VM to hang,
+  and the QEMU layer to emit a ``BLOCK_IO_ERROR`` which would bubble up
+  through ``libvirt`` and could be detected and handled by an automated
+  recovery process.
+
 * VM provisioning process (nova-compute service) is down.
 
 * Host/Hypervisor is down.
