@@ -47,7 +47,7 @@ can be detected and recovered by the system. Possible failure events include:
   through ``libvirt`` and could be detected and handled by an automated
   recovery process.
 
-* VM provisioning process (nova-compute service) is down.
+* ``nova-compute`` service crashes or becomes unresponsive.
 
 * Host/Hypervisor is down.
 
