@@ -18,7 +18,7 @@ Cloud-native model at once. Some applications are deployed on a VM in a pet
 model. This requires high availability of such VMs. Even though VM volumes can
 be stored on a shared storage system, such as NFS or Ceph, to improve the
 availability, VM state on each hypervisor is not easily replicated to other
-hypervisors. Therefore, the system must be able to recover or rescue the VM
+hypervisors. Therefore, the system must be able to recover the VM
 from failure events, preferably in an automated and cost effective manner.
 
 Opportunity/Justification
