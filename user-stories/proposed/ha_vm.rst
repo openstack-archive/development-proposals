@@ -33,7 +33,7 @@ Use Cases
 User Stories
 ++++++++++++
 
-As a cloud operator, I would like to provide my users with highly reliable
+As a cloud operator, I would like to provide my users with highly available
 VMs to meet high SLA requirement. There are several types of failure
 events that can occur in OpenStack clouds. We need to make sure such events
 can be detected and recovered by the system. Possible failure events include:
