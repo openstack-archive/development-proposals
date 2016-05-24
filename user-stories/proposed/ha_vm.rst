@@ -109,11 +109,9 @@ To be determined.
 *External References*
 +++++++++++++++++++++
 
-https://github.com/ntt-sic/masakari
-
-https://etherpad.openstack.org/p/automatic-evacuation
-
-https://review.openstack.org/#/c/257809
+* https://github.com/ntt-sic/masakari
+* https://etherpad.openstack.org/p/automatic-evacuation
+* https://review.openstack.org/#/c/257809
 
 *Rejected User Stories / Usage Scenarios*
 -----------------------------------------
