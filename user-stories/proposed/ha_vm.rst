@@ -33,7 +33,7 @@ Use Cases
 User Stories
 ++++++++++++
 
-As a cloud operator, I would like to provide my users with highly reliable
+As a cloud operator, I would like to provide my users with highly available
 VMs to meet high SLA requirements. There are several types of failure
 events that can occur in OpenStack clouds. We need to make sure such events
 can be detected and recovered by the system. Possible failure events include:
@@ -121,4 +121,14 @@ None.
 Glossary
 --------
 
-To be determined.
+* `Availability <https://en.wikipedia.org/wiki/Availability>`_ -
+  ratio of the expected value of the uptime of a system
+  to the aggregate of the expected values of up and down time.
+  Not to be confused with
+  `reliability <https://en.wikipedia.org/wiki/Reliability_engineering>`_.
+
+* `High Availability <https://en.wikipedia.org/wiki/High_availability>`_ -
+  a characteristic of a system which aims to ensure an agreed level of
+  operational performance for a higher than normal period.  Not to be
+  confused with 100% availability, which is sometimes described as
+  `fault tolerance <https://en.wikipedia.org/wiki/Fault_tolerance>`_.
