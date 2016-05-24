@@ -13,19 +13,19 @@ Problem description
 ++++++++++++++++++++
 
 Enterprise customers are moving their application workloads onto OpenStack
-Cloud. However, not all applications can be re-architected into a
-Cloud-native model at once. Some applications are deployed on a VM in a Pet
-model. This requires high availability of such VM. Even though VM volumes can
+clouds. However, not all applications can be re-architected into a
+Cloud-native model at once. Some applications are deployed on a VM in a pet
+model. This requires high availability of such VMs. Even though VM volumes can
 be stored on a shared storage system, such as NFS or Ceph, to improve the
 availability, VM state on each hypervisor is not easily replicated to other
-hypervisor. Therefore, the system must be able to recover or rescue the VM
-from a failure events preferably in an automated and cost effective manner.
+hypervisors. Therefore, the system must be able to recover or rescue the VM
+from failure events, preferably in an automated and cost effective manner.
 
 Opportunity/Justification
 +++++++++++++++++++++++++
 
-Many enterprise customers requires HA VM feature in order to satisfy their
-workload SLA. For example, HA VM is a critical requirements for NTT customers.
+Many enterprise customers require highly available VMs in order to satisfy their
+workload SLAs. For example, this is a critical requirement for NTT customers.
 
 Use Cases
 ---------
@@ -34,8 +34,8 @@ User Stories
 ++++++++++++
 
 As a cloud operator, I would like to provide my users with highly reliable
-VM to meet high SLA requirement. Potentially there are few types of failure
-events that can occurs with OpenStack Cloud. We need to make sure such events
+VMs to meet high SLA requirements. There are several types of failure
+events that can occur in OpenStack clouds. We need to make sure such events
 can be detected and recovered by the system. Possible failure events include:
 
 * VM is down.
@@ -46,13 +46,13 @@ can be detected and recovered by the system. Possible failure events include:
 
 * Network is down
 
-* Attached Cinder Volume failure
+* Attached Cinder volume failure
 
 * Availability Zone/Data Center/Region failure
 
 
-Usage Scenarios Examples
-++++++++++++++++++++++++
+Usage Scenario Examples
++++++++++++++++++++++++
 
 * VM is down
 
@@ -63,17 +63,17 @@ Usage Scenarios Examples
   Monitor the provisioning process (nova-compute service). Detect
   process failure and notify system to restart the service.
 
-  If it fails to restart the provisioning process, it should stop scheduling
-  a new VM instance onto the hypervisor/host that the process is running on.
+  If it fails to restart the provisioning process, it should prevent scheduling
+  any new VM instance onto the hypervisor/host that the process is running on.
   The operator can evacuate all VMs on this host to another healthy host and
   shutdown this host if it fails to restart the process. Prior to evacuation,
-  the hosts must be fenced to prevent 2 instances writing to the same shared
+  the hosts must be fenced to prevent two instances writing to the same shared
   storage that lead to data corruption.
 
 * Hypervisor host is down
 
   Monitor the hypervisor host. Detect hypervisor host failure and evacuate
-  all VMs from failure host. Restart the VMs on new hosts that enable an
+  all VMs from failed host. Restart the VMs on new hosts that enable an
   application workload to resume a process if the VM state is stored in a
   volume even though it loses the state on memory. A shared storage can be
   used for instance volume as these volumes survive outside the hypervisors
@@ -93,18 +93,18 @@ To be determined.
 
 * An ability to monitor provisioning process failure.
 
-* An ability to monitor hypervisor host failure.
+* An ability to monitor hypervisor host for failure
 
-* An ability to restart VM due to VM failure.
+* An ability to automatically restart VMs due to VM failure
 
-* An ability to restart provisioning process.
+* An ability to restart provisioning processes
 
-* An ability to automatically evacuate VMs from a failure hypervisor host
-  and restart the VMs on other available host. The host must be fenced prior
+* An ability to automatically evacuate VMs from a failed hypervisor host
+  and restart the VMs on another available host. The host must be fenced prior
   to the evacuation process to ensure that no 2 instances are writing to the
   same storage.
 
-* An ability to disable a failure host from nova scheduler.
+* An ability to disable a failed host from nova scheduler
 
 *External References*
 +++++++++++++++++++++
