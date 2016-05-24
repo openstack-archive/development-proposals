@@ -109,11 +109,9 @@ To be determined.
 *External References*
 +++++++++++++++++++++
 
-https://github.com/ntt-sic/masakari
-
-https://etherpad.openstack.org/p/automatic-evacuation
-
-https://review.openstack.org/#/c/257809
+* `Masakari (GitHub) <https://github.com/ntt-sic/masakari>`_
+* `Automatic Evacuation (Etherpad) <https://etherpad.openstack.org/p/automatic-evacuation>`_
+* `Instance Auto-Evacuation Cross Project Spec (In Review) <https://review.openstack.org/#/c/257809>`_
 
 *Rejected User Stories / Usage Scenarios*
 -----------------------------------------
@@ -124,4 +122,3 @@ Glossary
 --------
 
 To be determined.
-
