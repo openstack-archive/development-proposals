@@ -48,8 +48,19 @@ can be detected and recovered by the system. Possible failure events include:
 
 * Attached Cinder Volume failure
 
-* Availability Zone/Data Center/Region failure
+* Availability Zone failure
 
+* Data Center / Region failure
+
+  Failure of a whole region or data center is obviously much more severe,
+  requiring recovery of not just compute nodes but also OpenStack services in
+  the control plane.  It needs to be covered by a Disaster Recovery plan,
+  which will vary greatly for each cloud depending on its architecture,
+  supported workloads, required SLAs, and organizational structure.  As such,
+  a general solution to Disaster Recovery is a problem of considerable
+  complexity, therefore it makes sense to keep it out of scope for this user
+  story, which should instead be viewed as a necessary and manageable step on
+  the long road to that solution.
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
