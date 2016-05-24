@@ -42,6 +42,14 @@ can be detected and recovered by the system. Possible failure events include:
 
   For example, with the KVM hypervisor, the ``qemu-kvm`` process could crash.
 
+* VM hangs.
+
+  For example, an issue with a VM's block storage (either its
+  ephemeral disk or an associated Cinder volume) could cause the VM to
+  hang, and the QEMU layer to emit a ``BLOCK_IO_ERROR`` which would
+  bubble up through ``libvirt`` and could be detected and handled by
+  an automated recovery process.
+
 * VM provisioning process (nova-compute service) is down.
 
 * Compute host is down.
@@ -61,8 +69,6 @@ can be detected and recovered by the system. Possible failure events include:
   order to fulfill this user story we don't need to be able to
   pinpoint the cause of a network failure; it's enough to recognise
   which network connection failed, and then react accordingly.
-
-* Attached Cinder volume failure
 
 * Availability Zone failure
 
