@@ -51,6 +51,10 @@ can be detected and recovered by the system. Possible failure events include:
 * Availability Zone/Data Center/Region failure
 
 
+N.B. This user story concerns high availability, not 100% availability.
+Therefore some service interruption is usually expected when failures occur.  The
+goal of the user story is to reduce that interruption via automated recovery.
+
 Usage Scenario Examples
 +++++++++++++++++++++++
 
