@@ -87,7 +87,20 @@ To be determined.
 *Requirements*
 ++++++++++++++
 
-* An ability to tag VMs that require HA.
+* An ability to tag VMs that require or do not require HA
+
+  Ideally this should be supported at several different levels of granularity,
+  e.g. per VM, per flavor, per project, per availability zone, per host
+  aggregate, per region, per cell.  A tag indicating a requirement or
+  non-requirement for HA at a finer level of granularity should be able to
+  override a tag at a larger level; e.g. an availability zone could be tagged
+  to require HA for all VMs inside it, but VMs booted within the zone with a
+  flavor tagged as not requiring would override the tag at the zone level.
+
+  However, it does not make sense to support tagging per compute host, since
+  then VMs would inherit the HA feature non-deterministically, depending on
+  whether ``nova-scheduler`` happened to boot them on an HA compute host or a
+  non-HA compute host.
 
 * An ability to monitor VM failure.
 
