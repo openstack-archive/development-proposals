@@ -12,14 +12,23 @@ Problem description
 *Problem Definition*
 ++++++++++++++++++++
 
-Enterprise customers are moving their application workloads onto OpenStack
-clouds. However, not all applications can be re-architected into a
-Cloud-native model at once. Some applications are deployed on a VM in a pet
-model. This requires high availability of such VMs. Even though VM volumes can
-be stored on a shared storage system, such as NFS or Ceph, to improve the
-availability, VM state on each hypervisor is not easily replicated to other
-hypervisors. Therefore, the system must be able to recover the VM
-from failure events, preferably in an automated and cost effective manner.
+Enterprise customers are moving their application workloads into OpenStack
+clouds, for example to consolidate virtual estates, and benefit from increased
+manageability and other economies of scale which OpenStack can bring.
+
+However, it's typically impractical to re-architect all applications into a
+purely cloud-native model at once. Therefore some applications, or parts
+thereof, are deployed on non-disposable VMs in a pet model. This requires high
+availability of such VMs. Even though VM volumes can be stored on a shared
+storage system, such as NFS or Ceph, to improve the availability, VM state on
+each hypervisor is not easily replicated to other hypervisors. Therefore, the
+system must be able to recover the VM from failure events, preferably in an
+automated and cost-effective manner.
+
+Even for applications architected in a cloud-native "cattle" model which can
+tolerate failures of individual VMs, at scale it is too impractical and costly
+to have to manually recover every failure, so there is still benefit in the
+OpenStack infrastructure being able to automatically recover them.
 
 Opportunity/Justification
 +++++++++++++++++++++++++
