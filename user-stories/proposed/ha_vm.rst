@@ -42,11 +42,11 @@ can be detected and recovered by the system. Possible failure events include:
 
 * VM provisioning process (nova-compute service) is down.
 
-* Compute host is down.
+* Compute host crashes or hangs.
 
-* Hypervisor has failed (e.g. libvirtd process is dead or unresponsive).
+* Hypervisor fails, e.g. libvirtd process dies or becomes unresponsive.
 
-* Network is down
+* Network component fails.
 
   There are many ways a network component could fail, e.g. NIC
   configuration error, NIC driver failure, NIC hardware failure, cable
@@ -71,11 +71,11 @@ The goal of the user story is to reduce that interruption via automated recovery
 Usage Scenario Examples
 +++++++++++++++++++++++
 
-* VM is down
+* Recovery from VM failure
 
   Monitor the VM. Detect VM down failure and notify system to recover the VM.
 
-* VM provisioning process is down
+* Recovery from ``nova-compute`` failure
 
   Monitor the provisioning process (nova-compute service). Detect
   process failure and notify system to restart the service.
@@ -87,7 +87,7 @@ Usage Scenario Examples
   the hosts must be fenced to prevent two instances writing to the same shared
   storage that lead to data corruption.
 
-* Hypervisor host is down
+* Recovery from hypervisor host failure
 
   Monitor the hypervisor host. Detect hypervisor host failure and evacuate
   all VMs from failed host. Restart the VMs on new hosts that enable an
