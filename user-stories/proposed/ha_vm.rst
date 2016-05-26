@@ -97,6 +97,9 @@ To be determined.
 
 * An ability to automatically restart VMs due to VM failure
 
+  The restart should first be attempted on the same compute host, and if that
+  fails, it should be attempted elsewhere.
+
 * An ability to restart provisioning processes
 
 * An ability to automatically evacuate VMs from a failed hypervisor host
