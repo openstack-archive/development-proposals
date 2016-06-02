@@ -134,3 +134,11 @@ Glossary
   operational performance for a higher than normal period.  Not to be
   confused with 100% availability, which is sometimes described as
   `fault tolerance <https://en.wikipedia.org/wiki/Fault_tolerance>`_.
+
+* `Pets and cattle
+  <http://www.theregister.co.uk/2013/03/18/servers_pets_or_cattle_cern/>`_ -
+  a metaphor commonly used in the OpenStack community to describe the
+  difference between two service architecture models: cloud-native,
+  stateless, disposable instances with built-in resilience in the
+  application layer (cattle), vs. legacy, stateful instances with no
+  built-in resilience.
