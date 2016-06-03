@@ -167,7 +167,9 @@ To be determined.
   to the evacuation process to ensure that no 2 instances are writing to the
   same storage.
 
-* An ability to disable a failed host from nova scheduler
+* An ability to disable the ``nova-compute`` service of a failed host so
+  that ``nova-scheduler`` will not attempt to provision new VMs to that
+  host before ``nova`` notices.
 
 *External References*
 +++++++++++++++++++++
