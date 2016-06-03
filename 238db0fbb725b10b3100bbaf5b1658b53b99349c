@@ -1,0 +1,9 @@
+Code-Review+2: Ken Johnston <kenny@kencjohnston.com>
+Code-Review+2: Rochelle Grober <rochelle.grober@huawei.com>
+Workflow+1: Ken Johnston <kenny@kencjohnston.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 03 Jun 2016 19:39:25 +0000
+Reviewed-on: https://review.openstack.org/324130
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
