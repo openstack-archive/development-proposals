@@ -42,7 +42,9 @@ can be detected and recovered by the system. Possible failure events include:
 
 * VM provisioning process (nova-compute service) is down.
 
-* Host/Hypervisor is down.
+* Compute host is down.
+
+* Hypervisor has failed (e.g. libvirtd process is dead or unresponsive).
 
 * Network is down
 
