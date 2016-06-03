@@ -46,8 +46,8 @@ an attempt to address some aspects of this problem.
 Use Cases
 ---------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 * FLT001 - As a cloud operator, I need to track and utilize the status of
   physical resources in my OpenStack cloud - controller, network, compute,
   storage, and utility/logging nodes, and factors like power, temperature, CPU,
@@ -103,6 +103,25 @@ User Stories
 * FLT014 - As a cloud operator, I should be able to set a repeatability
   threshold for each alert so the resolving system does not take action on
   auditor alerts which happen repeatedly.
+
+Use Case Prioritization
++++++++++++++++++++++++
+**Phase 1** - Modularity and Inventory Management
+ #. FLT013
+ #. FLT002
+ #. FLT001
+ #. FLT004
+ #. FLT003
+**Phase 2** - Auditing and Automated Resolution
+ #. FLT012
+ #. FLT006
+ #. FLT011
+ #. FLT005
+ #. FLT007
+ #. FLT008
+ #. FLT009
+ #. FLT010
+ #. FLT014
 
 Usage Scenario Examples
 +++++++++++++++++++++++
