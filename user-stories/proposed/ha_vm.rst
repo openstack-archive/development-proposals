@@ -46,6 +46,18 @@ can be detected and recovered by the system. Possible failure events include:
 
 * Network is down
 
+  There are many ways a network component could fail, e.g. NIC
+  configuration error, NIC driver failure, NIC hardware failure, cable
+  failure, switch failure and so on. Any production environment aiming
+  for high availability already requires considerable redundancy at
+  the network level, especially voting nodes within a cluster which
+  needs its quorum protecting against network partitions. Whilst this
+  redundancy will keep most network hardware failures invisible to
+  OpenStack, the remainder still need defending against. However, in
+  order to fulfill this user story we don't need to be able to
+  pinpoint the cause of a network failure; it's enough to recognise
+  which network connection failed, and then react accordingly.
+
 * Attached Cinder volume failure
 
 * Availability Zone/Data Center/Region failure
@@ -78,6 +90,38 @@ Usage Scenario Examples
   volume even though it loses the state on memory. A shared storage can be
   used for instance volume as these volumes survive outside the hypervisors
   host.
+
+* Recovery from network failure
+
+  Typically the cloud infrastructure uses multiple networks, e.g.
+
+  - an administrative network used for internal traffic such as the message bus,
+    database connections, and Pacemaker cluster communication
+
+  - various neutron networks
+
+  - storage networks
+
+  - remote control of physical hardware via IPMI / iLO / DRAC or similar
+
+  Failures on these networks should not necessarily be handled in the same
+  way.  For example:
+
+  - If a compute host loses connection to the storage network, its VMs cannot
+    continue to function correctly, so automatic fencing and resurrection is
+    probably the only reasonable response.
+
+  - If it loses connection to the admin network, its VMs should still continue
+    to function correctly, so the cloud operator might prefer to receive
+    alerts via email/SMS instead of any fencing and automated resurrection
+    which would be needlessly disruptive.
+
+  - If the compute host loses connection to the project (tenant) network, then
+    it may be possible to fix this with minimal downtime by automatically
+    migrating the VMs to another compute host.
+
+  The desired response will vary from cloud to cloud, therefore should be
+  configurable.
 
 Related User Stories
 ++++++++++++++++++++
