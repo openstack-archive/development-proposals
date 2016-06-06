@@ -161,7 +161,11 @@ To be determined.
 
 * An ability to monitor VM failure.
 
-* An ability to monitor provisioning process failure.
+* An ability to monitor provisioning processes on the compute host for failure
+
+  Provisioning processes include ``nova-compute``, associated backend
+  hypervisor processes such as ``libvirtd``, and any other dependent
+  services, e.g. ``neutron-openvswitch-agent`` if Open vSwitch is in use.
 
 * An ability to monitor hypervisor host for failure
 
