@@ -89,12 +89,14 @@ Usage Scenario Examples
 
 * Hypervisor host is down
 
-  Monitor the hypervisor host. Detect hypervisor host failure and evacuate
-  all VMs from failed host. Restart the VMs on new hosts that enable an
+  Monitor the hypervisor host. When failure is detected, resurrect
+  all VMs from the failed host onto new hosts that enable an
   application workload to resume a process if the VM state is stored in a
-  volume even though it loses the state on memory. A shared storage can be
-  used for instance volume as these volumes survive outside the hypervisors
-  host.
+  volume even though it loses the state on memory. If shared storage is used
+  for instance volumes, these volumes survive outside the failed hypervisor
+  host. However this is not required. If shared storage is not available,
+  the instance VMs will be automatically rebuilt from their original image, as
+  per standard nova evacuate behaviour.
 
 * Recovery from network failure
 
