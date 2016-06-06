@@ -38,7 +38,9 @@ VMs to meet high SLA requirements. There are several types of failure
 events that can occur in OpenStack clouds. We need to make sure such events
 can be detected and recovered by the system. Possible failure events include:
 
-* VM is down.
+* VM crashes.
+
+  For example, with the KVM hypervisor, the ``qemu-kvm`` process could crash.
 
 * VM provisioning process (nova-compute service) is down.
 
