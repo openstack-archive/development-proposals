@@ -176,10 +176,19 @@ To be determined.
 
 * An ability to restart provisioning processes
 
-* An ability to automatically evacuate VMs from a failed hypervisor host
-  and restart the VMs on another available host. The host must be fenced prior
-  to the evacuation process to ensure that no 2 instances are writing to the
-  same storage.
+* An ability to automatically resurrect VMs from a failed hypervisor host
+  and restart them on another available host
+
+  The host must be fenced (typically via a STONITH mechanism) prior to the
+  resurrection process, to ensure that there are never multiple instances of
+  the same VM accidentally running concurrently and conflicting with each
+  other.  The conflict could cause data corruption, e.g. if both instances are
+  writing to the same non-clustered filesystem backed by a virtual disk on
+  shared storage, but it could also cause service-level failures even without
+  shared storage.  For example, a VM on a failing host could still be
+  unexpectedly communicating on a project network even when the host is
+  unreachable via the cluster network, and this could conflict with 
+  another instance of the same VM resurrected on another compute host.
 
 * An ability to disable the ``nova-compute`` service of a failed host so
   that ``nova-scheduler`` will not attempt to provision new VMs to that
