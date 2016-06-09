@@ -93,7 +93,15 @@ Usage Scenario Examples
 
 * Recovery from VM failure
 
-  Monitor the VM. Detect VM down failure and notify system to recover the VM.
+  Monitor the VM externally (i.e. as a black box, without requiring
+  any knowledge of or invasive changes to the internals of the
+  VM). Detect VM failure and notify system to recover the VM on the same
+  hypervisor, or if that fails, on another hypervisor.
+
+  Note that failures of the VM which are undetectable from outside it
+  are out of scope of this user story, since they would require invasive
+  monitoring inside the VM, and there is no general solution to this which
+  would work across all guest operating systems and workloads.
 
 * Recovery from ``nova-compute`` failure
 
@@ -177,7 +185,7 @@ To be determined.
   happened to boot them on an HA compute host or a non-HA compute
   host.
 
-* An ability to monitor VM failure.
+* An ability to non-intrusively monitor VMs for failure
 
 * An ability to monitor provisioning processes on the compute host for failure
 
