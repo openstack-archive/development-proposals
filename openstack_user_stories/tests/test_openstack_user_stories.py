@@ -13,16 +13,16 @@
 # under the License.
 
 """
-test_openstack-user-stories
+test_openstack_user_stories
 ----------------------------------
 
-Tests for `openstack-user-stories` module.
+Tests for `openstack_user_stories` module.
 """
 
-from openstack-user-stories.tests import base
+from openstack_user_stories.tests import base
 
 
-class TestOpenstack-user-stories(base.TestCase):
+class TestOpenstack_user_stories(base.TestCase):
 
     def test_something(self):
         pass

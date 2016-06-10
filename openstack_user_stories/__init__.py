@@ -16,4 +16,4 @@ import pbr.version
 
 
 __version__ = pbr.version.VersionInfo(
-    'openstack-user-stories').version_string()
+    'openstack_user_stories').version_string()
