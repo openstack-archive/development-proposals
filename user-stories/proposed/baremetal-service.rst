@@ -6,10 +6,10 @@ Cross Project Spec - None
 User Story Tracker - None
 
 Problem description
-====================
+-------------------
 
 *Problem Definition*
---------------------
+++++++++++++++++++++
 
 In order to support certain Enterprise Business Requirements, OpenStack must
 be able to provision bare metal machines in a secure, multi-tenant, and
@@ -57,17 +57,17 @@ To support these use cases, we need:
    network (VXLAN), and Console.
 
 Opportunity/Justification
--------------------------
++++++++++++++++++++++++++
 
 Cloud service providers want to support bare metal machine, but it is a tough
 challenge to provide IaaS access to bare metal with the same elastic and
 service-oriented properties as they do with virtual machines.
 
 Use Cases
-=========
+---------
 
 User Stories
-------------
+++++++++++++
 
 * As an Enterprise user, I want to use bare metal machine so that I get
   consistent performance not affected by another machine, nor impacted
@@ -100,7 +100,7 @@ User Stories
   to VMs in virtual network(VXLAN) in the same manner of VMs.
 
 Usage Scenario Examples
-------------------------
++++++++++++++++++++++++
 
 1.Successful bare metal service
   a. Enterprise user creates virtual network.
@@ -119,17 +119,17 @@ Usage Scenario Examples
   b. Enterprise user restore from data backed up.
 
 Related User Stories
-====================
+++++++++++++++++++++
 
 * `High Availability for Virtual Machines <https://review.openstack.org/#/c/289469/>`_
 
 *Requirements*
-==============
+++++++++++++++
 
 None.
 
 *External References*
-=====================
++++++++++++++++++++++
 
 * `[RFE] [Ironic] Ironic Neutron ML2 Integration <https://bugs.launchpad.net/ironic/+bug/1526403>`_
 * `[SPEC] [Ironic] Update of the Ironic Neutron Integration spec <https://review.openstack.org/#/c/188528/>`_
@@ -150,11 +150,11 @@ None.
 * `[SPEC] [Ironic] Bare metal node N+1 redundancy <https://review.openstack.org/#/c/259320>`_
 
 *Rejected User Stories / Usage Scenarios*
-=========================================
+-----------------------------------------
 
 None.
 
 Glossary
-========
+--------
 
 TBD.
