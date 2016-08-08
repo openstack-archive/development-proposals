@@ -77,7 +77,8 @@ Use Cases
   in the appropriate state and takes remedial action if they are not
 
 * FLT008 - As a cloud operator, I need to define and adjust automated remedial
-  actions on physical resources so that they are least disruptive to my end-users
+  actions on physical resources so that they are least disruptive to my
+  end-users
 
 * FLT009 - As a cloud operator, I need to execute automated remedial actions as
   a result of my investigations into alerts
@@ -125,6 +126,61 @@ Use Case Prioritization
 
 Usage Scenario Examples
 +++++++++++++++++++++++
+**Specific - Automated Security Hardening**
+
+In this example an operator desires to apply a series of security best
+practices to all of the hosts in their fleet.
+
+* Cloud operator determines security requirements and derives or determines an
+  `automation script`_ to apply requirements
+* Cloud operator is already using inventory management to manage their fleet
+* Cloud operator determines for which hosts the security requirements are
+  applicable
+* Cloud operator defines the desired states for specified hosts as compliant
+  with automation script
+* Fleet management system automatically audits status of automation script on
+  hosts and remediates by running script where required
+* Cloud operator is sure that future hosts added to fleet will have security
+  requirements applied by fleet management system
+
+.. _automation script: http://docs.openstack.org/developer/\
+                      openstack-ansible-security/
+
+**Specific - Automated Host OS Patching**
+
+In this example a cloud operator desires to apply an updated patch for specified
+hosts within their fleet.
+
+* Cloud operator determines specified OS patch to update hosts with
+* Cloud operator determines host group to update
+* Cloud operator defines desired state for host group as including specified
+  host OS patch
+* Fleet management system audits host group to determine whether they have been
+  patched with specified host OS patch
+* Prior to taking any disruptive action, fleet management system will attempt
+  to live migrate all workloads off of hosts and put a host into maintenance
+  mode
+* Fleet management resolves specified hosts who do not have patch by applying
+  patch
+
+**Specific - Automated Networking Maintenance**
+
+In this example a cloud operator is performing a maintenance on a piece of
+network hardware that will impact networking access to a series of hosts.
+
+* Cloud operator determines networking hardware requires maintenance
+* Cloud operator identifies networking hardware requiring maintenance to
+  fleet management system
+* Fleet management system takes remedial action to limit impact of maintenance
+  including
+
+  * Live migrating workloads from affected compute hosts
+  * Deploy additional control plane instances to replace affected
+    infrastructure hosts
+  * Put compute hosts into maintenance mode
+* After maintenance fleet management system returns affected hosts to available
+  pool
+
 **General Lifecycle**
 
 In this process cloud operators are faced with three tasks: detection, trigger
@@ -146,7 +202,7 @@ Here is a real world description of this process:
 * Cloud operator implements automatic remediation in resolver system
 * Cloud operator implements automatic trigger from auditor to resolver system
 
-**Automated Remediation**
+**General - Automated Remediation**
 
 * Monitoring triggers a warning on physical resources
 * Auditing system determines physical resource in question is not in
@@ -156,7 +212,7 @@ Here is a real world description of this process:
 * Resolving system returns physical resources to appropriate state
 * Resolving system returns physical resources to production pool
 
-**Operator Notification and Manual Remediation**
+**General - Operator Notification and Manual Remediation**
 
 * Monitoring triggers a warning on physical resources
 * Auditing system determines physical resource in question is in appropriate
@@ -168,7 +224,7 @@ Here is a real world description of this process:
 * Cloud operator returns resource to resolving system management
 * Resolving system returns physical resources to production pool
 
-**Cloud Operator Definition or Adjustment of Automated Remediation**
+**General - Cloud Operator Definition or Adjustment of Automated Remediation**
 
 * Cloud operator identifies pattern causing requirement for manual remediation
 * Cloud operator easily programs known resolution into resolving system
@@ -177,7 +233,9 @@ Here is a real world description of this process:
 
 Related User Stories
 ++++++++++++++++++++
-TBD
+* `HA VM`
+
+.. _`HA VM`:http://specs.openstack.org/openstack/openstack-user-stories/user-stories/proposed/ha_vm.html
 
 Requirements
 ++++++++++++
@@ -185,11 +243,13 @@ TBD
 
 External References
 +++++++++++++++++++
-* `<https://wiki.openstack.org/wiki/Watcher>`_
+* `OpenStack Watcher Project`_
+* `Cloud Minion`_
+* `OpenStack Ops Wiki`_
 
-* `<http://github.com/paypal/cloudminion>`_
-
-* `<https://wiki.openstack.org/wiki/Osops>`_
+.. _`OpenStack Watcher Project`: https://wiki.openstack.org/wiki/Watcher
+.. _`Cloud Minion`: http://github.com/paypal/cloudminion
+.. _`OpenStack Ops Wiki`: https://wiki.openstack.org/wiki/Osops
 
 Rejected User Stories / Usage Scenarios
 ---------------------------------------
