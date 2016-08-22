@@ -72,6 +72,10 @@ User Stories
  d. Add “burst capacity” from a federation partner or reseller.
  e. Modify or defer another project.
 
+* as a CSP, I want to be able to automate resource usage request (RUR) with chargeback
+  so that only users whose account is up to date on payments and whose RUR
+  is both within a quota and within cost of RUR plus
+  current balance is below project/tenant threshold will be considered for resources.
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
@@ -160,3 +164,6 @@ Glossary
 .. **reST** reStructuredText is a simple markup language
 .. **TLA** Three-Letter Abbreviation is an abbreviation consisting of three letters
 .. **xyz** Another example abbreviation
+
+* **RUR** - Resource Usage Request
+
