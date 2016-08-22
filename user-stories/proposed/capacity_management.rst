@@ -10,13 +10,26 @@ Problem Description
 
 *Problem Definition*
 ++++++++++++++++++++
-A canonical property of an IaaS system like OpenStack is “capacity on demand”. Users expect to be able to allocate new resources via UI or API whenever needed, and to release them when the need ends. By supporting a large number of users, pooling resources, and maintaining some excess capacity, the cloud service provider (CSP) presents the illusion of infinite capacity.
+A canonical property of an IaaS system like OpenStack is “capacity on demand”.
+Users expect to be able to allocate new resources via UI or API whenever needed,
+and to release them when the need ends. By supporting a large number of users,
+pooling resources, and maintaining some excess capacity, the cloud service provider
+(CSP) presents the illusion of infinite capacity.
 
 In practice, of course, the resources are not infinite, and the CSP must institute measures to manage capacity so that resource exhaustion is minimized. This is generally done by imposing a cap or quota on the resources that a particular project may consume, and by managing the relationship between the available physical resources and the aggregate quotas for all projects. When a project requires more resources than its assigned quota, the user is generally required to submit a request, generally requiring human approval. The CSP may reject the request, or delay it until sufficient capacity is available. When the request is approved, the quota for the project is modified to reflect the new limit.
 
 Other CSPs have introduced a number of mechanisms to provide them with flexibility in managing capacity. These include group quotas (shared by related projects), reserved instances, ephemeral instances (which may be reclaimed for reallocation), and market-based allocation models. At the present time, OpenStack does not support any of these.
 
 One common factor in all these processes is that they do not reflect temporal variations in resource usage. Yet in many cases the user knows how their usage is going to vary over time, and such information would be useful to the CSP who needs to decide how to handle each request. It might also facilitate the automation of some of the processing. The following user stories capture the possibilities here.
+
+This user story is also applicable to Telcos / TSP (Telecommunication Service
+Providers) users. There is movement in the industry toward NFV (Network
+Function Virtualization) that want to leverage the benefits of cloud
+technologies and virtualization by deploying VNFs (virtual network functions)
+on industry standard high volume servers, switches and storage located in data
+centers, network nodes and in end-user premises.  The resource requirements
+for these VNFs are described in the VNF Descriptor (VNFD) which is being
+standardized under the aegis of ETSI NFV ISG [1] and OASIS TOSCA.
 
 Opportunity/Justification
 +++++++++++++++++++++++++
@@ -47,15 +60,27 @@ User Stories
 
 .. * As a <type of user>, I want to <goal> so that <benefit>
 
-* As an OpenStack user, I want to specify my resource usage request (RUR) in a way that will enable automated processing by the CSP, so that my RUR will be handled more quickly and accurately.
+* As an OpenStack user, I want to specify my resource usage request (RUR) in a way that
+will enable automated processing by the CSP, so that my RUR will be handled more
+quickly and accurately.
 
-* As a CSP I want to be able to automate the processing of RURs so that I can meet my user SLAs and gain more timely and accurate data input to my capacity management and planning systems.
+* As a CSP I want to be able to automate the processing of RURs so that I can meet
+my user SLAs and gain more timely and accurate data input to my capacity management
+and planning systems.
 
-* As a user, I want to be able to describe the temporal characteristics of my RUR, so that the CSP can plan capacity more accurately and reduce the chances of a resource request failure. My CSP may also offer me better pricing for more accurate usage prediction. Some examples of time-based RURs:
+* As a user, I want to be able to describe the temporal characteristics of my RUR,
+so that the CSP can plan capacity more accurately and reduce the chances
+of a resource request failure. My CSP may also offer me better pricing for more
+accurate usage prediction. Some examples of time-based RURs:
 
  a. I plan to use up to 60 vCPUs and 240GB of RAM from 6/1/2016 to 8/14/2016.
  b. I plan to use 200GB of object storage starting on 8/14/2016, increasing by 100GB every calendar month thereafter.
- c. I want guaranteed access to 30 vCPUs and 200GB of RAM for my project. In addition, during October-December, I want to be able to increase my usage to 150 vCPUs and 1TB of RAM
+ c. I want guaranteed access to 30 vCPUs and 200GB of RAM for my project.
+    In addition, during October-December, I want to be able to increase my usage
+    to 150 vCPUs and 1TB of RAM.
+ d. I want guaranteed access to 4 instances with 1 vCPU and 1GB of RAM and 10GB
+    of disk and a guaranteed minimum bandwidth of 1Gbps between the instances.
+    This example is similar to what would be described in the VNFD.
 
 * As a user, I want to be able to submit an updated version of a rolling RUR for my project every month, so that my CSP has accurate information and can give me the best price and SLA.
 
@@ -72,6 +97,20 @@ User Stories
  d. Add “burst capacity” from a federation partner or reseller.
  e. Modify or defer another project.
 
+* As a user, I want to be able to query/update/terminate a RUR at any point in time.
+
+* As a user, I want to receive an appropriate error message in case the a RUR
+  is not successful. In case of a failure of RUR I want the environment to be
+  reverted back to pre-RUR state.
+  In other words, RUR transaction should be Atomic. In case of RUR
+  failure, the error message should contain sufficient information such that user
+  can take actions to modify the RUR.
+
+* As a CSP, I want to be able to automate the RUR with chargeback
+  so only users with following requirements are considered for resources:
+    a. whose account is up to date on payments
+    b. whose RUR is within a quota
+    c. whose cost of RUR plus current balance is below project/tenant threshold
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
@@ -129,7 +168,9 @@ This Use Case is related to the Infinite Elasticity use case. The latter focuses
 .. specifically call for the implementation of a standard or protocol or other
 .. well-defined mechanism, use this section to list them.
 
-None.
+[1] ETSI NFV IFA has specified the concept and use cases of "resource reservation"
+    and **VNFD** in the following standard specifications:
+    <http://www.etsi.org/deliver/etsi_gs/NFV-IFA>
 
 *Rejected User Stories / Usage Scenarios*
 -----------------------------------------
@@ -160,3 +201,8 @@ Glossary
 .. **reST** reStructuredText is a simple markup language
 .. **TLA** Three-Letter Abbreviation is an abbreviation consisting of three letters
 .. **xyz** Another example abbreviation
+
+* **RUR** - Resource Usage Request
+* **CSP** - Cloud service provider
+* **VNFD** - Virtual Network Function (VNF) Descriptor describes resource requirements for VNFs
+
