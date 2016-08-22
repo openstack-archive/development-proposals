@@ -104,6 +104,12 @@ Use Cases
   threshold for each alert so the resolving system does not take action on
   auditor alerts which happen repeatedly.
 
+* FLT015 - As a cloud operator, I need to be able to replace failed HW: server,
+  switch, storage node, and to ensure that added HW will be treated as
+  replacement component not newly added HW component. That includes configuration
+  of HW component to match the replaced one. And a UUID that openstack uses for
+  HW component matches the one that is being replaced.
+
 Use Case Prioritization
 +++++++++++++++++++++++
 **Phase 1** - Modularity and Inventory Management
@@ -121,6 +127,7 @@ Use Case Prioritization
  #. FLT008
  #. FLT009
  #. FLT010
+ #. FLT015
  #. FLT014
 
 Usage Scenario Examples
@@ -166,6 +173,23 @@ Here is a real world description of this process:
   resources from resolving system management
 * Cloud operator investigates and determines cause of issue
 * Cloud operator returns resource to resolving system management
+* Resolving system returns physical resources to production pool
+
+**Operator Notification and Manual HW Replacement**
+
+* Monitoring triggers a warning on physical resources
+* Auditing system determines physical resource in question is in appropriate
+  state
+* Resolving system moves failed physical resources into maintenance mode
+* Resolving system informs cloud operator of need for investigation, and
+  replacement away from automated system management.
+* Cloud operator investigates and determines cause of issue
+* Cloud operator replaces failed HW. Cloud operator maintains HW UUID in
+  system management system. Cloud operator configures replaced HW to
+  identical configuration of replaced HW.
+* Cloud operator returns resource to resolving system management
+* Resolving system returns physical resource from maintanence mode to
+  operation one.
 * Resolving system returns physical resources to production pool
 
 **Cloud Operator Definition or Adjustment of Automated Remediation**
