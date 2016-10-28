@@ -61,9 +61,12 @@ User Stories
 .. separate submission for each group of user stories.  Please replace "None." with
 .. the appropriate data.
 
+.. Please provide a unique three character reference and three digit number for
+.. each user story
+
 .. A list of user stories ideally in this or a similar format:
 
-.. * As a <type of user>, I want to <goal> so that <benefit>
+.. * XXX### As a <type of user>, I want to <goal> so that <benefit>
 
 None.
 
@@ -82,6 +85,21 @@ Usage Scenario Examples
 
 .. 1. Usage Scenario Title a. 1st Step b. 2nd Step 2. Usage Scenario Title a. 1st
 .. Step b. 2nd Step 3. [...]
+
+None.
+
+Acceptance Criteria
++++++++++++++++++++
+.. This section is mandatory
+.. In order to define completion of a user story, provide detailed definitions
+.. of acceptance criteria for these stories. This should include where
+.. applicable the specific project set appropriate, the user focused experience
+.. and in some cases references to types of specific artifacts.
+
+.. Please reference the user stories by three character and three number
+.. references defined above.
+
+.. Ex. ABC123 - All Interop Projects obtain tag "FOO"
 
 None.
 
