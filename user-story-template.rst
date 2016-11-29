@@ -54,18 +54,24 @@ Use Cases
 
 User Stories
 ++++++++++++
-..  This section is mandatory. You may submit multiple
+.. This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are
 .. explaining goals that fall under different epics/themes then please complete a
 .. separate submission for each group of user stories.  Please replace "None." with
 .. the appropriate data.
 
-.. A list of user stories ideally in this or a similar format:
+.. A list of user stories targetted at OpenStack UX Personas, ideally in this
+.. or a similar format:
 
-.. * As a <type of user>, I want to <goal> so that <benefit>
+.. * As `<type of user>`_, I want to <goal> so that <benefit>
+
+This section utilizes the `OpenStack UX Personas`_.
 
 None.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _<type of user>: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/<type_of_user>
 
 Usage Scenario Examples
 +++++++++++++++++++++++
