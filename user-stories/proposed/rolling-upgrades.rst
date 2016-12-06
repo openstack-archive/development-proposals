@@ -34,30 +34,36 @@ Use Cases
 
 User Stories
 ++++++++++++
-* As a Cloud User, I want to experience a stable, regularly updated and
+This section utilizes the `OpenStack UX Personas`_.
+
+* As `Quinn the Application Developer`_, I want to experience a stable, regularly updated and
   upgraded OpenStack platform in order to utilize new features, bug fixes and
   security enhancements, so that my cloud development experience is
   consistently world-class.
-* As a Cloud Operator, I want to provide my users a reliable and available
+* As `Rey the Cloud Operator`_, I want to provide my users a reliable and available
   OpenStack platform so that they do not experience any data plane downtime or
   extended control plane downtime
-* As a Cloud Operator, I want to have confidence in my ability to perform an
+* As Rey, I want to have confidence in my ability to perform an
   OpenStack cloud update so that I can perform them on a monthly basis
-* As a Cloud Operator, I want to be able to roll back the most recent cloud
+* As Rey, I want to be able to roll back the most recent cloud
   upgrade or update I initiate in the event of issues so that I can be
   confident that even in the case of errors I will still avoid data plane or
   control plane downtime
-* As a Cloud Operator, I want to be able to define characteristics of a rolling
+* As Rey, I want to be able to define characteristics of a rolling
   reboot of my data and control plane hosts so that my users are not impacted
   by a rolling upgrade or update
-* As a Cloud Operator, I want to be able to run pre-upgrade tests to ensure my
+* As Rey, I want to be able to run pre-upgrade tests to ensure my
   cloud is capable of upgrading or updating to a specified version so that I
   can be confident in the success of my upgrade or update
-* As a Cloud Operator, I want a way to validate whether an upgrade completed
+* As Rey, I want a way to validate whether an upgrade completed
   successfully, and get clear indication for any issues and how to resolve them
   with specific actions (such as repair, fix and retry, rollback).
-* As a Cloud Operator I want to know beforehand the upgrade plan including
+* As Rey, I want to know beforehand the upgrade plan including
   timing, dependencies, and which services would be impacted.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Quinn the Application Developer: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/app-developer.html#app-developer
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
