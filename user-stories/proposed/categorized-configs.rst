@@ -28,38 +28,42 @@ Use Cases
 
 User Stories
 ++++++++++++
+This section utilizes the `OpenStack UX Personas`_.
 
-* As an Operator, I should be able to understand how to use a configuration
+* As `Rey the Cloud Operator`_, I should be able to understand how to use a configuration
   option by reading the documentation. There should be no need to read the
   code to understand what value to choose.
-* As an Operator doing an initial deployment, I want most options to have
+* As Rey doing an initial deployment, I want most options to have
   a useful default value, so they do not need to be considered or specified
   during the initial configuration of the system.
-* As an Operator doing an initial deployment, I should be able to quickly
+* As Rey doing an initial deployment, I should be able to quickly
   identify what configurations I must consider, and how I should determine
   their value for my deployment to be successful.
 * As a Packager, I should be able to quickly identify what configuration
   options the packaging must set, and what options the operator needs to
   specify.
-* As an Operator scaling out a deployment, there should be minimal
+* As Rey scaling out a deployment, there should be minimal
   configuration changes required. For the small number of options that must
   be changed, it should be clear what values require tuning, what symptoms are
   caused by incorrect values and how to determine correct values.
-* As an Operator, the documentation should be clear on the relationship
+* As Rey, the documentation should be clear on the relationship
   between configuration options. For example, if you select driver A by
   setting configuration option X, it should be clear what values should be
   set for any dependent configuration options within the same project.
 * There may be some options that are very unlikely to be used, except by the
   most advanced users. By default, these advanced options should be marked as
   such and presented in such a way as to make the documentation less daunting.
-  While remaining discoverable it's possible such options may require the
-  operator to review additional documentation to fully understand their impact.
-* As on Operator doing an initial configuration, it should be easy to check
+  While remaining discoverable it's possible such options may require Rey to
+  review additional documentation to fully understand their impact.
+* As Rey doing an initial configuration, it should be easy to check
   that you have a valid configuration file. Checking for any unrecognized
   configuration options and any invalid values can help find typos.
-* As an Operator that has just completed an upgrade, it should be easy to
+* As Rey that has just completed an upgrade, it should be easy to
   check if you are making use of any deprecated configuration options, and
   determine what changes must be made before doing your next upgrade.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
 
 Usage Scenario Examples
 +++++++++++++++++++++++
