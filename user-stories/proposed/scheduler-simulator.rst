@@ -27,14 +27,18 @@ Use Cases
 
 User Stories
 ++++++++++++
-* As a cloud operator, I want to be able to simulate my cloud's scheduler with
+This section utilizes the `OpenStack UX Personas`_.
+
+* As `Rey the Cloud Operator`_, I want to be able to simulate my cloud's scheduler with
   a variety of virtual machine request loads under a given scheduler
   configuration in order to determine the optimal configuration for my desired
   outcome
-* As a cloud operator, I want to be able to visualize the simulated scheduling
+* As Rey, I want to be able to visualize the simulated scheduling
   of virtual machines onto hosts in my environment so that I can quickly
   realize whether a given configuration will result in my desired outcome
 
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
