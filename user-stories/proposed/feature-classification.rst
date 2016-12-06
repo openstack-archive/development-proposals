@@ -31,21 +31,26 @@ Use Cases
 
 User Stories
 ++++++++++++
+This section utilizes the `OpenStack UX Personas`_.
 
-* As an Operator, I want to understand what features are complete,
+* As `Rey the Cloud Operator`_, I want to understand what features are complete,
   well-documented and stable so that I can ensure a good experience for my
   user community in recommending features for use.
-* As an Operator, I want to understand the effects my configuration choices
+* As Rey, I want to understand the effects my configuration choices
   might have on specific feature classifications so that I can make optimal
   decisions when defining my cloud's configuration.
-* As a User, I want to understand which features are stable and mature so that
+* As `Quinn the Application Developer`_, I want to understand which features are stable and mature so that
   I choose appropriate features for use in my applications.
-* As a User, I want to be able to reference a common set of feature
+* As Quinn, I want to be able to reference a common set of feature
   classification definitions that span all OpenStack projects so that I don't
   have to understand differing definitions across multiple projects.
 * As an OpenStack Developer, I want to understand which features lack
   stability, completeness and documentation so that I can direct my attention
   to improving those deficient features.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
+.. _Quinn the Application Developer: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/app-developer.html#app-developer
 
 Usage Scenario Examples
 +++++++++++++++++++++++
