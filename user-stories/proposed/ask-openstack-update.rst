@@ -25,14 +25,19 @@ Use Cases
 
 User Stories
 ++++++++++++
-*As an Operator, I want to be able to quickly find reliable answers to common
+This section utilizes the `OpenStack UX Personas`_.
+
+*As `Rey the Cloud Operator`_, I want to be able to quickly find reliable answers to common
 operational issues and questions so that I can continue to support my users
-*As an Operator, I want to ask an uncommon question in a community forum and
+*As Rey, I want to ask an uncommon question in a community forum and
 receive an timely answer from the communities expertise so that I can continue to
 support my users
-*As an Operator, I want to see answers to previously asked uncommon questions and
+*As Rey, I want to see answers to previously asked uncommon questions and
 a notion to the popularity of previous answers so that I can continue to support
 my users
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
