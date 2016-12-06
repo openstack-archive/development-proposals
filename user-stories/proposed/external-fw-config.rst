@@ -26,12 +26,17 @@ Use Cases
 
 User Stories
 ++++++++++++
-* As a deployer, I want to be able to access a configuration description that I
+This section utilizes the `OpenStack UX Personas`_.
+
+* As `Rey the Cloud Operator`_, I want to be able to access a configuration description that I
   can provide to my network security team to properly configure any external
   firewalls so that my users can quickly begin accessing the cloud.
-* As the network security team for a deployer, I want to be able to easily
+* As the network security team for Rey, I want to be able to easily
   consume the firewall configuration provided in a standard format, so that I
   have minimal effort required to appropriately configure the firewall
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
