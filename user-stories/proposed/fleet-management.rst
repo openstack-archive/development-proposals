@@ -48,66 +48,71 @@ Use Cases
 
 Use Cases
 +++++++++
-* FLT001 - As a cloud operator, I need to track and utilize the status of
+This section utilizes the `OpenStack UX Personas`_.
+
+* FLT001 - As `Rey the Cloud Operator`_, I need to track and utilize the status of
   physical resources in my OpenStack cloud - controller, network, compute,
   storage, and utility/logging nodes, and factors like power, temperature, CPU,
   memory, disk space, disk i/o, bandwidth (in/out) on each physical resources
   - so that I may monitor those metrics and maintain the health of my cloud
 
-* FLT002 - As a cloud operator, I need to monitor the health of physical
+* FLT002 - As Rey, I need to monitor the health of physical
   resources in my OpenStack cloud so that I can take automatic policy-driven
   remedial action and deliver on my SLAs
 
-* FLT003 - As a cloud operator, I need to keep track of unused resource
+* FLT003 - As Rey, I need to keep track of unused resource
   capacity so that I can free up resources and use them more efficiently
 
-* FLT004 - As a cloud operator, I need to keep track of system alerts and
+* FLT004 - As Rey, I need to keep track of system alerts and
   messages, so that I can take remedial action and maintain the health of my
   cloud
 
-* FLT005 - As a cloud operator, I need to check my deployed physical resources
+* FLT005 - As Rey, I need to check my deployed physical resources
   against a set of policies and rules, so that I can meet security,
   availability and other requirements
 
-* FLT006 - As a cloud operator, I only want to have a human make an operational
+* FLT006 - As Rey, I only want to have a human make an operational
   decision when it adds value or automation is not able to
 
-* FLT007 - As a cloud operator, I need to utilize an automatic remediation
+* FLT007 - As Rey, I need to utilize an automatic remediation
   system which identifies inconsistencies, determines if physical resources are
   in the appropriate state and takes remedial action if they are not
 
-* FLT008 - As a cloud operator, I need to define and adjust automated remedial
+* FLT008 - As Rey, I need to define and adjust automated remedial
   actions on physical resources so that they are least disruptive to my end-users
 
-* FLT009 - As a cloud operator, I need to execute automated remedial actions as
+* FLT009 - As Rey, I need to execute automated remedial actions as
   a result of my investigations into alerts
 
-* FLT010 - As a cloud operator, I need to apply patches and updates to my
+* FLT010 - As Rey, I need to apply patches and updates to my
   physical resources, and maintain audit logs, so that I can keep my
   environment updated and secure, and roll back to prior validated
   configurations when something goes wrong with a patch or update
 
-* FLT011 - As a cloud operator, I need to be able to retrieve the current state
+* FLT011 - As Rey, I need to be able to retrieve the current state
   of my hardware resources and verify if there are any inconsistencies with
   respect to the right operating system, OpenStack services or other services
   installed.
 
-* FLT012 - As a cloud operator, I should be able to leverage the deployment and
+* FLT012 - As Rey, I should be able to leverage the deployment and
   life-cycle management tooling of my choice as the executor of my automated
   actions.
 
-* FLT013 - As a cloud operator, I should be able to choose which components of
+* FLT013 - As Rey, I should be able to choose which components of
   the fleet management tooling (inventory, auditing, remediation, human
   interaction) I utilize
 
-* FLT014 - As a cloud operator, I should be able to set a repeatability
+* FLT014 - As Rey, I should be able to set a repeatability
   threshold for each alert so the resolving system does not take action on
   auditor alerts which happen repeatedly.
 
-* FLT015 - As a cloud operator, I need to be able to replace failed HW: server,
+* FLT015 - As Rey, I need to be able to replace failed HW: server,
   switch, storage node, and to ensure that the replacement hardware is treated
   the same as the replaced hardware I should be able to clone the meta-data and
   appropriate settings.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html#cloud-ops
 
 Use Case Prioritization
 +++++++++++++++++++++++
