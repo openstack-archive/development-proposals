@@ -20,6 +20,7 @@ Product WG User Story Submission Process
   https://github.com/openstack/openstack-user-stories" and create a branch
   using "git checkout -b <branch>".
 - Document your user story using our `approved template <user-story-template.rst>`_
+  - Include use cases that reference the `official OpenStack UX Personas <http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html>`_.
 - Save the user story in the "user-stories/proposed" directory with a unique name
 
   - For initial submissions of a user story expect a robust discussion around
