@@ -52,7 +52,20 @@ User Cases
 
 User Stories
 ++++++++++++
-WIP
+This section utilizes the `OpenStack UX Personas`_.
+
+* As 'Ray the cloud operator' I need an ability to remove records of
+  deleted objects from the database after storing those records for audit purposes.
+
+* As 'Adrian the infrastructure architect' I need to be able to re-run the same tests
+  (with same objects) in a repeatable manner so that I can have a high certainty
+  in the outcome of my proof of concept and cloud functionality.
+
+* As 'Ray'  need only the appropriate records in my
+  database so that I can complete my upgrade in the allocated down time.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _<type of user>: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/<type_of_user>
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
