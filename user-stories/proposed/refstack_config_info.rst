@@ -45,6 +45,7 @@ Use Cases
 
 User Stories
 ++++++++++++
+This section utilizes the `OpenStack UX Personas`_.
 
 * Private Cloud
 
@@ -67,25 +68,25 @@ User Stories
     supports multiple hypervisors for my applications and meet interoperability
     requirements for all of them.
 
-  * As a Cloud operator I want to choose hypervisor for my OpenStack solution
-    configuration that provides application interoperability. Thus, as cloud
-    operator I want to see which hypervisor was used by vendor for refstack
+  * As As 'Rey the cloud operator'_ I want to choose hypervisor for my OpenStack solution
+    configuration that provides application interoperability. Thus, as Rey
+    I want to see which hypervisor was used by vendor for refstack
     result submissions.
 
-  * As a Cloud operator I want to choose container management for my OpenStack
+  * As Rey I want to choose container management for my OpenStack
     solution configuration that provides application interoperability. Thus, as
-    Cloud operator I want to see which container management was used by vendor
+    Rey I want to see which container management was used by vendor
     for refstack result submissions.
 
   * As a Cloud solution decision maker I want to choose OpenStack solution that
     supports interoperability for bare metal applications.
 
-  * As a Cloud operator I want to configure my OpenStack solution configuration
-    that ensures bare metal application interoperability. Thus, as Cloud
-    operator I want to see what configuration for OpenStack and what hardware
+  * As Rey I want to configure my OpenStack solution configuration
+    that ensures bare metal application interoperability. Thus, as Rey
+    I want to see what configuration for OpenStack and what hardware
     and its configuration used by vendor for refstack result submissions.
 
-  * As a Cloud operator I would like to replicate vendor interoperability
+  * As Rey I would like to replicate vendor interoperability
     results. This requiers exact configuration of complete OpenStack solution,
     including hardware choices, its configuration, mapping of OpenStack
     component to hardware and OpenStack configuraion for each OpenStack
@@ -103,20 +104,20 @@ User Stories
     supports containers for my applications and meet interoperability
     requirements for them.
 
-  * As a Cloud operator I want to choose hypervisor for my OpenStack solution
-    configuration that provides application interoperability. Thus, as Cloud
+  * As Rey I want to choose hypervisor for my OpenStack solution
+    configuration that provides application interoperability. Thus, as Rey
     operator I want to see which hypervisor was used by vendor for refstack
     result submissions.
 
-  * As a Cloud operator I want to choose container management for my OpenStack
+  * As Rey I want to choose container management for my OpenStack
     solution configuration that provides application interoperability. Thus, as
-    Cloud operator I want to see which container management was used by vendor
+    Rey I wan't to see which container management was used by vendor
     for refstack result submissions.
 
   * As a Cloud solution decision maker I want to choose OpenStack solution that
     supports interoperability for bare metal applications.
 
-  * As a Cloud operator I would like to replicate vendor interoperability
+  * As Rey I would like to replicate vendor interoperability
     results. This requiers exact configuration of complete OpenStack solution,
     including hardware choices, its configuration, mapping of openstack
     component to hardware and OpenStack configuraion for each OpenStack
@@ -126,6 +127,9 @@ User Stories
     That covers, hardware choices, openstack projects configuration,
     environment in which it is running, Availability Zone, Host Aggregate,
     High Availability.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Rey the cloud operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
