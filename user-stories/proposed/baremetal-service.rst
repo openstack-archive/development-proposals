@@ -69,58 +69,58 @@ Use Cases
 User Stories
 ++++++++++++
 
-* BMT001 - As an Enterprise user, I want to use bare metal machine so that I
-  get consistent performance not affected by another machine, nor impacted
-  by hypervisor.
+* BMT001 - As Wei - project owner, I want to use bare metal machine so that I
+  get consistent performance not affected by another machine, nor impacted by
+  hypervisor.
 
-* BMT002 - As an Enterprise user, I want to have a secure and clean bare
+* BMT002 - As Wei - project owner, I want to have a secure and clean bare
   metal machine deployed no matter who used it before.
 
-* BMT003 - As an Enterprise user, I want to create networks elastically so
+* BMT003 - As Wei - project owner, I want to create networks elastically so
   that I can use network like I have these networks not affected by other
   companies.
 
-* BMT004 - As an Enterprise user, I want to back up internal disk of bare
+* BMT004 - As Wei - project owner, I want to back up internal disk of bare
   metal and create a snapshot. This can be backed up to an external storage
   managed by Cinder.
 
-* BMT005 - As an Enterprise user, I want to use bare metal machine
-  integrated with block storage service so that I can use external
-  storage service.
+* BMT005 - As Wei - project owner, I want to use bare metal machine integrated
+  with block storage service so that I can use external storage service.
 
-* BMT006 - As an Enterprise user, I want to see bare metal machine from
+* BMT006 - As Wei - project owner, I want to see bare metal machine from
   console log and operate from console so that I can analyze problems at
   booting time and so on.
 
-* BMT007 - As an Enterprise user, I want to continue my operation
-  immediately when a bare metal machine fails without any manual
-  operations such as switchover. Similar to HA VM user story, The user
-  should not have to design the fail-over mechanism themselves. The system
-  should monitor and detect bare metal machine failure and automatically
-  fail-over to a spare bare metal machine.
+* BMT007 - As Wei - project owner, I want to continue my operation immediately
+  when a bare metal machine fails without any manual operations such as
+  switchover. Similar to HA VM user story, The owner should not have to design
+  the fail-over mechanism themselves. The system should monitor and detect
+  bare metal machine failure and automatically fail-over to a spare bare metal
+  machine.
 
-* BMT008 - As an Enterprise user, I want to use a bare metal machine with
-  the network services such as FWaaS, LBaaS, Security Group, VPNaaS, and
+* BMT008 - As Wei - project owner, I want to use a bare metal machine with the
+  network services such as FWaaS, LBaaS, Security Group, VPNaaS, and
   connection to VMs in virtual network(VXLAN) in the same manner of VMs.
 
 Usage Scenario Examples
 +++++++++++++++++++++++
 
 1.Successful bare metal service
-  a. Enterprise user creates virtual network.
-  b. Enterprise user boots bare metal machine.
-  c. Enterprise user uses block storage from bare metal machine.
-  d. Enterprise user uses bare metal machine with consistent performance.
+  a. Wei - project owner creates virtual network.
+  b. Wei - project owner boots bare metal machine.
+  c. Wei - project owner uses block storage from bare metal machine.
+  d. Wei - project owner uses bare metal machine with consistent performance.
 
 2.Analyze bare metal machine rebooting problem
-  a. Enterprise user can't connect to bare metal machine remotely when rebooting.
-  b. Enterprise user can see state of bare metal machine from console log.
-  c. Enterprise user analyzes boot problem and resolved the issue.
-  d. Enterprise user can boot successfully.
+  a. Wei - project owner can't connect to bare metal machine remotely when
+     rebooting.
+  b. Wei - project owner can see state of bare metal machine from console log.
+  c. Wei - project owner analyzes boot problem and resolved the issue.
+  d. Wei - project owner can boot successfully.
 
 3.Bare metal machine data protection
-  a. Enterprise user backs up data in bare metal machine.
-  b. Enterprise user restore from data backed up.
+  a. Wei - project owner backs up data in bare metal machine.
+  b. Wei - project owner restore from data backed up.
 
 Related User Stories
 ++++++++++++++++++++
