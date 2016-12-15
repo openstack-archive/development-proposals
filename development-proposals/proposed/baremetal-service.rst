@@ -3,13 +3,10 @@ Bare Metal Service
 
 Cross Project Spec - None
 
-User Story Tracker - None
+Feature Tracker - None
 
-Problem description
--------------------
-
-*Problem Definition*
-++++++++++++++++++++
+Problem Overview
+----------------
 
 In order to support certain Enterprise Business Requirements, OpenStack must
 be able to provision bare metal machines in a secure, multi-tenant, and
@@ -57,83 +54,91 @@ To support these use cases, we need:
    network (VXLAN), and Console.
 
 Opportunity/Justification
-+++++++++++++++++++++++++
+-------------------------
 
 Cloud service providers want to support bare metal machine, but it is a tough
 challenge to provide IaaS access to bare metal with the same elastic and
 service-oriented properties as they do with virtual machines.
 
-Requirements Specification
---------------------------
+Requirement Specification
+-------------------------
 
 Use Cases
 +++++++++
 
-* BMT001 - As an Enterprise user, I want to use bare metal machine so that I
-  get consistent performance not affected by another machine, nor impacted
-  by hypervisor.
+This section utilizes the `OpenStack UX Personas`_.
 
-* BMT002 - As an Enterprise user, I want to have a secure and clean bare
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Quinn the application developer: https://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/app-developer.html
+
+*The best-matching persona seems to be `Quinn the application developer`_ at the time this proposal
+is created.*
+
+* BMT001 - As `Quinn the application developer`_, I want to use bare metal machine so that I
+  get consistent performance not affected by another machine, nor impacted by
+  hypervisor.
+
+* BMT002 - As Quinn, I want to have a secure and clean bare
   metal machine deployed no matter who used it before.
 
-* BMT003 - As an Enterprise user, I want to create networks elastically so
+* BMT003 - As Quinn, I want to create networks elastically so
   that I can use network like I have these networks not affected by other
   companies.
 
-* BMT004 - As an Enterprise user, I want to back up internal disk of bare
+* BMT004 - As Quinn, I want to back up internal disk of bare
   metal and create a snapshot. This can be backed up to an external storage
   managed by Cinder.
 
-* BMT005 - As an Enterprise user, I want to use bare metal machine
-  integrated with block storage service so that I can use external
-  storage service.
+* BMT005 - As Quinn, I want to use bare metal machine integrated
+  with block storage service so that I can use external storage service.
 
-* BMT006 - As an Enterprise user, I want to see bare metal machine from
+* BMT006 - As Quinn, I want to see bare metal machine from
   console log and operate from console so that I can analyze problems at
   booting time and so on.
 
-* BMT007 - As an Enterprise user, I want to continue my operation
-  immediately when a bare metal machine fails without any manual
-  operations such as switchover. Similar to HA VM user story, The user
-  should not have to design the fail-over mechanism themselves. The system
-  should monitor and detect bare metal machine failure and automatically
-  fail-over to a spare bare metal machine.
+* BMT007 - As Quinn, I want to continue my operation immediately
+  when a bare metal machine fails without any manual operations such as
+  switchover. Similar to HA VM user story, The owner should not have to design
+  the fail-over mechanism themselves. The system should monitor and detect
+  bare metal machine failure and automatically fail-over to a spare bare metal
+  machine.
 
-* BMT008 - As an Enterprise user, I want to use a bare metal machine with
-  the network services such as FWaaS, LBaaS, Security Group, VPNaaS, and
+* BMT008 - As Quinn, I want to use a bare metal machine with the
+  network services such as FWaaS, LBaaS, Security Group, VPNaaS, and
   connection to VMs in virtual network(VXLAN) in the same manner of VMs.
 
 Usage Scenario Examples
 +++++++++++++++++++++++
 
 1.Successful bare metal service
-  a. Enterprise user creates virtual network.
-  b. Enterprise user boots bare metal machine.
-  c. Enterprise user uses block storage from bare metal machine.
-  d. Enterprise user uses bare metal machine with consistent performance.
+  a. Quinn creates virtual network.
+  b. Quinn boots bare metal machine.
+  c. Quinn uses block storage from bare metal machine.
+  d. Quinn uses bare metal machine with consistent performance.
 
 2.Analyze bare metal machine rebooting problem
-  a. Enterprise user can't connect to bare metal machine remotely when rebooting.
-  b. Enterprise user can see state of bare metal machine from console log.
-  c. Enterprise user analyzes boot problem and resolved the issue.
-  d. Enterprise user can boot successfully.
+  a. Quinn can't connect to bare metal machine remotely when
+     rebooting.
+  b. Quinn can see state of bare metal machine from console log.
+  c. Quinn analyzes boot problem and resolved the issue.
+  d. Quinn can boot successfully.
 
 3.Bare metal machine data protection
-  a. Enterprise user backs up data in bare metal machine.
-  b. Enterprise user restore from data backed up.
+  a. Quinn backs up data in bare metal machine.
+  b. Quinn restore from data backed up.
 
-Related User Stories
-++++++++++++++++++++
+Related Development Proposals
+++++++++++++++++++++++++++++++
 
 * `High Availability for Virtual Machines <https://review.openstack.org/#/c/289469/>`_
 
-*Requirements*
-++++++++++++++
+Requirements
+++++++++++++
 
-None.
+N/A.
 
-*External References*
-+++++++++++++++++++++
+External References
++++++++++++++++++++
 
 * `[RFE] [Ironic] Ironic Neutron ML2 Integration <https://bugs.launchpad.net/ironic/+bug/1526403>`_
 * `[SPEC] [Ironic] Update of the Ironic Neutron Integration spec <https://review.openstack.org/#/c/188528/>`_
@@ -153,12 +158,12 @@ None.
 * `[RFE] [Ironic] Bare metal node N+1 redundancy <https://bugs.launchpad.net/ironic/+bug/1526234>`_
 * `[SPEC] [Ironic] Bare metal node N+1 redundancy <https://review.openstack.org/#/c/259320>`_
 
-*Rejected User Stories / Usage Scenarios*
------------------------------------------
+Rejected Proposals
+------------------
 
-None.
+N/A.
 
 Glossary
 --------
 
-TBD.
+N/A.
