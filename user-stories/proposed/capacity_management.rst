@@ -16,11 +16,29 @@ and to release them when the need ends. By supporting a large number of users,
 pooling resources, and maintaining some excess capacity, the cloud service provider
 (CSP) presents the illusion of infinite capacity.
 
-In practice, of course, the resources are not infinite, and the CSP must institute measures to manage capacity so that resource exhaustion is minimized. This is generally done by imposing a cap or quota on the resources that a particular project may consume, and by managing the relationship between the available physical resources and the aggregate quotas for all projects. When a project requires more resources than its assigned quota, the user is generally required to submit a request, generally requiring human approval. The CSP may reject the request, or delay it until sufficient capacity is available. When the request is approved, the quota for the project is modified to reflect the new limit.
+In practice, of course, the resources are not infinite, and the CSP must
+institute measures to manage capacity so that resource exhaustion is minimized.
+This is generally done by imposing a cap or quota on the resources that a
+particular project may consume, and by managing the relationship between the
+available physical resources and the aggregate quotas for all projects. When a
+project requires more resources than its assigned quota, the user is generally
+required to submit a request, generally requiring human approval. The CSP may
+reject the request, or delay it until sufficient capacity is available. When
+the request is approved, the quota for the project is modified to reflect the
+new limit.
 
-Other CSPs have introduced a number of mechanisms to provide them with flexibility in managing capacity. These include group quotas (shared by related projects), reserved instances, ephemeral instances (which may be reclaimed for reallocation), and market-based allocation models. At the present time, OpenStack does not support any of these.
+Other CSPs have introduced a number of mechanisms to provide them with
+flexibility in managing capacity. These include group quotas (shared by related
+projects), reserved instances, ephemeral instances (which may be reclaimed for
+reallocation), and market-based allocation models. At the present time,
+OpenStack does not support any of these.
 
-One common factor in all these processes is that they do not reflect temporal variations in resource usage. Yet in many cases the user knows how their usage is going to vary over time, and such information would be useful to the CSP who needs to decide how to handle each request. It might also facilitate the automation of some of the processing. The following user stories capture the possibilities here.
+One common factor in all these processes is that they do not reflect temporal
+variations in resource usage. Yet in many cases the user knows how their usage
+is going to vary over time, and such information would be useful to the CSP who
+needs to decide how to handle each request. It might also facilitate the
+automation of some of the processing. The following user stories capture the
+possibilities here.
 
 This user story is also applicable to Telcos / TSP (Telecommunication Service
 Providers) users. There is movement in the industry toward NFV (Network
@@ -42,7 +60,16 @@ Opportunity/Justification
 .. segments, workloads, user bases, etc. and any associated data.  Please replace
 .. "None." with the appropriate data.
 
-None.
+CSP and TSP need to be able to efficiently manage and utilize the finite amount
+of resources including their temporal characteristics. Current OpenStack
+services do not allow for such flexible resource usage requests and scheduling
+of resources for future usage. In particular:
+
+* For high priority VNFs (e.g. mobile core network nodes) the TSP requires a
+  guarantee on the availability of the resources to run the VNFs in different
+  operational timing (e.g. in future) and scenarios.
+
+.. * Further examples may be added by other stakeholders.
 
 Use Cases
 ---------
@@ -138,7 +165,9 @@ Related User Stories
 .. that you perceive may partially share requirements or a solution, reference them
 .. here.
 
-This Use Case is related to the Infinite Elasticity use case. The latter focuses on testing the capability of an OpenStack cloud to handle large-scale capacity requests.
+This Use Case is related to the Infinite Elasticity use case. The latter focuses
+on testing the capability of an OpenStack cloud to handle large-scale capacity
+requests.
 
 *Requirements*
 ++++++++++++++
@@ -157,8 +186,12 @@ This Use Case is related to the Infinite Elasticity use case. The latter focuses
 .. * 2nd Requirement
 .. * [...]
 
-* The implementation of these capabilities will depend in part on the existence of a more flexible and holistic quota scheme, so that the capacity management system can adjust quotas programmatically.
-* It will also require a rich monitoring, notification, and visualization system, so that both user and CSP have accurate and timely data about the behavior of the system.
+* The implementation of these capabilities will depend in part on the existence
+  of a more flexible and holistic quota scheme, so that the capacity management
+  system can adjust quotas programmatically.
+* It will also require a rich monitoring, notification, and visualization
+  system, so that both user and CSP have accurate and timely data about the
+  behavior of the system.
 
 *External References*
 +++++++++++++++++++++
@@ -205,5 +238,6 @@ Glossary
 
 * **RUR** - Resource Usage Request
 * **CSP** - Cloud service provider
-* **VNFD** - Virtual Network Function (VNF) Descriptor describes resource requirements for VNFs
+* **VNFD** - Virtual Network Function (VNF) Descriptor describes resource
+  requirements for VNFs
 
