@@ -129,7 +129,82 @@ Usage Scenarios Examples
 .. 1. Usage Scenario Title a. 1st Step b. 2nd Step 2. Usage Scenario Title a. 1st
 .. Step b. 2nd Step 3. [...]
 
-TBD
+1. Reserve resources for upcoming events
+   a. `Wei the project owner of a Telco operator`_ is in charge of network
+      planning for big events, like mega-concerts and festival, where local
+      traffic spikes are expected.
+   b. In order to ensure sufficient network capacity for the upcoming Fuji Rock
+      Festival on 22-24 July 2017, Wei reserves additional capacity by creating
+      a request which describes the size of VNFs to be scaled for the
+      aforementioned dates.
+   c. The system then translates this data to the number and size of the
+      additional virtual instances that are required to allow the VNFs to scale
+      out, which is 4 instances with 1 vCPU, 1GB of RAM, 10GB of disk, and a
+      guaranteed minimum bandwidth of 1Gbps between the instances.
+   d. After having successfully created a corresponding RUR, the system
+      acknowledges to Wei that the requested scale operation for the event dates
+      is possible and appropriate resource is reserved.
+
+2. Reserve resources for maintenance works
+   a. Wei is responsible for updating VNFs and `Rey the cloud operator`_ is
+      responsible for maintaining the underlying cloud environment including its
+      hardware. Now, the team plans a maintenance window for several hosts on next
+      Monday.
+   b. To avoid impact on the service, Wei plans to migrate all VNFs running on
+      those hosts to other hosts that are not affected by the maintenance work
+      on Sunday, i.e., a day before the maintenance window.
+   c. In order to ensure that those other hosts are available from Sunday to the
+      end of the maintenance window, Wei reserves the required resources through
+      his frontend tools.
+   d. In the backend, the system creates respective RURs for this time window to
+      guarantee the availability of the resources and the system returns a
+      reservation ID to Wei.
+   e. On Sunday, Wei triggers the migration of the affected VNFs referring to
+      the reservation ID. Rey then triggers the maintenance work on the cloud.
+      The work can be finished earlier than expected and after having migrated
+      back the VNFs, Wei can release the reservation ahead of the planned
+      reservation end time.
+
+3. Reserve resources for disaster recovery
+   a. Wei is in charge of ensuring core services are running in disaster cases.
+      In order to be able to immediately react to a disaster situation, the
+      network maintains a disaster configuration for its core services and keeps
+      respective resources reserved for such situations.
+   b. Just now, an earthquake has hit the country and an automated tsunami
+      warning was issued by the government. Wei has a short time window to
+      prepare for the tsunami hitting the coastlines and its effects, e.g. a
+      high volume of extraordinary communication such as emergency
+      communication, evacuation instructions, and safety confirmations.
+   c. Wei switches the network to a pre-configured disaster configuration,
+      where, e.g., VNFs for basic communication needs are prioritized over other
+      low priority services. Switching to the disaster configuration is
+      supported by resources that had been exclusively reserved for such
+      situations.
+   d. On his monitors, Wei can already clearly see the increase of voice calls
+      and SMS.
+   e. Thirty minutes after the warning, the tsunami hits the coastline.
+      Fortunately, it is less heavy than anticipated. Still, some base stations
+      got damaged and Wei reconfigures some nearby intact base stations to
+      extend their service area and cover most of the areas of the failed base
+      stations. Communication in the network is still high from people calling
+      their relatives and also Wei picks up his phone to check on the safety of
+      his family.
+
+4. Reserve resources for launching new services
+   a. Wei is in charge of introducing a new service that has complex requirements
+      on the NFVI. In order to avoid the risk that one requirement during the
+      allocation of the resources cannot be met and the allocation of resources
+      has to be rolled back or be changed to meet the requirements, Wei first
+      creates a reservation for the required resources specifying in the request
+      also all parameters and conditions the resources have to fulfil.
+   b. The reservation service tries to reserve the resources with the specified
+      criteria. After having successfully created the reservation, a reservation
+      ID is returned to Wei.
+   c. Wei then triggers the setup of the service referencing the reservation ID
+      knowing that all resource requirements can be met. The new service is
+      initialized without conflicts.
+
+.. _Rey the cloud operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html
 
 Related User Stories
 ++++++++++++++++++++
