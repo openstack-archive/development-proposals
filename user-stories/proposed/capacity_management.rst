@@ -60,58 +60,72 @@ User Stories
 
 .. * As a <type of user>, I want to <goal> so that <benefit>
 
-* As an OpenStack user, I want to specify my resource usage request (RUR) in a way that
-  will enable automated processing by the CSP, so that my RUR will be handled more
-  quickly and accurately.
+This section utilizes the `OpenStack UX Personas`_.
 
-* As a CSP I want to be able to automate the processing of RURs so that I can meet
-  my user SLAs and gain more timely and accurate data input to my capacity management
-  and planning systems.
+* As `Wei the project owner of a Telco operator`, I want to specify my resource
+  usage request (RUR) in a way that will enable automated processing by the CSP,
+  so that my RUR will be handled more quickly and accurately.
 
-* As a user, I want to be able to describe the temporal characteristics of my RUR,
-  so that the CSP can plan capacity more accurately and reduce the chances
-  of a resource request failure. My CSP may also offer me better pricing for more
+* As `Adrian the infrastructure architect`, I want to be able to automate the
+  processing of RURs so that I can meet my user SLAs and gain more timely and
+  accurate data input to my capacity management and planning systems.
+
+* As Wei, I want to be able to describe the temporal characteristics of my RUR,
+  so that the CSP can plan capacity more accurately and reduce the chances of a
+  resource request failure. My CSP may also offer me better pricing for more
   accurate usage prediction. Some examples of time-based RURs:
 
   a. I plan to use up to 60 vCPUs and 240GB of RAM from 6/1/2016 to 8/14/2016.
-  b. I plan to use 200GB of object storage starting on 8/14/2016, increasing by 100GB every calendar month thereafter.
+  b. I plan to use 200GB of object storage starting on 8/14/2016, increasing by
+     100GB every calendar month thereafter.
   c. I want guaranteed access to 30 vCPUs and 200GB of RAM for my project.
-     In addition, during October-December, I want to be able to increase my usage
-     to 150 vCPUs and 1TB of RAM.
+     In addition, during October-December, I want to be able to increase my
+     usage to 150 vCPUs and 1TB of RAM.
   d. I want guaranteed access to 4 instances with 1 vCPU and 1GB of RAM and 10GB
      of disk and a guaranteed minimum bandwidth of 1Gbps between the instances.
      This example is similar to what would be described in the VNFD.
 
-* As a user, I want to be able to submit an updated version of a rolling RUR for my project every month, so that my CSP has accurate information and can give me the best price and SLA.
+* As Wei, I want to be able to submit an updated version of a rolling RUR for my
+  project every month, so that my CSP has accurate information and can give me
+  the best price and SLA.
 
-* As a user, I want to be able to take advantage of pricing and other offers from my CSP in order to meet the business objectives for my project. For example:
+* As Wei, I want to be able to take advantage of pricing and other offers from
+  my CSP in order to meet the business objectives for my project. For example:
 
-  a. I want 60 vCPUs for a minimum of one hour. After that time, the CSP may shut down all my instances if the resources are needed elsewhere. (I assume that the price is lower on such instances.)
+  a. I want 60 vCPUs for a minimum of one hour. After that time, the CSP may
+     shut down all my instances if the resources are needed elsewhere. (I assume
+     that the price is lower on such instances.)
   b. I want up to 100 vCPUs for the next 24 hours. Tell me how many I can have.
 
-* As a CSP, I want to be able to automate the construction and interpretation of a time-based resource usage plan so that I can schedule the most cost-effective actions to maintain my SLA. Some examples of actions:
+* As Adrian, I want to be able to automate the construction and interpretation
+  of a time-based resource usage plan so that I can schedule the most
+  cost-effective actions to maintain my SLA. Some examples of actions:
 
   a. Schedule the provisioning of additional infrastructure.
   b. Repurpose existing allocated infrastructure.
-  c. Assign a new project to one of a number of regions based on usage projections.
+  c. Assign a new project to one of a number of regions based on usage
+     projections.
   d. Add “burst capacity” from a federation partner or reseller.
   e. Modify or defer another project.
 
-* As a user, I want to be able to query/update/terminate a RUR at any point in time.
+* As Wei, I want to be able to query/update/terminate a RUR at any point in
+  time.
 
-* As a user, I want to receive an appropriate error message in case the a RUR
-  is not successful. In case of a failure of RUR I want the environment to be
+* As Wei, I want to receive an appropriate error message in case the a RUR is
+  not successful. In case of a failure of RUR I want the environment to be
   reverted back to pre-RUR state.
-  In other words, RUR transaction should be Atomic. In case of RUR
-  failure, the error message should contain sufficient information such that user
-  can take actions to modify the RUR.
+  In other words, RUR transaction should be Atomic. In case of RUR failure, the
+  error message should contain sufficient information such that user can take
+  actions to modify the RUR.
 
-* As a CSP, I want to be able to automate the RUR with chargeback
-  so only users with following requirements are considered for resources:
+* As Adrian, I want to be able to automate the RUR with chargeback so only users
+  with following requirements are considered for resources:
 
   a. whose account is up to date on payments
   b. whose RUR is within a quota
   c. whose cost of RUR plus current balance is below project/tenant threshold
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
