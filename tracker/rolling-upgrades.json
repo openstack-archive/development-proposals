@@ -1,21 +1,23 @@
 {
     "id": "00001",
-    "date": "2016-02-29",
+    "date": "2017-01-10",
     "description": "Rolling Upgrades",
     "source": "https://github.com/openstack/openstack-user-stories/tree/master/user-stories/proposed/rolling-upgrades.rst",
     "status": "In Progress",
     "tasks": [
-        "",
-        ""
+      "maintenanceMode",
+      "versionedObjects",
+      "onlineSchemaMigrations",
+      "rollingUpgradesTag",
+      "upgradeGating"
     ],
     "tasks_status": {
-        "": {
+        "maintenanceMode": {
             "cross-project spec": "",
             "gerrit-topic": "",
             "xp_status": "",
             "projects": [
-                "",
-                ""
+                "nova", "cinder", "neutron","magnum", "ironic"
             ],
             "projects_status": {
                 "": {
@@ -24,6 +26,119 @@
                     },
                     "spec": "",
                     "spec_status": ""
+                }
+            }
+        },
+        "versionedObjects": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "",
+            "projects": [
+                "nova","cinder","neutron"
+            ],
+            "projects_status": {
+                "nova": {
+                    "spec": "http://specs.openstack.org/openstack/nova-specs/specs/liberty/implemented/service-version-number.html",
+                    "spec_status": "Complete"
+                },
+                "neutron": {
+                    "blueprints": {
+                        "adopt-oslo-versioned-objects-for-db": "started"
+                    }
+                },
+                "cinder": {
+                    "spec": "http://specs.openstack.org/openstack/cinder-specs/specs/liberty/rpc-object-compatibility.html",
+                    "spec_status": "Complete"
+                },
+                "heat": {
+                    "spec": "http://specs.openstack.org/openstack/heat-specs/specs/kilo/versioned-objects.html",
+                    "spec_status": "Complete"
+                }
+
+            }
+        },
+        "onlineSchemaMigrations": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "",
+            "projects": [
+                "keystone","glance","neutron"
+            ],
+            "projects_status": {
+                "keystone": {
+                    "spec": "http://specs.openstack.org/openstack/keystone-specs/specs/keystone/backlog/alembic.html",
+                    "spec_status": "Complete"
+                },
+                "glance": {
+                      "spec": "http://specs.openstack.org/openstack/glance-specs/specs/ocata/approved/glance/alembic-migrations.html",
+                      "spec_status": "In Progress"
+                },
+                "neutron": {
+                      "spec": "http://specs.openstack.org/openstack/neutron-specs/specs/ocata/no-downtime-server-upgrade.html",
+                      "spec_status": "In Progress"
+                },
+                "nova": {
+                      "spec": "http://specs.openstack.org/openstack/nova-specs/specs/liberty/implemented/online-schema-changes.html",
+                      "spec_status": "Complete"
+                },
+                "cinder": {
+                      "spec": "http://specs.openstack.org/openstack/cinder-specs/specs/mitaka/online-schema-upgrades.html",
+                      "spec_status": "Complete"
+                }
+
+
+            }
+        },
+        "rollingUpgradesTag": {
+            "cross-project spec": "https://governance.openstack.org/tc/reference/tags/assert_supports-rolling-upgrade.html",
+            "gerrit-topic": "Not Applicable",
+            "xp_status": "In Progress",
+            "projects": [
+                "nova","glance","neutron","cinder", "swift", "keystone",
+                "ironic"
+            ],
+            "projects_status": {
+                "nova": {
+                    "spec": "",
+                    "spec_status": "Complete"
+                },
+                "glance": {
+                    "spec": "http://specs.openstack.org/openstack/glance-specs/specs/ocata/approved/glance/rolling-upgrades.html",
+                    "spec_status": "In Progress"
+                },
+                "neutron": {
+                    "spec": "",
+                    "spec_status": "Complete"
+                },
+                "cinder": {
+                    "spec": "",
+                    "spec_status": "Complete"
+                },
+                "swift": {
+                    "spec": "",
+                    "spec_status": "Complete"
+                },
+                "keystone": {
+                    "spec": "",
+                    "spec_status": "In Progress"
+                },
+                "ironic": {
+                    "spec": "http://specs.openstack.org/openstack/ironic-specs/specs/not-implemented/support-rolling-upgrade.html",
+                    "spec_status": "In Progress"
+                }
+            }
+        },
+        "upgradeGating": {
+          "cross-project spec": "",
+          "gerrit-topic": "",
+          "xp_status": "",
+          "projects": [
+              "heat"
+          ],
+          "projects_status": {
+                "heat": {
+                    "spec": "http://specs.openstack.org/openstack/heat-specs/specs/liberty/upgrade-tests.html",
+                    "spec_status": "Complete"
                 }
             }
         }
