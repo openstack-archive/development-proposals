@@ -1,0 +1,11 @@
+Code-Review+1: arkady kanevsky <arkady_kanevsky@dell.com>
+Code-Review+2: Rochelle Grober <rochelle.grober@huawei.com>
+Code-Review+1: Gerald Kunzmann <kunzmann@docomolab-euro.com>
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Workflow+1: Ken Johnston <kenny@kencjohnston.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Tue, 10 Jan 2017 20:52:52 +0000
+Reviewed-on: https://review.openstack.org/407301
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
