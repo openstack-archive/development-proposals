@@ -1,0 +1,10 @@
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Code-Review+1: Gerald Kunzmann <kunzmann@docomolab-euro.com>
+Workflow+1: Yih Leong Sun <yihleong@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Tue, 10 Jan 2017 17:00:20 +0000
+Reviewed-on: https://review.openstack.org/416839
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
