@@ -1,0 +1,46 @@
+{
+    "id": "00002",
+    "date": "2017-01-10",
+    "description": "Categorized Configs",
+    "source": "https://github.com/openstack/openstack-user-stories/tree/master/user-stories/proposed/categorized-configs.rst",
+    "status": "In Progress",
+    "tasks": [
+        "osloCategories",
+        "projectAdoption"
+    ],
+    "tasks_status": {
+      "osloCategories": {
+          "cross-project spec": "",
+          "gerrit-topic": "",
+          "xp_status": "",
+          "projects": [
+              "",
+              ""
+          ],
+          "projects_status": {
+              "": {
+                  "blueprints": {
+                      "$bp_name": "$bp_status"
+                  },
+                  "spec": "",
+                  "spec_status": ""
+              }
+          }
+      },
+      "projectAdoption": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "In Progress",
+            "projects": [
+                "nova",
+                ""
+            ],
+            "projects_status": {
+                "nova": {
+                    "spec": "http://specs.openstack.org/openstack/nova-specs/specs/mitaka/implemented/centralize-config-options.html",
+                    "spec_status": "Complete"
+                }
+            }
+        }
+    }
+}
