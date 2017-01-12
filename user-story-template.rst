@@ -61,10 +61,13 @@ User Stories
 .. separate submission for each group of user stories.  Please replace "None." with
 .. the appropriate data.
 
-.. A list of user stories targetted at OpenStack UX Personas, ideally in this
+.. Please provide a unique three character reference and three digit number for
+.. each user story
+
+.. A list of user stories targeted at OpenStack UX Personas, ideally in this
 .. or a similar format:
 
-.. * As `<type of user>`_, I want to <goal> so that <benefit>
+.. * XXX### As `<type of user>`_, I want to <goal> so that <benefit>
 
 This section utilizes the `OpenStack UX Personas`_.
 
@@ -91,6 +94,22 @@ Usage Scenario Examples
 
 None.
 
+Acceptance Criteria
++++++++++++++++++++
+.. This section is mandatory
+.. In order to define completed implementation of a user story, provide
+.. detailed definitions of acceptance criteria for these stories. This should
+.. include where applicable the specific project set appropriate, the user
+.. focused experience and in some cases references to types of specific
+.. artifacts.
+
+.. Please reference the user stories by three character and three number
+.. references defined above.
+
+.. Ex. ABC123 - All Interop Projects obtain tag "FOO"
+
+None.
+
 Related User Stories
 ++++++++++++++++++++
 .. This section is mandatory.
@@ -107,8 +126,8 @@ None.
 .. apparent through the user story and usage examples.  This information will help
 .. the development be aware of any additional known constraints that need to be met
 .. for adoption of the newly implemented features/functionality.  Use this section
-.. to define tahe functions that must be available or any specific technical
-.. requirementsthat exist in order to successfully support your use case. If there
+.. to define the functions that must be available or any specific technical
+.. requirements that exist in order to successfully support your use case. If there
 .. are requirements that are external to OpenStack, note them as such. Please
 .. always add a comprehensible description to ensure that people understand your
 .. need.
