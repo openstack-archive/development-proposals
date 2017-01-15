@@ -1,0 +1,12 @@
+Code-Review-1: Rochelle Grober <rochelle.grober@huawei.com>
+Code-Review-1: Carol Barrett <carol.l.barrett@intel.com>
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Code-Review+1: arkady kanevsky <arkady_kanevsky@dell.com>
+Code-Review+2: Shamail Tahir <ItzShamail@gmail.com>
+Workflow+1: Shamail Tahir <ItzShamail@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Sun, 15 Jan 2017 22:29:16 +0000
+Reviewed-on: https://review.openstack.org/407300
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
