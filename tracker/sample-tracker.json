@@ -1,55 +1,75 @@
 {
-  "id": "2016.01.01",
-  "date": "06-01-2016",
-  "description": "Rolling Upgrade Monitor",
-  "source": "https://github.com/openstack/openstack-user-stories/blob/master/user-stories/tracked/rolling-upgrades.rst",
-  "status": "in-progress",
-  "tasks": ["versionedObjects", "newCollector"],
-  "tasks_status": {
-    "versionedObjects": {
-      "cross-project spec": "https://github.com/openstack/openstack-specs/blob/master/specs/eventlet-best-practices.rst",
-      "gerrit-topic": "verobj-all",
-      "xp_status": "in-progress",
-      "projects": ["cinder","nova","tacker"],
-        "projects_status": {
-          "cinder": {
-            "blueprints": {
-	      "backup-snapshots": "in-progress",
-	      "nfs-snapshots": "in-progress"
-	    },
-            "spec": "https://github.com/openstack/cinder-specs/blob/master/specs/mitaka/backup-snapshots.rst",
-	    "spec_status":"completed"
-           },
-          "nova": {
-            "blueprints": {
-	      "na": "na"
-	    },
-	    "spec": "https://github.com/openstack/nova-specs/blob/master/specs/mitaka/approved/cells-db-connection-switching.rst",
-	    "spec_status":"na"
-            },
-          "tacker": {
-	    "blueprints": {
-	      "multi-site-vim": "in-progress"
-	    },
-	    "spec": "needed",
-	    "spec_status": "pending"
-	    },
-    "newCollector": {
-      "cross-project spec": "needed",
-      "gerrit-topic": "ru-newcollecter",
-      "xp_status": "pending",
-      "projects": ["ceilometer"],
-      "projects_status": {
-        "ceilometer": {
-          "blueprints": {
-	    "none": "pending"
-	  },
-          "spec": "needed",
-	  "spec_status": "pending"
+    "id": "0001",
+    "date": "23-03-2016",
+    "submitted_by": {
+        "name": "FirstName LastName",
+        "email": "email@domain.com"
+    },
+    "description": "Rolling Upgrades",
+    "source": "rolling-upgrades",
+    "status": "in-progress",
+    "tasks": [
+        "Versioned Objects",
+        "Online Schema Change"
+    ],
+    "tasks_status": {
+        "Versioned Objects": {
+            "cross-project spec": "chronicles-of-a-dlm",
+            "gerrit-topic": "tooz",
+            "xp_status": "in-progress",
+            "projects": [
+                "nova",
+                "cinder"
+            ],
+            "projects_status": {
+                "nova": {
+                    "blueprints": {
+                        "bp/service-version-number": "completed"
+                    },
+                    "spec": "http://specs.openstack.org/openstack/nova-specs/specs/liberty/implemented/service-version-number.html",
+                    "spec_status": "completed"
+                },
+                "cinder": {
+                    "blueprints": {
+                        "bp/cinder-object-fields": "completed"
+                    },
+                    "spec": "https://github.com/openstack/cinder-specs/blob/master/specs/kilo/cinder-objects.rst",
+                    "spec_status": "completed"
+                }
             }
+      },
+      "Online Schema Change": {
+          "cross-project spec": "no-downward-sql-migration",
+          "gerrit-topic": "online-schema-changes",
+          "xp_status": "in-progress",
+          "projects": [
+              "nova",
+              "cinder",
+              "keystone"
+          ],
+          "projects_status": {
+              "nova": {
+                  "blueprints": {
+                      "online-schema-changes": "completed"
+                  },
+                  "spec": "http://specs.openstack.org/openstack/nova-specs/specs/liberty/implemented/online-schema-changes.html",
+                  "spec_status": "completed"
+              },
+              "cinder": {
+                  "blueprints": {
+                      "bp/online-schema-upgrades": "completed"
+                  },
+                  "spec": "https://github.com/openstack/cinder-specs/blob/master/specs/kilo/cinder-objects.rst",
+                  "spec_status": "completed"
+              },
+              "keystone": {
+                  "blueprints": {
+                      "bp/online-schema-migration": "pending"
+                  },
+                  "spec": "http://specs.openstack.org/openstack/nova-specs/specs/liberty/implemented/online-schema-changes.html",
+                  "spec_status": "pending"
+              }
           }
-        }
       }
-    }
   }
 }
