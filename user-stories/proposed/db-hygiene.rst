@@ -52,7 +52,21 @@ User Cases
 
 User Stories
 ++++++++++++
-WIP
+This section utilizes the `OpenStack UX Personas`_.
+
+* As `Rey the Cloud Operator`_, I need an ability to remove records of
+  deleted objects from the database after storing those records for audit purposes.
+
+* As `Adrian the infrastructure architect`_, I need to be able to re-run the same tests
+  (with same objects) in a repeatable manner so that I can have a high certainty
+  in the outcome of my proof of concept and cloud functionality.
+
+* As Rey, I need only the appropriate records in my
+  database so that I can complete my upgrade in the allocated down time.
+
+.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
+.. _Adrian the infrastructure architect: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/infrastructure-arch.html
+.. _Rey the cloud operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html
 
 Usage Scenarios Examples
 ++++++++++++++++++++++++
@@ -61,21 +75,23 @@ WIP
 Related User Stories
 ++++++++++++++++++++
 Nova specs:
+
 * https://review.openstack.org/#/c/184645/
 * https://review.openstack.org/#/c/184637/
 * https://review.openstack.org/#/c/137669/
 
 Cinder blueprint:
+
 * https://blueprints.launchpad.net/cinder/+spec/db-cleanup
 
 Requirements
 ++++++++++++
 * Operator should be able to specify which policy to apply for deleted objects
 * Operator should be able to specify which policy to apply for different tenants
-and sub-tenants.
+  and sub-tenants.
 * At least two policies must be supported: Policy 1 - Archive the records in
-other persistent storage for a specific interval duration; Policy 2 - Remove
-the records from database permanently.
+  other persistent storage for a specific interval duration; Policy 2 - Remove
+  the records from database permanently.
 
 External References
 +++++++++++++++++++
