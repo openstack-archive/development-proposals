@@ -21,7 +21,7 @@ information tracked is who is implementing it, current progress, and `more <http
 
 Project Specifications
 ^^^^^^^^^^^^^^^^^^^^^^
-Some projects go a step futher with blueprints and ask for a set of information
+Some projects go a step further with blueprints and ask for a set of information
 up front to know whether a certain initiative is a good idea. This set of
 information can be technical information such as:
 
