@@ -43,8 +43,8 @@ and is actively considering open-sourcing parts of it, based on requests from
 its Private Cloud customers. The new Watcher project within OpenStack is also
 an attempt to address some aspects of this problem.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
 Use Cases
 +++++++++

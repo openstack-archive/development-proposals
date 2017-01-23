@@ -17,11 +17,11 @@ Opportunity/Justification
 +++++++++++++++++++++++++
 TBD.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 * As an Enterprise IT security policy maker, I need to ensure that all compute
   resources must adhere to the security policy as defined by the IT security
   department so that the cloud resources are compliant to enterprise rules and

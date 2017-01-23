@@ -39,11 +39,11 @@ Opportunity/Justification
 Many enterprise customers require highly available VMs in order to satisfy their
 workload SLAs. For example, this is a critical requirement for NTT customers.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 As a cloud operator, I would like to provide my users with highly available
 VMs to meet high SLA requirements. There are several types of failure

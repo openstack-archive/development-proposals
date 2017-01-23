@@ -37,11 +37,11 @@ OpenStackClient usability studies in both Austin and Barcelona that it took
 time to learn the command structure.  However, they were able to efficiently
 use the client once they became familiar with the structure.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-------------
+Use Cases
++++++++++
 These user stories utilize the standard `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I would like to quickly learn commands and

@@ -74,11 +74,11 @@ utilising a fast data plane or high scale SIP.  The use case focuses on those
 elements rather than more generic issues like orchestration and high
 availability (HA).
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 * As a communication service provider, I want to deploy a highly available,
   high scale, high performance Session Border Controller on OpenStack to police
@@ -257,4 +257,3 @@ Glossary
 **DPDK**
   Data Plane Development Kit - a set of libraries and drivers for fast packet
   processing.
-

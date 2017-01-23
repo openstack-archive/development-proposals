@@ -42,11 +42,11 @@ and each deployment. Currently operators are doing these extended tests
 by themselves and not collaborating and taking advantage of each other.
 
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 This section utilizes the `OpenStack UX Personas`_.
 
