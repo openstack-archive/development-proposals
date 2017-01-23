@@ -63,11 +63,11 @@ Cloud service providers want to support bare metal machine, but it is a tough
 challenge to provide IaaS access to bare metal with the same elastic and
 service-oriented properties as they do with virtual machines.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 * BMT001 - As an Enterprise user, I want to use bare metal machine so that I
   get consistent performance not affected by another machine, nor impacted

@@ -47,11 +47,11 @@ upgrade issues. This ensures that historical records of deleted items are not
 impacting operational performance and such deleted items are not polluted by
 upgrades.
 
-User Cases
-----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 WIP
 
 Usage Scenarios Examples

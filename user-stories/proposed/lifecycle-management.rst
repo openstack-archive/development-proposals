@@ -70,11 +70,11 @@ over resource sprawl.  A second benefit will be that clouds running at
 scale will operate more efficiently due to clean up older database
 records associated with instances.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 ..  This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are

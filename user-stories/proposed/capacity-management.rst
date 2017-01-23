@@ -71,11 +71,11 @@ of resources for future usage. In particular:
 
 .. * Further examples may be added by other stakeholders.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 ..  This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are
@@ -323,4 +323,3 @@ Glossary
 * **CSP** - Cloud service provider
 * **VNFD** - Virtual Network Function (VNF) Descriptor describes resource
   requirements for VNFs
-

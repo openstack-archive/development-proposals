@@ -40,11 +40,11 @@ their interoperability requirements. Configuration information requested is
 similar to the one that many benchmarking groups, like TPC and SPEC, provide
 with their results.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 * Private Cloud
 

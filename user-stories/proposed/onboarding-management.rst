@@ -76,11 +76,11 @@ OpenStack to manage new applications.
 Support for onboarding legacy environments in a non-disruptive manner
 will greatly increase the adoption of OpenStack.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 ..  This section is mandatory. You may submit multiple
 .. user stories in a single submission as long as they are inter-related and can be
 .. associated with a single epic and/or function.  If the user stories are
