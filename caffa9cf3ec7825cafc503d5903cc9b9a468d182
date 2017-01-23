@@ -1,0 +1,10 @@
+Code-Review+2: Ken Johnston <kenny@kencjohnston.com>
+Code-Review+1: arkady kanevsky <arkady_kanevsky@dell.com>
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Workflow+1: Yih Leong Sun <yihleong@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Mon, 23 Jan 2017 23:54:32 +0000
+Reviewed-on: https://review.openstack.org/423996
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
