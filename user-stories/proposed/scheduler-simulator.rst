@@ -22,11 +22,11 @@ This user story is valuable to cloud operators because it allows them to tune
 the scheduler without having to run the configurations in real world
 environments.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I want to be able to simulate my cloud's scheduler with

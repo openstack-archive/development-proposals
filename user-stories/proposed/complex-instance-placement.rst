@@ -67,11 +67,11 @@ applications which have some combination of:
 * Performance requirements that are met by packing related workloads; or
 * Resiliency requirements that are met by spreading related workloads
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 * As a communication service provider, I want to deploy a highly available
   IMS core as a Virtual Network Function running on OpenStack so that I meet my

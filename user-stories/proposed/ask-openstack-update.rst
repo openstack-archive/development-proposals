@@ -20,11 +20,11 @@ software. Even more so in free open-source projects. Having a simple place for
 operators to go to acquire the collective community knowledge on a given topic
 will significantly reduce the barrier to entry to utilizing OpenStack.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I want to be able to quickly find reliable

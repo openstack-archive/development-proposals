@@ -22,11 +22,11 @@ of the IT infrastructure for different people/positions in the organization.
 Enterprise security requires separate access UI/ API for Network, Security,
 Storage management, User Management, and Instance management.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 * As a cloud operator I want to enable my team to be able to see all Admin
   level alerts, but not to be able to change their status. That requires review
   and approval by the IT manager.

@@ -29,11 +29,11 @@ This is an inherently un-cloudy characteristic of the OpenStack platform.
 Fixing upgrades and updates would clear up many concerns which limit OpenStack
 adoption today.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Quinn the Application Developer`_, I want to experience a stable, regularly updated and

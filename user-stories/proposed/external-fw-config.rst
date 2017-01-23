@@ -21,11 +21,11 @@ Opportunity/Justification
 +++++++++++++++++++++++++
 None.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I want to be able to access a configuration description that I

@@ -32,11 +32,11 @@ Opportunity/Justification
 +++++++++++++++++++++++++
 None.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 * As the Enterprise IT Manager, I must ensure the appropriate security for the
   HR Department database containing employee records that services several
   applications. I would like to migrate the database into our company's
