@@ -47,11 +47,11 @@ upgrade issues. This ensures that historical records of deleted items are not
 impacting operational performance and such deleted items are not polluted by
 upgrades.
 
-User Cases
-----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I need an ability to remove records of
