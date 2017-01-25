@@ -122,7 +122,7 @@ Gaps
 **Nova issues:**
 
 * Usage of availability zone(AZ)/host aggregates to assign a vm to a placement
-  zone is feasable [Ref.1], but:
+  zone is feasible [Ref.1], but:
 
   * By default a physical host can be assigned to multiple host aggregates
   * It is up to the operator to ensure security using non OpenStack mechanisms
