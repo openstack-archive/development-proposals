@@ -192,7 +192,7 @@ Here is a real world description of this process:
   system management system. Cloud operator configures replaced HW to
   identical configuration of replaced HW.
 * Cloud operator returns resource to resolving system management
-* Resolving system returns physical resource from maintanence mode to
+* Resolving system returns physical resource from maintenance mode to
   operation one.
 * Resolving system returns physical resources to production pool
 
