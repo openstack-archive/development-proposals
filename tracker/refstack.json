@@ -1,0 +1,26 @@
+{
+    "id": "0001",
+    "date": "29-01-2017",
+    "submitted_by": {
+        "name": "Arkady Kanevsky",
+        "email": "arkady_kanevsky@dell.com"
+    },
+    "description": "RefStack Configuration",
+    "source": "refstack-config-info",
+    "status": "in-progress",
+    "tasks": [
+        "gap analysis"
+    ],
+    "tasks_status": {
+        "gap analysis": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "in-progress",
+            "projects": [
+                ""
+            ],
+            "projects_status": {
+            }
+        }
+  }
+}
