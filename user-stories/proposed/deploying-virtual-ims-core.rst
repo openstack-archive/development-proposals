@@ -49,11 +49,11 @@ issues involved in deploying in OpenStack any scalable Telco-grade control
 plane Virtual Network Function (VNF) deployed as a series of load-balanced
 stateless N+k pools.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 * As a communication service provider, I want to deploy a highly available,
   high scale, high performance virtual IMS core on OpenStack to provide my core

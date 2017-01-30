@@ -23,11 +23,11 @@ One of the largest barriers to adoption of OpenStack is perceived complexity.
 This surfaces in attempting to understand and properly set configurations
 on initial deployment, and again after upgrading.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I should be able to understand how to use a configuration

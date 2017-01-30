@@ -49,22 +49,22 @@ Opportunity/Justification
 
 None.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
-.. This section is mandatory. You may submit multiple
-.. user stories in a single submission as long as they are inter-related and can be
-.. associated with a single epic and/or function.  If the user stories are
-.. explaining goals that fall under different epics/themes then please complete a
-.. separate submission for each group of user stories.  Please replace "None." with
-.. the appropriate data.
+Use Cases
++++++++++
+.. This section is mandatory. You may submit multiple use cases in a single
+.. submission as long as they are inter-related and can be associated with a
+.. single epic and/or function.  If the use cases are explaining goals that
+.. fall under different epics/themes then please complete a separate submission
+.. for each group of use cases.  Please replace "None." with the appropriate
+.. data.
 
 .. Please provide a unique three character reference and three digit number for
-.. each user story
+.. each use case
 
-.. A list of user stories targeted at OpenStack UX Personas, ideally in this
+.. A list of use cases targeted at OpenStack UX Personas, ideally in this
 .. or a similar format:
 
 .. * XXX### As `<type of user>`_, I want to <goal> so that <benefit>
@@ -79,9 +79,9 @@ None.
 Usage Scenario Examples
 +++++++++++++++++++++++
 .. This section is mandatory.
-.. In order to explain your user stories, if possible, provide an example in the
+.. In order to explain your use cases, if possible, provide an example in the
 .. form of a scenario to show how the specified user type might interact with the
-.. user story and what they might expect.  An example of a usage scenario can be
+.. use case and what they might expect.  An example of a usage scenario can be
 .. found at http://agilemodeling.com/artifacts/usageScenario.htm of a currently
 .. implemented or documented planned solution.  Please replace "None." with the
 .. appropriate data.
@@ -103,7 +103,7 @@ Acceptance Criteria
 .. focused experience and in some cases references to types of specific
 .. artifacts.
 
-.. Please reference the user stories by three character and three number
+.. Please reference the use cases by three character and three number
 .. references defined above.
 
 .. Ex. ABC123 - All Interop Projects obtain tag "FOO"
@@ -123,7 +123,7 @@ None.
 ++++++++++++++
 .. This section is optional.  It might be useful to specify
 .. additional requirements that should be considered but may not be
-.. apparent through the user story and usage examples.  This information will help
+.. apparent through the use cases and usage examples.  This information will help
 .. the development be aware of any additional known constraints that need to be met
 .. for adoption of the newly implemented features/functionality.  Use this section
 .. to define the functions that must be available or any specific technical

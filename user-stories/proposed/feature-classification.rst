@@ -26,11 +26,11 @@ The configuration and use of OpenStack services can be simplified by:
 * documenting their completeness, maturity and documentation against specific
   configuration sets
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 This section utilizes the `OpenStack UX Personas`_.
 
 * As `Rey the Cloud Operator`_, I want to understand what features are complete,

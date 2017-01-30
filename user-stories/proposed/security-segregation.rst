@@ -31,11 +31,11 @@ Opportunity/Justification
 Separation of DMZ and MZ is a common requirement of VNFs to meet
 communication service provider security requirements.
 
-Use Cases
----------
+Requirements Specification
+--------------------------
 
-User Stories
-++++++++++++
+Use Cases
++++++++++
 
 Current Situation
 -----------------
