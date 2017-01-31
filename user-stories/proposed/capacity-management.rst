@@ -85,22 +85,22 @@ Use Cases
 
 .. A list of user stories ideally in this or a similar format:
 
-.. * As a <type of user>, I want to <goal> so that <benefit>
+.. * XXX### As a <type of user>, I want to <goal> so that <benefit>
 
 This section utilizes the `OpenStack UX Personas`_.
 
-* As `Wei the project owner of a Telco operator`_, I want to specify my resource
-  usage request (RUR) in a way that will enable automated processing by the CSP,
-  so that my RUR will be handled more quickly and accurately.
+* CRM001 As `Wei the project owner of a Telco operator`_, I want to specify my
+  resource usage request (RUR) in a way that will enable automated processing by
+  the CSP, so that my RUR will be handled more quickly and accurately.
 
-* As `Adrian the infrastructure architect`_, I want to be able to automate the
-  processing of RURs so that I can meet my user SLAs and gain more timely and
-  accurate data input to my capacity management and planning systems.
+* CRM002 As `Adrian the infrastructure architect`_, I want to be able to
+  automate the processing of RURs so that I can meet my user SLAs and gain more
+  timely and accurate data input to my capacity management and planning systems.
 
-* As Wei, I want to be able to describe the temporal characteristics of my RUR,
-  so that the CSP can plan capacity more accurately and reduce the chances of a
-  resource request failure. My CSP may also offer me better pricing for more
-  accurate usage prediction. Some examples of time-based RURs:
+* CRM003 As Wei, I want to be able to describe the temporal characteristics of
+  my RUR, so that the CSP can plan capacity more accurately and reduce the
+  chances of a resource request failure. My CSP may also offer me better pricing
+  for more accurate usage prediction. Some examples of time-based RURs:
 
   a. I plan to use up to 60 vCPUs and 240GB of RAM from 6/1/2016 to 8/14/2016.
   b. I plan to use 200GB of object storage starting on 8/14/2016, increasing by
@@ -112,21 +112,22 @@ This section utilizes the `OpenStack UX Personas`_.
      of disk and a guaranteed minimum bandwidth of 1Gbps between the instances.
      This example is similar to what would be described in the VNFD.
 
-* As Wei, I want to be able to submit an updated version of a rolling RUR for my
-  project every month, so that my CSP has accurate information and can give me
-  the best price and SLA.
+* CRM004 As Wei, I want to be able to submit an updated version of a rolling RUR
+  for my project every month, so that my CSP has accurate information and can
+  give me the best price and SLA.
 
-* As Wei, I want to be able to take advantage of pricing and other offers from
-  my CSP in order to meet the business objectives for my project. For example:
+* CRM005 As Wei, I want to be able to take advantage of pricing and other offers
+  from my CSP in order to meet the business objectives for my project.
+  For example:
 
   a. I want 60 vCPUs for a minimum of one hour. After that time, the CSP may
      shut down all my instances if the resources are needed elsewhere. (I assume
      that the price is lower on such instances.)
   b. I want up to 100 vCPUs for the next 24 hours. Tell me how many I can have.
 
-* As Adrian, I want to be able to automate the construction and interpretation
-  of a time-based resource usage plan so that I can schedule the most
-  cost-effective actions to maintain my SLA. Some examples of actions:
+* CRM006 As Adrian, I want to be able to automate the construction and
+  interpretation of a time-based resource usage plan so that I can schedule the
+  most cost-effective actions to maintain my SLA. Some examples of actions:
 
   a. Schedule the provisioning of additional infrastructure.
   b. Repurpose existing allocated infrastructure.
@@ -135,18 +136,18 @@ This section utilizes the `OpenStack UX Personas`_.
   d. Add “burst capacity” from a federation partner or reseller.
   e. Modify or defer another project.
 
-* As Wei, I want to be able to query/update/terminate a RUR at any point in
-  time.
+* CRM007 As Wei, I want to be able to query/update/terminate a RUR at any point
+  in time.
 
-* As Wei, I want to receive an appropriate error message in case the a RUR is
-  not successful. In case of a failure of RUR I want the environment to be
-  reverted back to pre-RUR state.
+* CRM008 As Wei, I want to receive an appropriate error message in case the a
+  RUR is not successful. In case of a failure of RUR I want the environment to
+  be reverted back to pre-RUR state.
   In other words, RUR transaction should be Atomic. In case of RUR failure, the
   error message should contain sufficient information such that user can take
   actions to modify the RUR.
 
-* As Adrian, I want to be able to automate the RUR with chargeback so only users
-  with following requirements are considered for resources:
+* CRM009 As Adrian, I want to be able to automate the RUR with chargeback so
+  only users with following requirements are considered for resources:
 
   a. whose account is up to date on payments
   b. whose RUR is within a quota
