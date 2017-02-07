@@ -30,7 +30,7 @@ tolerate failures of individual VMs, at scale it is too impractical and costly
 to have to manually recover every failure. Ideally this auto-recovery would be
 implemented in the application or PaaS layer, to maximise integration with the
 rest of the application. However even if a new feature implemented the
-OpenStack layer primarily targetted auto-recovery of pets, it could also serve
+OpenStack layer primarily targeted auto-recovery of pets, it could also serve
 as a cheap alternative for auto-recovery of cattle.
 
 Opportunity/Justification
