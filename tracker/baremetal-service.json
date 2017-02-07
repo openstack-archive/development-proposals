@@ -1,0 +1,89 @@
+{
+    "id": "0001",
+    "date": "06-02-2017",
+    "submitted_by": {
+        "name": "Yih Leong Sun",
+        "email": "yih.leong.sun@intel.com"
+    },
+    "description": "Baremetal Service",
+    "source": "https://github.com/openstack/openstack-user-stories/blob/master/user-stories/proposed/baremetal-service.rst",
+    "status": "in-progress",
+    "tasks": [
+        "ML2 Integration",
+        "Multiple Network For Bare Metal",
+        "Storage Service Integration",
+        "Console",
+        "NMI Injection",
+        "Graceful Shutdown",
+        "Unifid VM/BM Management"
+    ],
+    "tasks_status": {
+        "ML2 Integration": {
+            "cross-project spec": "",
+            "gerrit-topic": "",
+            "xp_status": "in-progress",
+            "projects": [
+                "ironic",
+                "nova"
+            ],
+            "projects_status": {
+                "ironic": {
+                    "blueprints": {
+                        "https://blueprints.launchpad.net/ironic/+spec/ironic-ml2-integration":"$bp_status"
+                    },
+                    "spec": "https://review.openstack.org/#/c/188528/",
+                    "spec_status": "completed"
+                },
+                "nova": {
+                    "blueprints": {
+                        "https://blueprints.launchpad.net/nova/+spec/ironic-networks-support":"$bp_status"
+                    },
+                    "spec":"https://review.openstack.org/#/c/237067",
+                    "spec_status": "completed"
+                }
+            }
+      },
+      "Multiple Network For Bare Metal": {
+          "cross-project spec": "",
+          "gerrit-topic": "",
+          "xp_status": "in-progress",
+          "projects": [
+              "ironic"
+          ],
+          "projects_status": {
+              "ironic": {
+                  "blueprints": {
+                      "https://bugs.launchpad.net/ironic/+bug/1543584":"in-progress"
+                  },
+                  "spec":"https://review.openstack.org/#/c/277853/10/specs/approved/VLAN-aware-baremetal-instances.rst",
+                  "spec_status": "in-progress"
+              }
+          }
+      },
+      "Storage Service Integration": {
+          "cross-project spec": "",
+          "gerrit-topic": "",
+          "xp_status": "in-progress",
+          "projects": [
+              "ironic"
+          ],
+          "project_status": {
+              "ironic": {
+                  "blueprints": {
+                      "https://bugs.launchpad.net/ironic/+bug/1526231":"in-progress"
+                  },
+                  "spec":"https://review.openstack.org/#/c/200496/",
+                  "spec_status": "in-progress"
+              }
+          }
+      },
+      "Console": {
+      },
+      "NMI Injection":{
+      },
+      "Graceful Shutdown":{
+      },
+      "Unified VM/BM Management": {
+      }
+  }
+}
