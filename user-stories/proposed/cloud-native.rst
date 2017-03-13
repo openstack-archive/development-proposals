@@ -1,21 +1,5 @@
-.. This template should be in ReSTructured text. Please do not delete any of
-.. the sections in this template.  If you have nothing to say for a whole
-.. section, just write: None.  For help with syntax, see
-.. http://sphinx-doc.org/rest.html You can also use an online RST editor at
-.. rst.ninjs.org to generate proper RST.
-
-
-The title of your use case
-==========================
-**Sections in** *italics* **are optional.**
-
-.. In order to propose submitting a User Story as a cross project spec replace
-.. 'Cross Project Spec - None' with 'Cross Project Spec - Ready for Submission'
-.. after this change is accepted and merged then submit the Cross Project Spec
-.. to the openstack/openstack-specs repository and replace 'Ready for
-.. Submission' with a link to the review, and after merger of the Cross Project
-.. spec with a link to the spec. Before proposing be sure to create and provide
-.. a link to the User Story Tracker
+Enabling cloud-native OpenStack deployment, operation and life-cycle management
+===============================================================================
 
 Cross Project Spec - None
 
@@ -26,155 +10,72 @@ Problem description
 
 *Problem Definition*
 ++++++++++++++++++++
-.. This section is optional.
-.. Please use it to provide additional details (if available) about your user story
-.. (if warranted) for further expansion for clarity.  A detailed description of the
-.. problem. This should include the types of functions that you expect to run on
-.. OpenStack and their interactions both with OpenStack and with external systems.
-.. Please replace "None." with the problem description if you plan to use this
-.. section.
-
-None.
+Enabling cloud-native OpenStack deployment, operation and life-cycle management introduces principles coming out of modern application architecture guidelines to guide application designers in separating out their applications to support running in a more granular and stateless manner conducive to distributed internet based computing. While OpenStack is inherently meant to support this style of application, in many original projects OpenStack was not designed following some of these principles. This user story is meant to assist in identifying, prioritizing and tracking areas of OpenStack to benefit from a redesign.
 
 Opportunity/Justification
 +++++++++++++++++++++++++
-.. This section is mandatory.
-.. Use this section to give opportunity details that support why
-.. pursuing these user stories would help address key barriers to adoption or
-.. operation.
-
-.. Some examples of information that might be included here are applicable market
-.. segments, workloads, user bases, etc. and any associated data.  Please replace
-.. "None." with the appropriate data.
-
-None.
-
+Scale the key business and technical functions enabled by our software to meet point in time demand. Scaling means designing the functions to operate in small and discrete units that can be instantiated in a manner which can increase and decrease in response to demand. This creates an efficient but operationally flexible and hands off product. 
 Requirements Specification
 --------------------------
 
 Use Cases
 +++++++++
-.. This section is mandatory. You may submit multiple use cases in a single
-.. submission as long as they are inter-related and can be associated with a
-.. single epic and/or function.  If the use cases are explaining goals that
-.. fall under different epics/themes then please complete a separate submission
-.. for each group of use cases.  Please replace "None." with the appropriate
-.. data.
 
-.. Please provide a unique three character reference and three digit number for
-.. each use case
 
-.. A list of use cases targeted at OpenStack UX Personas, ideally in this
-.. or a similar format:
+As Adrian - infrastructure architect I need to break out my Open Stack installation footprint to modularized / componentized workloads.  I need a shift from vertical scaling to horizontal scaling in elastic cloud environments supporting small clouds, very large and multi-clouds with a mixture of both.
 
-.. * XXX### As `<type of user>`_, I want to <goal> so that <benefit>
+As Rey - cloud operator, for the purposes of most quickly responding to business growth, need to move from single-threaded designs to multi-threaded designs. This removes single point of contention affinity so throughput can be spread across more resources (CPUs, racks, centers). With a multi-threaded design, the application can better utilize the virtual compute processing platform to achieve the best possible throughput.
 
-This section utilizes the `OpenStack UX Personas`_.
+As Adrian - infrastructure architect I need to show that OpenStack can multi-task across centers. Similar to application decomposition, databases should be partitioned to small stores that can be hosted and scaled independently. This can be done by partitioning traditional RDBMS (Relational Database) systems into multiple stores based on a logical business partitioning of the data, or by using newer NOSQL and cloud-scalable database solutions that auto-shard or auto-partition across servers. Provides ability to scale data horizontally rather than only vertically. This is needed to improves availability by reducing failure surface for data (failure occurs on one, not many partitions). It is needed to improve scalability by allowing parallelism across multiple compute and storage resources vs. vertical scaling through faster CPUs. It requires smaller code and memory footprint. It reduces I/O requirement impacts.
 
-None.
+As Quinn - application developer and Rey - cloud operator,as we don't know at the time the application is developed where various dependent projects will run (different servers or different centers), we need to reduce sensitivity to non-critical latency in app to app service calls to allow more flexible placement in cloud datacenters. (reduce co-location requirements). This will allow more flexibility in geographic location to align with currently available cloud capacity.
 
-.. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
-.. _<type of user>: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/<type_of_user>
+As Wei - project owner I need service level performance instrumentation and metrics around each service with automated alerting to capture deviations from expected service levels during migration and post migration to the cloud This ensures that software is performing at expected levels and provides the basis for autoscaling.
+
+As Rey - cloud operator, I need project level automated procedures to ensure the project reports and facilitates software currency (i.e. versions and patches maintained) including underlying cloud services and 3rd party software and tools (n,, n-1…) This facilitates improved portability and adaption to cloud deployments and standards and reduced security risk.
+
+As Quinn - application developer I need the OpenStack Control Plane to have automated service-discovery because new services are deployed dynamically on-demand as they are rolled out and not just on a 6 month tested release basis. This supports the continuous delivery of new control plan functionality without waiting and going through the full release testing and upgrade processes.
 
 Usage Scenario Examples
 +++++++++++++++++++++++
-.. This section is mandatory.
-.. In order to explain your use cases, if possible, provide an example in the
-.. form of a scenario to show how the specified user type might interact with the
-.. use case and what they might expect.  An example of a usage scenario can be
-.. found at http://agilemodeling.com/artifacts/usageScenario.htm of a currently
-.. implemented or documented planned solution.  Please replace "None." with the
-.. appropriate data.
 
-.. If you have multiple usage scenarios/examples (the more the merrier) you may
-.. want to use a numbered list with a title for each one, like the following:
 
-.. 1. Usage Scenario Title a. 1st Step b. 2nd Step 2. Usage Scenario Title a. 1st
-.. Step b. 2nd Step 3. [...]
+**Scenario 1** - Operator expands from 1 to multi-sites
+1. Management lets Adrian know that they need to expand cloud operations from the 1 initial site to 3 to support expanded business operations.
+2. Rey scans for and analyzes the current production projects for running components and versions and implements copies of the same in new sites though at an initially small footprint.
+3. Wei signs in and increases users base and thus expands into the new sites.
 
-None.
+**Scenario 2:** Operator needs to rollback after an upgrade
+1. Rey upgrades a project to a new version with improvements specified and needed by Quinn - Application Developer
+2. Once the upgrade is complete Wei notifies Rey that there is an issue with his workloads in the traditional and older tenants and needs the upgrade rolled back. These same issues are not seen by Quinn who is successfully using the new functions.
+3. Rey is able to drop and reinstantiate the previous version for Wei and leave the new function in place for Quinn.
+4. Wei monitors and is aware of any service level exceptions in the new sites.
+5 Rey monitors and expands underlying resources as the projects auto ramp up in terms of instances to meet demand.
 
 Acceptance Criteria
 +++++++++++++++++++
-.. This section is mandatory
-.. In order to define completed implementation of a user story, provide
-.. detailed definitions of acceptance criteria for these stories. This should
-.. include where applicable the specific project set appropriate, the user
-.. focused experience and in some cases references to types of specific
-.. artifacts.
-
-.. Please reference the use cases by three character and three number
-.. references defined above.
-
-.. Ex. ABC123 - All Interop Projects obtain tag "FOO"
-
-None.
+Cloud Infrastructure scales virtualized resources at the VM and container level based on triggers like CPU usage, memory utilization, disk space available and network bandwidth. Cloud Platform automatically detects and responds to elastic conditions defined by the developer. These conditions contemplate business or technical transactions, communications and indicators which are more complex than traditional infrastructure instrumentation.
 
 Related User Stories
 ++++++++++++++++++++
-.. This section is mandatory.
-.. If there are related user stories that have some overlap in the problem domain or
-.. that you perceive may partially share requirements or a solution, reference them
-.. here.
-
-None.
+Capacity Management
+Containerization of the Control Plane
 
 *Requirements*
 ++++++++++++++
-.. This section is optional.  It might be useful to specify
-.. additional requirements that should be considered but may not be
-.. apparent through the use cases and usage examples.  This information will help
-.. the development be aware of any additional known constraints that need to be met
-.. for adoption of the newly implemented features/functionality.  Use this section
-.. to define the functions that must be available or any specific technical
-.. requirements that exist in order to successfully support your use case. If there
-.. are requirements that are external to OpenStack, note them as such. Please
-.. always add a comprehensible description to ensure that people understand your
-.. need.
-
-.. * 1st Requirement
-.. * 2nd Requirement
-.. * [...]
 
 None.
 
 *External References*
 +++++++++++++++++++++
-.. This section is optional.
-.. Please use this section to add references for standards or well-defined
-.. mechanisms.  You can also use this section to reference existing functionality
-.. that fits your user story outside of OpenStack.  If any of your requirements
-.. specifically call for the implementation of a standard or protocol or other
-.. well-defined mechanism, use this section to list them.
 
 None.
 
 *Rejected User Stories / Usage Scenarios*
 -----------------------------------------
-.. This is optional
-.. Please fill out this section after a User Story has been submitted as a
-.. cross project spec to highlight any user stories deemed out of scope of the
-.. relevant cross project spec.
 
 None.
 
 Glossary
 --------
-.. This section is optional.
-.. It is highly suggested that you define any terms,
-.. abbreviations that are not   commonly used in order to ensure
-.. that your user story is understood properly.
-
-.. Provide a list of acronyms, their expansions, and what they actually mean in
-.. general language here. Define any terms that are specific to your problem
-.. domain. If there are devices, appliances, or software stacks that you expect to
-.. interact with OpenStack, list them here.
-
-.. Remember: OpenStack is used for a large number of deployments, and the better
-.. you communicate your user story, the more likely it is to be considered by the
-.. project teams and the product working group.
-
-.. Examples:
-.. **reST** reStructuredText is a simple markup language
-.. **TLA** Three-Letter Abbreviation is an abbreviation consisting of three letters
-.. **xyz** Another example abbreviation
+See definitions of Cloud Native Applications and Micro-services: https://blog.sysaid.com/entry/demystifying-the-latest-cloud-terminology-part-1/ 
