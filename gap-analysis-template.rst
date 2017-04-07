@@ -5,41 +5,38 @@
 .. rst.ninjs.org to generate proper RST.
 
 
-<Title of the user story> Gap and Overlap Analysis
-==================================================
-**Sections in** *italics* **are optional.**
+<Title of the Development Proposal> Gap and Overlap Analysis
+============================================================
+.. Provide a link to the approved Development Proposal that this
+.. gap and overlay analysis is referring to.
+.. URL to the Development Proposal is mandatory.
 
-.. Provide a link to the approved User Story that this gap and overlay analysis
-.. is referring to. URL to the User Story is mandatory.
+`Development Proposal - <url>`
 
-`User Story - <url>`
-
-*Primary contact*
------------------
-
-.. This section is optional.
+Primary contact
+---------------
 .. Please use it to list the primary contacts for the gap and overlap analysis.
-.. e.g. Name (Company, IRC: Name)
+.. e.g. Name (Company, IRC: <irc_handle>)
 
+Name (Company, IRC: <irc_handle>)
 
 Gap analysis
 ------------
-
 .. This section is mandatory.
 .. Use this section to list and describe the gaps and
 .. identify related bugs, blueprints and specs in OpenStack.
-.. For each use case and requirement of your user story there should be a
-.. description of the identified gap and, if available, links to related
-.. activities / documents / patches.
+.. For each use case and requirement of your Development Proposal,
+.. there should be a description of the identified gap and, if available,
+.. links to related activities / documents / patches.
 
 .. Please for each gap, if possible, clearly refer to the corresponding use
-.. case or requirement in the user story.
+.. case or requirement in the Development Proposal.
 
 .. You can create sub-sections to structure the gap analysis,
-.. e.g. distinguish between gaps on the "problem definition", gaps
-.. on the "user cases", or gaps on the "requirements" of your user story.
-.. In particular, you may want to make use of sub-sections if the gap analysis
-.. contains a long lists of gaps.
+.. e.g. distinguish between gaps on the "problem overview", gaps
+.. on the "user cases", or gaps on the "requirements" of your
+.. Development Proposal. In particular, you may want to make use of
+.. sub-sections if the gap analysis contains a long lists of gaps.
 
 .. Please see existing gap analysis for examples.
 
@@ -96,10 +93,9 @@ Gap analysis
 ..   * [blueprint] [Blazar] Update reserved resource capacity
 ..     `<https://blueprints.launchpad.net/blazar/+spec/update-reserved-capacity>`_
 
-None.
+Mandatory section. See rst comment in this doc.
 
 
 Appendix
-------------
-
+--------
 .. This section is optional.
