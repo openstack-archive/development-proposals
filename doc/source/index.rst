@@ -2,36 +2,32 @@
 
 Contents:
 
-=====================
-Workflow Documentation
-=====================
+===========================
+Development Proposal Status
+===========================
+
+For progress status, please refer Feature Tracker
+at http://featuretracker.openstack.org
+
+==================================
+Development Proposal Specification
+==================================
 
 .. toctree::
    :glob:
    :maxdepth: 1
 
-   workflow/*
+   development-proposals/proposed/*
 
-=================
-User Story Status
-=================
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-
-   status/*
-
-User Stories
-------------
-
-Proposed:
+================================
+Other Proposals In Draft/Pending
+================================
 
 .. toctree::
    :glob:
    :maxdepth: 1
 
-   user-stories/proposed/*
+   development-proposals/parking/*
 
 
 ==================
