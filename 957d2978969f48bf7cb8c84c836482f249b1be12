@@ -1,0 +1,9 @@
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Code-Review+2: Gerald Kunzmann <kunzmann@docomolab-euro.com>
+Workflow+1: arkady kanevsky <arkady_kanevsky@dell.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Tue, 11 Apr 2017 13:58:09 +0000
+Reviewed-on: https://review.openstack.org/454914
+Project: openstack/openstack-user-stories
+Branch: refs/heads/master
