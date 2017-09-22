@@ -1,0 +1,11 @@
+Code-Review+2: arkady kanevsky <arkady_kanevsky@dell.com>
+Code-Review+1: Hieu LE <hieulq@vn.fujitsu.com>
+Code-Review+2: Gerald Kunzmann <kunzmann@docomolab-euro.com>
+Code-Review+2: Yih Leong Sun <yihleong@gmail.com>
+Workflow+1: Yih Leong Sun <yihleong@gmail.com>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 22 Sep 2017 05:34:09 +0000
+Reviewed-on: https://review.openstack.org/411140
+Project: openstack/development-proposals
+Branch: refs/heads/master
