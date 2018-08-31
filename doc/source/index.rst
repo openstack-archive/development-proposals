@@ -1,13 +1,10 @@
-.. OpenStack User Stories documentation master file
-
 Contents:
 
 ===========================
 Development Proposal Status
 ===========================
 
-For progress status, please refer Feature Tracker
-at http://featuretracker.openstack.org
+.. include:: ../../README.rst
 
 ==================================
 Development Proposal Specification
@@ -29,6 +26,16 @@ Other Proposals In Draft/Pending
 
    development-proposals/parking/*
 
+
+========
+Workflow
+========
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   workflow/*
 
 ==================
 Indices and tables

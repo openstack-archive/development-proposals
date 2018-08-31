@@ -47,11 +47,13 @@ These user stories utilize the standard `OpenStack UX Personas`_.
 * As `Rey the Cloud Operator`_, I would like to quickly learn commands and
   structure associated with each project. In addition, I would like to have
   snippets for common use cases that I can modify for my own purposes.
+
 .. _Rey the Cloud Operator: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas/cloud-ops.html
 .. _OpenStack UX Personas: http://docs.openstack.org/contributor-guide/ux-ui-guidelines/ux-personas.html
 
 Usage Scenario Examples
 +++++++++++++++++++++++
+
 #. Rey has decided to explore the OpenStackClient (OSC) as an alternative to
    using the individual APIs
 #. Rey opens the OpenStack documentation page
@@ -75,6 +77,7 @@ None.
 
 *External References*
 +++++++++++++++++++++
+
 * `Operator OpenStackClient Validation Study (Barcelona 2016)`_
 * `Operator OpenStackClient Validation Study (Austin 2016)`_
 
