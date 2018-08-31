@@ -1,5 +1,6 @@
 Workflow
-=======
+========
+
 Where Feature/Improvements Come From
 ------------------------------------
 Feature or improvement ideas typically start from a few ways:
@@ -9,7 +10,8 @@ Feature or improvement ideas typically start from a few ways:
 * A patch within a project that's recognized as benefiting other projects.
 
 How to Propose Feature/Improvements in OpenStack
------------------------------------------------
+------------------------------------------------
+
 Blueprints
 ^^^^^^^^^^
 To formally propose a feature or improvement to an OpenStack project, you need
@@ -72,13 +74,14 @@ assigned to oversee an idea cross-project with the following responsibilities:
    for work to be carried out on. This will allow all development work in
    `gerrit <https://review.openstack.org>`_ to be found easily with the topic
    filter across the different projects.
-4. Once enough consensus is met by the cross-project spec liaisons of the
+5. Once enough consensus is met by the cross-project spec liaisons of the
    necessary projects, the specification will be passed to the Technical
    Committee for approval.
 
 
 Tracking Feature/Improvement
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 1. The Product Working Group Liaison should identify with each project involved
    who will actually implement the feature/improvement.
 2. Alignment with each project implementing the feature/improvement in the same
