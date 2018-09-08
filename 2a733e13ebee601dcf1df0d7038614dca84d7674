@@ -1,0 +1,9 @@
+Code-Review+2: Rochelle Grober <rochelle.grober@huawei.com>
+Code-Review+2: arkady kanevsky <arkady_kanevsky@dell.com>
+Workflow+1: arkady kanevsky <arkady_kanevsky@dell.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Sat, 08 Sep 2018 02:30:26 +0000
+Reviewed-on: https://review.openstack.org/600645
+Project: openstack/development-proposals
+Branch: refs/heads/master
